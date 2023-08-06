@@ -1,111 +1,77 @@
-table 'NAST[PROD]_Workspace reports'
-	isHidden
-	lineageTag: c3ce527c-40d8-4261-aa72-d594cd8b0b0c
+table 'NAST[APE]_Workspace reports'
+	lineageTag: d9ce8faa-52a4-488e-9c0c-b52a81d4ff38
 	sourceLineageTag: bb3f9ae3-4a39-4d36-80c4-815ee18c146a
-	ordinal: 32
+	ordinal: 209
 
-	partition 'NAST[PROD]_Workspace reports' = Entity
+	partition 'NAST[APE]_Workspace reports' = Entity
 		mode: DirectQuery
 		entityName: "Workspace reports"
-		expressionSource: 'DirectQuery to AS - Usage Metrics Report 2'
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 11'
 
-	measure 'IsSelectedReport 2' = EXTERNALMEASURE("IsSelectedReport", INTEGER, "DirectQuery to AS - Usage Metrics Report 2")
+	measure 'IsSelectedReport 10' = EXTERNALMEASURE("IsSelectedReport", INTEGER, "DirectQuery to AS - Usage Metrics Report 11")
 		dataCategory: Uncategorized
 		formatString:= 0
-		isHidden
-		lineageTag: 04862e31-bc76-4694-b918-eead888d6c97
+		lineageTag: 03361c8d-a9f7-4572-9bc9-08c889fe62db
 		sourceLineageTag: c1d018d1-26b5-42af-815c-c72d45ebf455
-
-		changedProperty = IsHidden
 
 	column ReportGuid
 		dataCategory: Uncategorized
 		dataType: String
 		isDataTypeInferred: false
-		isHidden
 		isNullable: false
-		lineageTag: 5ac7ecbd-5211-4120-88ac-b8d7181216c9
+		lineageTag: ea88fe85-c3a6-4bf0-bf97-b2876fc0058f
 		sourceColumn: ReportGuid
 		sourceLineageTag: 7dc770e3-25e2-4e48-8961-b964390cf0fd
 		summarizeBy: None
 
 		annotation SummarizationSetBy = User
 
-		changedProperty = IsHidden
-
 	column trend
 		dataCategory: Uncategorized
 		dataType: Double
 		formatString:= 0%;-0%;0%
 		isDataTypeInferred: false
-		isHidden
-		lineageTag: c1ce630f-77a5-48bf-a015-6567fb79be57
+		lineageTag: 57fd07c1-0c79-47ca-ad2b-28489766e90b
 		sourceColumn: trend
 		sourceLineageTag: 64e70630-3689-4d9f-8fe3-26d4fdc20afa
 		summarizeBy: Sum
 
 		annotation SummarizationSetBy = User
 
-		changedProperty = IsHidden
-
 	column 'Days with usage'
 		dataCategory: Uncategorized
 		dataType: Int64
 		formatString:= 0
 		isDataTypeInferred: false
-		isHidden
-		lineageTag: fecb57d4-8171-43a4-b4fd-c29c617745de
+		lineageTag: 2e976d9b-c6c5-44d1-a067-54fc061c15e1
 		sourceColumn: "Days with usage"
 		sourceLineageTag: 3f021dae-8b9c-42aa-83f3-9cd57e6a3b2a
 		summarizeBy: Sum
 
 		annotation SummarizationSetBy = User
 
-		changedProperty = IsHidden
-
 	column ReportName
 		dataCategory: Uncategorized
 		dataType: String
 		isDataTypeInferred: false
-		isHidden
-		lineageTag: f47e6f95-74a1-4e96-80c0-d20f79c6ea08
+		lineageTag: f6eb38dc-8ab2-42e6-be1b-92f5957b7b39
 		sourceColumn: ReportName
 		sourceLineageTag: 176daf7d-a39e-4990-a3b0-17771cebdb39
 		summarizeBy: None
 
 		annotation SummarizationSetBy = User
 
-		changedProperty = IsHidden
-
 	column IsUsageMetricsReportWS
 		dataCategory: Uncategorized
 		dataType: Boolean
 		formatString:= "TRUE";"TRUE";"FALSE"
 		isDataTypeInferred: false
-		isHidden
-		lineageTag: 3ec026d3-1867-4141-a239-fa3c2ac80b1b
+		lineageTag: 181267e1-1e42-40ad-a03b-e9810389116c
 		sourceColumn: IsUsageMetricsReportWS
 		sourceLineageTag: 3877fe44-3d9d-4b3b-897f-397fcaccbfdd
 		summarizeBy: None
 
 		annotation SummarizationSetBy = User
 
-		changedProperty = IsHidden
-
-	column Workspace = "NAST[PROD]"
-		dataType: String
-		isDataTypeInferred: false
-		isHidden
-		lineageTag: 34b71df7-8899-4441-a238-13dcf9531f8f
-		summarizeBy: None
-
-		annotation SummarizationSetBy = Automatic
-
-		changedProperty = Name
-
-		changedProperty = IsHidden
-
 	changedProperty = Name
-
-	changedProperty = IsHidden
 

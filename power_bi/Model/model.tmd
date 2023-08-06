@@ -11,7 +11,7 @@ annotation __PBI_TimeIntelligenceEnabled = 0
 
 annotation PBIDesktopVersion = 2.119.666.0 (23.07)
 
-annotation PBI_QueryOrder = ["EndDateRelative","StartDateRelative","DirectQuery to AS - Usage Metrics Report","DirectQuery to AS - Usage Metrics Report 2","DirectQuery to AS - Usage Metrics Report 3","DirectQuery to AS - Usage Metrics Report 4","DirectQuery to AS - Usage Metrics Report 5","DirectQuery to AS - Usage Metrics Report 6","DirectQuery to AS - Usage Metrics Report 7","ALL_IMPORT_USERS","All_Date_Table","DirectQuery to AS - Usage Metrics Report 8","DirectQuery to AS - Usage Metrics Report 9","All Reporting Owners"]
+annotation PBI_QueryOrder = ["EndDateRelative","StartDateRelative","DirectQuery to AS - Usage Metrics Report","DirectQuery to AS - Usage Metrics Report 2","DirectQuery to AS - Usage Metrics Report 3","DirectQuery to AS - Usage Metrics Report 4","DirectQuery to AS - Usage Metrics Report 5","DirectQuery to AS - Usage Metrics Report 6","DirectQuery to AS - Usage Metrics Report 7","ALL_IMPORT_USERS","All_Date_Table","DirectQuery to AS - Usage Metrics Report 8","DirectQuery to AS - Usage Metrics Report 9","All Reporting Owners","DirectQuery to AS - Usage Metrics Report 10","DirectQuery to AS - Usage Metrics Report 11"]
 
 annotation __BNorm = 1
 

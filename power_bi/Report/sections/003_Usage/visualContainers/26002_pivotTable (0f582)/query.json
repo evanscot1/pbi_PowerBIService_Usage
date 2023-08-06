@@ -14,6 +14,11 @@
               "Name": "a2",
               "Entity": "All Reporting Owners",
               "Type": 0
+            },
+            {
+              "Name": "a",
+              "Entity": "All_Workspace_Reports",
+              "Type": 0
             }
           ],
           "Select": [
@@ -63,7 +68,35 @@
                 "Property": "Views_Distinct_Report_Count"
               },
               "Name": "All_Report views.Views_Distinct_Report_Count",
-              "NativeReferenceName": "Report Ct."
+              "NativeReferenceName": "Reports"
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "Comparison": {
+                      "ComparisonKind": 0,
+                      "Left": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "a"
+                            }
+                          },
+                          "Property": "ReportName"
+                        }
+                      },
+                      "Right": {
+                        "Literal": {
+                          "Value": "null"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
           ],
           "OrderBy": [

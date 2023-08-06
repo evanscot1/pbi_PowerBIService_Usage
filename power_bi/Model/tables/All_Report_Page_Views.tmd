@@ -4,7 +4,7 @@ table All_Report_Page_Views
 
 	partition All_Report_Page_Views = Calculated
 		mode: Import
-		expression:= UNION ('FINANCE_BARD2_Report page views','HUB[PROD]_Report page views', 'NAST[DEV]_Report page views', 'NAST[INT]_Report page views', 'NAST[PROD]_Report page views', 'NAST_CONTRACTUAL_Report page views','Finance[BARD]_Report page views')
+		expression:= UNION ('FINANCE_BARD2_Report page views','HUB[PROD]_Report page views', 'NAST[DEV]_Report page views', 'NAST[INT]_Report page views', 'NAST[PROD]_Report page views', 'NAST_CONTRACTUAL_Report page views','Finance[BARD]_Report page views','Commecial Connectivity_Report page views')
 
 	measure 'Page View Ct' = count('All_Report_Page_views'[Date])
 		formatString:= #,0

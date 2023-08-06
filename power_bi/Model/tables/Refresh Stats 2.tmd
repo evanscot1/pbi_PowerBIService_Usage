@@ -1,0 +1,23 @@
+table 'Refresh Stats 2'
+	isHidden
+	lineageTag: 8c3643af-caa5-448d-ba36-db5867940cc6
+	sourceLineageTag: 9578ffab-7bde-46d8-ba4f-486559d24e82
+	ordinal: 208
+
+	partition 'Refresh Stats 2' = Entity
+		mode: DirectQuery
+		entityName: "Refresh Stats"
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 11'
+
+	column 'Last Refresh'
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: b4b5c630-547d-4a45-8029-84786b2aa3e3
+		sourceColumn: "Last Refresh"
+		sourceLineageTag: fb38f4d9-5a54-42d5-9aef-7ece73930cb4
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+

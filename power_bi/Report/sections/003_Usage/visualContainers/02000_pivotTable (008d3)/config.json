@@ -4,11 +4,11 @@
     {
       "id": 0,
       "position": {
-        "x": 13.502109704641351,
-        "y": 101.26582278481013,
+        "x": 12.594752186588922,
+        "y": 100.75801749271137,
         "z": 4000,
-        "width": 441.51898734177217,
-        "height": 305.14767932489451,
+        "width": 461.80758017492712,
+        "height": 306.47230320699708,
         "tabOrder": 2000
       }
     }
@@ -95,7 +95,7 @@
             "Property": "Views_Distinct_Report_Count"
           },
           "Name": "All_Report views.Views_Distinct_Report_Count",
-          "NativeReferenceName": "Report Ct."
+          "NativeReferenceName": "Reports"
         }
       ],
       "OrderBy": [
@@ -147,10 +147,27 @@
     ],
     "columnProperties": {
       "All_Report views.Views_Distinct_Report_Count": {
-        "displayName": "Report Ct."
+        "displayName": "Reports"
       }
     },
     "drillFilterOtherVisuals": true,
-    "objects": {}
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "73.24390338773914D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "All_Report views.Views_Distinct_Report_Count"
+          }
+        }
+      ]
+    }
   }
 }

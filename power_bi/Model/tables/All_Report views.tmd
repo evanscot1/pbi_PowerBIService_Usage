@@ -4,7 +4,7 @@ table 'All_Report views'
 
 	partition 'All_Report views' = Calculated
 		mode: Import
-		expression:= UNION ('FINANCE_BARD2_Report views','HUB[PROD]_Report views', 'NAST[DEV]_Report views', 'NAST[INT]_Report views', 'NAST[PROD]_Report views', 'NAST_CONTRACTUAL_Report views','Finance[BARD]_Report views')
+		expression:= UNION ('FINANCE_BARD2_Report views','HUB[PROD]_Report views', 'NAST[DEV]_Report views', 'NAST[INT]_Report views', 'NAST[PROD]_Report views', 'NAST_CONTRACTUAL_Report views','Finance[BARD]_Report views','Commecial Connectivity_Report views')
 
 	measure Views = count('All_Report views'[Date])
 		formatString:= #,0

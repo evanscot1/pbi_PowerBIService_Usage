@@ -123,3 +123,27 @@ expression 'DirectQuery to AS - Usage Metrics Report 9' =
 
 	annotation PBI_IncludeFutureArtifacts = True
 
+expression 'DirectQuery to AS - Usage Metrics Report 10' =
+	let
+	    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/myorg/Commercial%20Connectivity", "Usage Metrics Report"),
+	    Cubes = Table.Combine(Source[Data]),
+	    Cube = Cubes{[Id="Model", Kind="Cube"]}[Data]
+	in
+	    Cube
+	lineageTag: 55bea6d1-060f-4101-a2ed-c3ab819a1880
+
+	annotation PBI_IncludeFutureArtifacts = True
+
+expression 'DirectQuery to AS - Usage Metrics Report 11' =
+	let
+	    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/myorg/Account%20Profitability%20and%20Efficiency", "Usage Metrics Report"),
+	    Cubes = Table.Combine(Source[Data]),
+	    Cube = Cubes{[Id="Model", Kind="Cube"]}[Data]
+	in
+	    Cube
+	lineageTag: de087660-06c9-435f-840b-2bc53959efb3
+
+	annotation PBI_IncludeFutureArtifacts = True
+
+	annotation PBI_RemovedChildren = [{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"088a20e1-ae21-42a9-b384-bdf3e6170eca"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"ceca560f-ef98-4b03-b7ac-0945c8bb4c77"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"96a140cd-8e7c-4e48-b86b-424dec870405"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"a70d2714-271a-4fb4-bdef-25a42c03ee19"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"400619c0-544c-46b1-a5a0-9f6df481b7e5"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"ed16c722-1441-471c-915d-0164d8fd550c"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"6d5103b9-d9ce-4886-aff5-6b034dc41ea6"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"aa82832b-e2c3-41df-a5e1-2b631cb28b4b"}},"objectType":"Table"}]
+

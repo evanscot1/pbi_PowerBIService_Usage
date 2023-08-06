@@ -14,6 +14,11 @@
               "Name": "a1",
               "Entity": "All_Report_Pages",
               "Type": 0
+            },
+            {
+              "Name": "a2",
+              "Entity": "All_Workspace_Reports",
+              "Type": 0
             }
           ],
           "Select": [
@@ -52,6 +57,34 @@
               },
               "Name": "All_Report_Pages.SectionName",
               "NativeReferenceName": "SectionName"
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "Comparison": {
+                      "ComparisonKind": 0,
+                      "Left": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "a2"
+                            }
+                          },
+                          "Property": "ReportName"
+                        }
+                      },
+                      "Right": {
+                        "Literal": {
+                          "Value": "null"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
           ],
           "OrderBy": [

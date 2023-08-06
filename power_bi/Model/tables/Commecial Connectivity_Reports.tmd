@@ -1,20 +1,20 @@
-table 'NAST[PROD]_Reports'
+table 'Commecial Connectivity_Reports'
 	isHidden
-	lineageTag: f470c5ab-a7be-43e0-ae36-85b6c96b56c3
+	lineageTag: c86b2a8f-cb5b-4c55-a31e-7fac957b5064
 	sourceLineageTag: a70d2714-271a-4fb4-bdef-25a42c03ee19
-	ordinal: 27
+	ordinal: 192
 
-	partition 'NAST[PROD]_Reports' = Entity
+	partition 'Commecial Connectivity_Reports' = Entity
 		mode: DirectQuery
 		entityName: Reports
-		expressionSource: 'DirectQuery to AS - Usage Metrics Report 2'
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 10'
 
 	column OrganizationId
 		dataCategory: Uncategorized
 		dataType: String
 		isDataTypeInferred: false
 		isHidden
-		lineageTag: bbb7ecb4-ef07-4253-b77e-6ea3fe7d1650
+		lineageTag: d9f21f49-e17f-4c90-84e4-0e31a49856f2
 		sourceColumn: OrganizationId
 		sourceLineageTag: 6f0a7eca-6b5d-43f2-acf5-5143422b6f2f
 		summarizeBy: None
@@ -29,7 +29,7 @@ table 'NAST[PROD]_Reports'
 		isDataTypeInferred: false
 		isHidden
 		isNullable: false
-		lineageTag: 5875dcb0-1341-4d57-b4ac-18afbaee2a78
+		lineageTag: a2322199-f2aa-4c75-8b07-229887ddb5e9
 		sourceColumn: ReportGuid
 		sourceLineageTag: d04f80ed-b628-4cfc-859b-bd220ce893aa
 		summarizeBy: None
@@ -43,7 +43,7 @@ table 'NAST[PROD]_Reports'
 		dataType: String
 		isDataTypeInferred: false
 		isHidden
-		lineageTag: ce6ff3d4-0636-4f8f-9e91-4513ccbf868a
+		lineageTag: 23052748-f9dd-48a6-ab4e-74a274b25ce3
 		sourceColumn: ReportName
 		sourceLineageTag: 2a1b9eea-cb70-4575-aa1c-e3d83b16f3c1
 		summarizeBy: None
@@ -57,7 +57,7 @@ table 'NAST[PROD]_Reports'
 		dataType: String
 		isDataTypeInferred: false
 		isHidden
-		lineageTag: 84b66ddd-e3a1-4220-a93b-1da89b992293
+		lineageTag: d19d5526-2218-445f-b19f-3a8fddb3a297
 		sourceColumn: WorkspaceId
 		sourceLineageTag: 0d3e7f72-b7cb-43d0-a775-0bc678f65d8f
 		summarizeBy: None
@@ -72,7 +72,7 @@ table 'NAST[PROD]_Reports'
 		formatString:= "TRUE";"TRUE";"FALSE"
 		isDataTypeInferred: false
 		isHidden
-		lineageTag: 3936a152-801b-451d-85a6-f5612709b422
+		lineageTag: 4df7c5bc-8c86-4046-956d-34f0c2f3dd6f
 		sourceColumn: IsUsageMetricsReport
 		sourceLineageTag: aaa9416e-121b-4837-87a4-6d04bb28ee40
 		summarizeBy: None

@@ -4,11 +4,11 @@
     {
       "id": 0,
       "position": {
-        "x": 473.92405063291153,
-        "y": 101.26582278481013,
+        "x": 493.99416909620993,
+        "y": 100.75801749271137,
         "z": 9000,
-        "width": 565.73839662447256,
-        "height": 305.14767932489451,
+        "width": 545.77259475218659,
+        "height": 305.0728862973761,
         "tabOrder": 26002
       }
     }
@@ -95,7 +95,7 @@
             "Property": "Views_Distinct_Report_Count"
           },
           "Name": "All_Report views.Views_Distinct_Report_Count",
-          "NativeReferenceName": "Report Ct."
+          "NativeReferenceName": "Reports"
         }
       ],
       "OrderBy": [
@@ -135,7 +135,7 @@
     ],
     "columnProperties": {
       "All_Report views.Views_Distinct_Report_Count": {
-        "displayName": "Report Ct."
+        "displayName": "Reports"
       }
     },
     "drillFilterOtherVisuals": true,

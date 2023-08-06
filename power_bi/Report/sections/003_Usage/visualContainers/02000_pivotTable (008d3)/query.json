@@ -63,7 +63,35 @@
                 "Property": "Views_Distinct_Report_Count"
               },
               "Name": "All_Report views.Views_Distinct_Report_Count",
-              "NativeReferenceName": "Report Ct."
+              "NativeReferenceName": "Reports"
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "Comparison": {
+                      "ComparisonKind": 0,
+                      "Left": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "a"
+                            }
+                          },
+                          "Property": "ReportName"
+                        }
+                      },
+                      "Right": {
+                        "Literal": {
+                          "Value": "null"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
           ],
           "OrderBy": [

@@ -1,5 +1,22 @@
 {
-  "objects": {},
+  "objects": {
+    "columnWidth": [
+      {
+        "properties": {
+          "value": {
+            "expr": {
+              "Literal": {
+                "Value": "73.24390338773914D"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "All_Report views.Views_Distinct_Report_Count"
+        }
+      }
+    ]
+  },
   "projectionOrdering": {
     "Rows": [
       0
@@ -38,10 +55,64 @@
         "Format": "#,0"
       },
       {
-        "Restatement": "Report Ct.",
+        "Restatement": "Reports",
         "Name": "All_Report views.Views_Distinct_Report_Count",
         "Type": 3,
         "Format": "#,0"
+      }
+    ],
+    "Filters": [
+      {
+        "type": 0,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All_Workspace_Reports"
+              }
+            },
+            "Property": "Workspace"
+          }
+        }
+      },
+      {
+        "type": 2,
+        "expression": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All_Report views"
+              }
+            },
+            "Property": "Viewers"
+          }
+        }
+      },
+      {
+        "type": 2,
+        "expression": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All_Report views"
+              }
+            },
+            "Property": "Views"
+          }
+        }
+      },
+      {
+        "type": 2,
+        "expression": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All_Report views"
+              }
+            },
+            "Property": "Views_Distinct_Report_Count"
+          }
+        }
       }
     ]
   },
@@ -140,7 +211,7 @@
       }
     },
     {
-      "displayName": "Report Ct.",
+      "displayName": "Reports",
       "format": "#,0",
       "queryName": "All_Report views.Views_Distinct_Report_Count",
       "roles": {

@@ -4,7 +4,7 @@ table All_Report_Pages
 
 	partition All_Report_Pages = Calculated
 		mode: Import
-		expression:= UNION ('FINANCE_BARD2_Report pages','HUB[PROD]_Report pages', 'NAST[DEV]_Report pages', 'NAST[INT]_Report pages', 'NAST[PROD]_Report pages', 'NAST_CONTRACTUAL_Report pages','Finance[BARD]_Report pages')
+		expression:= UNION ('FINANCE_BARD2_Report pages','HUB[PROD]_Report pages', 'NAST[DEV]_Report pages', 'NAST[INT]_Report pages', 'NAST[PROD]_Report pages', 'NAST_CONTRACTUAL_Report pages','Finance[BARD]_Report pages','Commecial Connectivity_Report pages')
 
 	column ReportId
 		dataType: String

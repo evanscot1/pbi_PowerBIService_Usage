@@ -111,5 +111,58 @@
     "objects": {},
     "isHiddenInViewMode": true,
     "isLockedInViewMode": true
+  },
+  {
+    "name": "Filterd6ed2753217238902413",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "All_Workspace_Reports"
+          }
+        },
+        "Property": "ReportName"
+      }
+    },
+    "filter": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "a",
+          "Entity": "All_Workspace_Reports",
+          "Type": 0
+        }
+      ],
+      "Where": [
+        {
+          "Condition": {
+            "Not": {
+              "Expression": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "a"
+                        }
+                      },
+                      "Property": "ReportName"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "null"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "type": "Advanced",
+    "howCreated": 1
   }
 ]

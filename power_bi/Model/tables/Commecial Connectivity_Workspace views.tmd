@@ -1,20 +1,20 @@
-table 'NAST[PROD]_Workspace views'
+table 'Commecial Connectivity_Workspace views'
 	isHidden
-	lineageTag: 980aac8e-2e8a-4c67-8ac8-68f34ea747e1
+	lineageTag: f104ff2b-52de-4d58-b5f5-7059bf17551d
 	sourceLineageTag: ed16c722-1441-471c-915d-0164d8fd550c
-	ordinal: 31
+	ordinal: 196
 
-	partition 'NAST[PROD]_Workspace views' = Entity
+	partition 'Commecial Connectivity_Workspace views' = Entity
 		mode: DirectQuery
 		entityName: "Workspace views"
-		expressionSource: 'DirectQuery to AS - Usage Metrics Report 2'
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 10'
 
 	column ReportId
 		dataCategory: Uncategorized
 		dataType: String
 		isDataTypeInferred: false
 		isHidden
-		lineageTag: ca066554-9513-4959-bf9c-0f745ec3cb67
+		lineageTag: 0b4198aa-9d53-4e9b-9294-9ffa39998124
 		sourceColumn: ReportId
 		sourceLineageTag: 6c82af29-a588-4084-b1ae-bdfd353f4040
 		summarizeBy: None
@@ -28,7 +28,7 @@ table 'NAST[PROD]_Workspace views'
 		dataType: String
 		isDataTypeInferred: false
 		isHidden
-		lineageTag: b6ce4452-803f-4523-8909-bf8e7e0aefb3
+		lineageTag: e249e364-ec17-4d06-a7cc-1fa7a3f7664e
 		sourceColumn: UserId
 		sourceLineageTag: b63bdc99-0c2c-4886-94a5-127796fef645
 		summarizeBy: None
@@ -42,7 +42,7 @@ table 'NAST[PROD]_Workspace views'
 		dataType: String
 		isDataTypeInferred: false
 		isHidden
-		lineageTag: 5dd9d957-4ce4-4b4d-9351-c4a5fa7c6ea3
+		lineageTag: d0666ef4-f7c9-43d0-bf4f-872f3ac34d61
 		sourceColumn: DistributionMethod
 		sourceLineageTag: d325a0c9-02cb-439b-ac7e-f4540bd214b7
 		summarizeBy: None
@@ -56,7 +56,7 @@ table 'NAST[PROD]_Workspace views'
 		dataType: String
 		isDataTypeInferred: false
 		isHidden
-		lineageTag: 942dcc29-2a9b-4c54-9adb-55435bd5376c
+		lineageTag: f076cfac-9ca0-4001-ba68-1b9c731114fd
 		sourceColumn: ConsumptionMethod
 		sourceLineageTag: cfaf38cd-5b54-495d-beb6-e324abf26e41
 		summarizeBy: None
@@ -71,7 +71,7 @@ table 'NAST[PROD]_Workspace views'
 		formatString:= 0
 		isDataTypeInferred: false
 		isHidden
-		lineageTag: 0992f6df-3e42-4737-816c-edb947a6117f
+		lineageTag: 324d0023-ea6b-400e-ad56-217f319ad425
 		sourceColumn: Views
 		sourceLineageTag: 1a053eea-1796-4bdb-bf05-a9531cbf1242
 		summarizeBy: Sum
@@ -85,7 +85,7 @@ table 'NAST[PROD]_Workspace views'
 		dataType: String
 		isDataTypeInferred: false
 		isHidden
-		lineageTag: c3d4b6df-f50a-49f5-aa00-19acf434d3a9
+		lineageTag: f99edd89-0cd9-405e-96ca-7de277f7bc76
 		sourceColumn: UserKey
 		sourceLineageTag: 58031bde-a8a2-4086-a47b-5f2b526b2f22
 		summarizeBy: None
@@ -99,7 +99,7 @@ table 'NAST[PROD]_Workspace views'
 		dataType: String
 		isDataTypeInferred: false
 		isHidden
-		lineageTag: 04516173-b9c9-4797-bf29-18157e4e62d4
+		lineageTag: 9aebd280-0428-4062-8bd0-603645c324bd
 		sourceColumn: UniqueUser
 		sourceLineageTag: b260fc66-1dce-46bc-9615-0c4422563e2c
 		summarizeBy: None

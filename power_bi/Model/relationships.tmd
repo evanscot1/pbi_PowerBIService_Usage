@@ -674,13 +674,99 @@ relationship '5ea7fd75-fd64-447d-9c9c-506110bb6775'
 	fromColumn: 'Finance[BARD]_Workspace views'.ReportId
 	toColumn: 'Finance[BARD]_Workspace reports'.ReportGuid
 
-relationship 'bd9911dd-0954-4be5-8279-51f9649628af'
-	fromColumn: 'All_Report views'.UserId
-	toColumn: ALL_IMPORT_USERS.USERID
+relationship 'a252f540-8790-4d4b-b2ef-1335dfd50bec'
+	fromColumn: 'Commecial Connectivity_Report views'.CreationTime
+	toColumn: 'LocalDateTable_dc7eb03a-ec8b-421f-b39b-107ea1f05736 9'.Date
 
-relationship 'a28305f8-2c83-4e74-81d0-ef90f381f6ed'
-	fromColumn: 'All_Report views'.Date
-	toColumn: All_Date_Table.DATE
+relationship '695144a5-f7a3-4d6b-b950-b473574101ba'
+	fromColumn: 'Commecial Connectivity_Report views'.ReportId
+	toColumn: 'Commecial Connectivity_Reports'.ReportGuid
+
+relationship '26131124-7889-4dc8-9489-6f6e58ab6f16'
+	fromColumn: 'Commecial Connectivity_Report views'.Date
+	toColumn: 'Commercial Connectivity_Dates'.Date
+
+relationship '5acec435-4e80-460c-91af-aa653dddfa72'
+	fromColumn: 'Commecial Connectivity_Report views'.ReportId
+	toColumn: 'Commecial Connectivity_Workspace reports'.ReportGuid
+
+relationship '472e3746-1403-41d3-be02-32c3c764f538'
+	fromColumn: 'Commecial Connectivity_Report views'.UserKey
+	toCardinality: Many
+	toColumn: 'Commecial Connectivity_Users'.UserKey
+
+relationship '21d75e36-25c4-45c7-b6ae-55a436b8cbd6'
+	crossFilteringBehavior: BothDirections
+	fromCardinality: One
+	fromColumn: 'Commecial Connectivity_Report rank'.ReportId
+	toColumn: 'Commecial Connectivity_Reports'.ReportGuid
+
+relationship '8aad8e37-850f-4e86-b647-3729ca37cd1c'
+	fromColumn: 'Commecial Connectivity_Report page views'.Timestamp
+	toColumn: 'LocalDateTable_e9fae86b-d80b-4c31-9ba4-095822014411 9'.Date
+
+relationship 'abf967f3-6de4-4208-aa1e-6aaa0ff595d7'
+	fromColumn: 'Commecial Connectivity_Report page views'.SectionId
+	toColumn: 'Commecial Connectivity_Report pages'.SectionId
+
+relationship '3e31c323-f2eb-41e6-9366-385f30007865'
+	fromColumn: 'Commecial Connectivity_Report page views'.Date
+	toColumn: 'Commercial Connectivity_Dates'.Date
+
+relationship 'aa369eb7-dc3b-4d69-8313-dcd5bde6cf7a'
+	fromColumn: 'Commecial Connectivity_Report page views'.UserKey
+	toCardinality: Many
+	toColumn: 'Commecial Connectivity_Users'.UserKey
+
+relationship '18bc8afe-56bc-46e1-8a86-ebed35ba4194'
+	fromColumn: 'Commecial Connectivity_Report load times'.StartTime
+	toColumn: 'LocalDateTable_3b852b25-f44a-4909-b021-a7df8cabefe6 10'.Date
+
+relationship '9f6d1ed5-35b5-4a7e-96a6-4394fe57d034'
+	fromColumn: 'Commecial Connectivity_Report load times'.EndTime
+	toColumn: 'LocalDateTable_3ebb0033-50be-4e6e-8081-ee8c7cf4091f 10'.Date
+
+relationship '8bc154f1-16aa-4ff7-b4a7-faf5756bc7c8'
+	fromColumn: 'Commecial Connectivity_Report load times'.Timestamp
+	toColumn: 'LocalDateTable_d27e4379-e50d-47cf-aeac-77eb5f688306 10'.Date
+
+relationship '2147a12c-521c-4e48-977b-1066a63404a5'
+	fromColumn: 'Commecial Connectivity_Report load times'.ReportId
+	toColumn: 'Commecial Connectivity_Reports'.ReportGuid
+
+relationship '469b7055-8a1f-4c17-8adc-7fb3e693648a'
+	fromColumn: 'Commecial Connectivity_Report load times'.Date
+	toColumn: 'Commercial Connectivity_Dates'.Date
+
+relationship '5b5710eb-70cd-4778-9e6a-c448fc18cfb5'
+	fromColumn: 'Commecial Connectivity_Report pages'.ReportId
+	toColumn: 'Commecial Connectivity_Reports'.ReportGuid
+
+relationship 'ea19d650-a85f-4401-b56e-fe6029f2b8fc'
+	fromColumn: 'Commercial Connectivity_Dates'.Date
+	toColumn: 'LocalDateTable_bc207ece-a79c-4d33-a331-c40f45eb2725 9'.Date
+
+relationship 'a24a268b-4770-4af0-b46b-2292f7377694'
+	fromColumn: 'Commercial Connectivity_Dates'.fDoW
+	toColumn: 'LocalDateTable_b465bb22-755a-4444-bc06-bd92af8a8952 9'.Date
+
+relationship 'a2ae9d4c-d247-4913-a3b5-e9e1ef1f4db8'
+	fromColumn: 'Commercial Connectivity_Dates'.lDoW
+	toColumn: 'LocalDateTable_7e74b9e2-e4a5-4c05-8b29-c52b531c8abf 9'.Date
+
+relationship 'f8d228f9-a03c-48ed-83e9-39e0dbb0b081'
+	fromColumn: 'Commecial Connectivity_Workspace views'.ReportId
+	toColumn: 'Commecial Connectivity_Workspace reports'.ReportGuid
+
+relationship 'c1e787bc-23b4-43a7-87d2-9fc2d279636c'
+	crossFilteringBehavior: BothDirections
+	fromCardinality: One
+	fromColumn: 'All Reporting Owners'.ReportGuid
+	toColumn: All_Workspace_Reports.ReportGuid
+
+relationship 'cc83c9b1-0e21-48dc-9caa-e30d68df95bb'
+	fromColumn: All_Report_Pages.ReportId
+	toColumn: All_Workspace_Reports.ReportGuid
 
 relationship '8cfc7242-008c-4bd3-ae8d-c75a999745d4'
 	fromColumn: All_Report_Page_Views.UserId
@@ -698,13 +784,27 @@ relationship '9fd3d8d6-a759-4690-81cb-1d58153f00e1'
 	fromColumn: 'All_Report views'.ReportId
 	toColumn: All_Workspace_Reports.ReportGuid
 
-relationship 'cc83c9b1-0e21-48dc-9caa-e30d68df95bb'
-	fromColumn: All_Report_Pages.ReportId
-	toColumn: All_Workspace_Reports.ReportGuid
+relationship 'bd9911dd-0954-4be5-8279-51f9649628af'
+	fromColumn: 'All_Report views'.UserId
+	toColumn: ALL_IMPORT_USERS.USERID
 
-relationship 'c1e787bc-23b4-43a7-87d2-9fc2d279636c'
-	crossFilteringBehavior: BothDirections
-	fromCardinality: One
-	fromColumn: 'All Reporting Owners'.ReportGuid
-	toColumn: All_Workspace_Reports.ReportGuid
+relationship 'a28305f8-2c83-4e74-81d0-ef90f381f6ed'
+	fromColumn: 'All_Report views'.Date
+	toColumn: All_Date_Table.DATE
+
+relationship 'de394ae2-171c-49c5-b24d-ea1a64101659'
+	fromColumn: 'NAST[APE]_Report views'.CreationTime
+	toColumn: 'LocalDateTable_dc7eb03a-ec8b-421f-b39b-107ea1f05736 10'.Date
+
+relationship '04be79e4-3cfe-46a2-8890-4c5ebd73416d'
+	fromColumn: 'NAST[APE]_Report views'.ReportId
+	toColumn: 'NAST[APE]_Workspace reports'.ReportGuid
+
+relationship 'b24bb195-5eaf-40dc-b760-1c1fe225bf05'
+	fromColumn: 'NAST[APE]_Report page views'.Timestamp
+	toColumn: 'LocalDateTable_e9fae86b-d80b-4c31-9ba4-095822014411 10'.Date
+
+relationship '2565f67e-649d-4ebb-ab1f-a66d24230ed3'
+	fromColumn: 'NAST[APE]_Report page views'.SectionId
+	toColumn: 'NAST[APE]_Report pages'.SectionId
 

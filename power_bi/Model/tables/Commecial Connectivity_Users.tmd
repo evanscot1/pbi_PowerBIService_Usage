@@ -1,20 +1,20 @@
-table 'NAST[PROD]_Users'
+table 'Commecial Connectivity_Users'
 	isHidden
-	lineageTag: 53338b02-3ab8-47fb-9a18-af43ab557046
+	lineageTag: 8ac375e6-d9c3-4c71-ad9c-fab1537af533
 	sourceLineageTag: 6d5103b9-d9ce-4886-aff5-6b034dc41ea6
-	ordinal: 36
+	ordinal: 201
 
-	partition 'NAST[PROD]_Users' = Entity
+	partition 'Commecial Connectivity_Users' = Entity
 		mode: DirectQuery
 		entityName: Users
-		expressionSource: 'DirectQuery to AS - Usage Metrics Report 2'
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 10'
 
 	column UserId
 		dataCategory: Uncategorized
 		dataType: String
 		isDataTypeInferred: false
 		isHidden
-		lineageTag: e0b8ebe4-8fe9-4da6-b847-e13cfd4f405e
+		lineageTag: 1bfe6cbb-2e2f-486a-b8b5-0542777d2e43
 		sourceColumn: UserId
 		sourceLineageTag: b8bb8249-7454-4110-aab8-8b8259c0dbf5
 		summarizeBy: None
@@ -28,7 +28,7 @@ table 'NAST[PROD]_Users'
 		dataType: String
 		isDataTypeInferred: false
 		isHidden
-		lineageTag: 3bef3a79-1d77-48d2-966b-00c8ec39f8de
+		lineageTag: 2b64433f-ba2f-4cfc-8fad-a8b96e0e461c
 		sourceColumn: UserKey
 		sourceLineageTag: 7b6f9a0b-b107-497b-840f-53591eea8dee
 		summarizeBy: None
@@ -42,7 +42,7 @@ table 'NAST[PROD]_Users'
 		dataType: String
 		isDataTypeInferred: false
 		isHidden
-		lineageTag: fce2fcf3-91b6-45af-9b33-0bac290a54b4
+		lineageTag: 9f66f7ed-8cb2-429d-993b-843e4b32487e
 		sourceColumn: UserGuid
 		sourceLineageTag: 16810f80-d331-4722-b04b-899d87095e6c
 		summarizeBy: None
@@ -56,7 +56,7 @@ table 'NAST[PROD]_Users'
 		dataType: String
 		isDataTypeInferred: false
 		isHidden
-		lineageTag: 2e0122b2-051a-4536-bd42-2460ac26aef1
+		lineageTag: 9b9cadc3-f42c-43a8-a58e-4bcc8248d813
 		sourceColumn: UniqueUser
 		sourceLineageTag: 4b8bbac5-7897-4754-a0ca-0e4c8e578e5b
 		summarizeBy: None

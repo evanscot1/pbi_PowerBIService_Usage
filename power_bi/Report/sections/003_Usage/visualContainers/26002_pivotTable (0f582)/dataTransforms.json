@@ -59,7 +59,7 @@
         "Type": 2048
       },
       {
-        "Restatement": "Report Ct.",
+        "Restatement": "Reports",
         "Name": "All_Report views.Views_Distinct_Report_Count",
         "Type": 3,
         "Format": "#,0"
@@ -161,7 +161,7 @@
       }
     },
     {
-      "displayName": "Report Ct.",
+      "displayName": "Reports",
       "format": "#,0",
       "queryName": "All_Report views.Views_Distinct_Report_Count",
       "roles": {

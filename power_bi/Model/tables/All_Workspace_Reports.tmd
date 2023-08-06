@@ -4,7 +4,7 @@ table All_Workspace_Reports
 
 	partition All_Workspace_Reports = Calculated
 		mode: Import
-		expression:= UNION ('FINANCE_BARD2_Workspace reports','HUB[PROD]_Workspace reports', 'NAST[DEV]_Workspace reports', 'NAST[INT]_Workspace reports', 'NAST[PROD]_Workspace reports', 'NAST_CONTRACTUAL_Workspace reports','Finance[BARD]_Workspace reports')
+		expression:= UNION ('FINANCE_BARD2_Workspace reports','HUB[PROD]_Workspace reports', 'NAST[DEV]_Workspace reports', 'NAST[INT]_Workspace reports', 'NAST[PROD]_Workspace reports', 'NAST_CONTRACTUAL_Workspace reports','Finance[BARD]_Workspace reports','Commecial Connectivity_Workspace reports')
 
 	column ReportGuid
 		dataType: String

@@ -14,6 +14,11 @@
               "Name": "i",
               "Entity": "ALL_IMPORT_USERS",
               "Type": 0
+            },
+            {
+              "Name": "a",
+              "Entity": "All_Workspace_Reports",
+              "Type": 0
             }
           ],
           "Select": [
@@ -64,6 +69,34 @@
               },
               "Name": "ALL_IMPORT_USERS.NAME",
               "NativeReferenceName": "NAME"
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "Comparison": {
+                      "ComparisonKind": 0,
+                      "Left": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "a"
+                            }
+                          },
+                          "Property": "ReportName"
+                        }
+                      },
+                      "Right": {
+                        "Literal": {
+                          "Value": "null"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
           ],
           "OrderBy": [

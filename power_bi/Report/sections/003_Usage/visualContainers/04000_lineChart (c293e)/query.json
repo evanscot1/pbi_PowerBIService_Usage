@@ -14,6 +14,11 @@
               "Name": "a1",
               "Entity": "All_Date_Table",
               "Type": 0
+            },
+            {
+              "Name": "a2",
+              "Entity": "All_Workspace_Reports",
+              "Type": 0
             }
           ],
           "Select": [
@@ -123,6 +128,32 @@
                       }
                     ]
                   ]
+                }
+              }
+            },
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "Comparison": {
+                      "ComparisonKind": 0,
+                      "Left": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "a2"
+                            }
+                          },
+                          "Property": "ReportName"
+                        }
+                      },
+                      "Right": {
+                        "Literal": {
+                          "Value": "null"
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }

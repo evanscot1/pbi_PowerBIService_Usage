@@ -1,19 +1,19 @@
-table 'NAST[PROD]_Workspace reports'
+table 'Commecial Connectivity_Workspace reports'
 	isHidden
-	lineageTag: c3ce527c-40d8-4261-aa72-d594cd8b0b0c
+	lineageTag: f9f73293-3487-48f5-a9ec-41a473781e0b
 	sourceLineageTag: bb3f9ae3-4a39-4d36-80c4-815ee18c146a
-	ordinal: 32
+	ordinal: 197
 
-	partition 'NAST[PROD]_Workspace reports' = Entity
+	partition 'Commecial Connectivity_Workspace reports' = Entity
 		mode: DirectQuery
 		entityName: "Workspace reports"
-		expressionSource: 'DirectQuery to AS - Usage Metrics Report 2'
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 10'
 
-	measure 'IsSelectedReport 2' = EXTERNALMEASURE("IsSelectedReport", INTEGER, "DirectQuery to AS - Usage Metrics Report 2")
+	measure 'IsSelectedReport 9' = EXTERNALMEASURE("IsSelectedReport", INTEGER, "DirectQuery to AS - Usage Metrics Report 10")
 		dataCategory: Uncategorized
 		formatString:= 0
 		isHidden
-		lineageTag: 04862e31-bc76-4694-b918-eead888d6c97
+		lineageTag: f5972b4a-3534-449a-90aa-512b075bb03f
 		sourceLineageTag: c1d018d1-26b5-42af-815c-c72d45ebf455
 
 		changedProperty = IsHidden
@@ -24,7 +24,7 @@ table 'NAST[PROD]_Workspace reports'
 		isDataTypeInferred: false
 		isHidden
 		isNullable: false
-		lineageTag: 5ac7ecbd-5211-4120-88ac-b8d7181216c9
+		lineageTag: 6271fd00-a746-4d1d-b608-440bb5e0a11d
 		sourceColumn: ReportGuid
 		sourceLineageTag: 7dc770e3-25e2-4e48-8961-b964390cf0fd
 		summarizeBy: None
@@ -39,7 +39,7 @@ table 'NAST[PROD]_Workspace reports'
 		formatString:= 0%;-0%;0%
 		isDataTypeInferred: false
 		isHidden
-		lineageTag: c1ce630f-77a5-48bf-a015-6567fb79be57
+		lineageTag: 0a1724ec-e3fb-460a-86e4-98fac375dceb
 		sourceColumn: trend
 		sourceLineageTag: 64e70630-3689-4d9f-8fe3-26d4fdc20afa
 		summarizeBy: Sum
@@ -54,7 +54,7 @@ table 'NAST[PROD]_Workspace reports'
 		formatString:= 0
 		isDataTypeInferred: false
 		isHidden
-		lineageTag: fecb57d4-8171-43a4-b4fd-c29c617745de
+		lineageTag: 61313b5a-008f-47e9-9c4b-539985b3fa5d
 		sourceColumn: "Days with usage"
 		sourceLineageTag: 3f021dae-8b9c-42aa-83f3-9cd57e6a3b2a
 		summarizeBy: Sum
@@ -68,7 +68,7 @@ table 'NAST[PROD]_Workspace reports'
 		dataType: String
 		isDataTypeInferred: false
 		isHidden
-		lineageTag: f47e6f95-74a1-4e96-80c0-d20f79c6ea08
+		lineageTag: e9d2190e-5647-4389-898d-6fe8cf6553cf
 		sourceColumn: ReportName
 		sourceLineageTag: 176daf7d-a39e-4990-a3b0-17771cebdb39
 		summarizeBy: None
@@ -83,7 +83,7 @@ table 'NAST[PROD]_Workspace reports'
 		formatString:= "TRUE";"TRUE";"FALSE"
 		isDataTypeInferred: false
 		isHidden
-		lineageTag: 3ec026d3-1867-4141-a239-fa3c2ac80b1b
+		lineageTag: 3c0df2a4-332a-4ae2-bc7f-84b0acbb5ce2
 		sourceColumn: IsUsageMetricsReportWS
 		sourceLineageTag: 3877fe44-3d9d-4b3b-897f-397fcaccbfdd
 		summarizeBy: None
@@ -92,11 +92,10 @@ table 'NAST[PROD]_Workspace reports'
 
 		changedProperty = IsHidden
 
-	column Workspace = "NAST[PROD]"
+	column Workspace = "Commercial_Connectivity"
 		dataType: String
-		isDataTypeInferred: false
 		isHidden
-		lineageTag: 34b71df7-8899-4441-a238-13dcf9531f8f
+		lineageTag: a535d7ca-c824-4ea9-903a-fd77099bf56c
 		summarizeBy: None
 
 		annotation SummarizationSetBy = Automatic

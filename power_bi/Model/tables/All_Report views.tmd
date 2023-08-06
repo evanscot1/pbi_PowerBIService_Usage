@@ -1,0 +1,174 @@
+table 'All_Report views'
+	lineageTag: 1a4e5dbd-18bc-4e6a-9549-e616fdd186dc
+	ordinal: 135
+
+	partition 'All_Report views' = Calculated
+		mode: Import
+		expression:= UNION ('FINANCE_BARD2_Report views','HUB[PROD]_Report views', 'NAST[DEV]_Report views', 'NAST[INT]_Report views', 'NAST[PROD]_Report views', 'NAST_CONTRACTUAL_Report views','Finance[BARD]_Report views')
+
+	measure Views = count('All_Report views'[Date])
+		formatString:= #,0
+		lineageTag: 230aab29-c75f-48af-92ee-0ba8f6e2d99c
+
+	measure Viewers = DISTINCTCOUNT([UserId])
+		formatString:= #,0
+		lineageTag: bbca08a8-b672-4aaf-83db-0d68b92e9c2e
+
+	measure Views_Distinct_Report_Count = DISTINCTCOUNT('All_Report views'[ReportId])
+		formatString:= #,0
+		lineageTag: c5ddf212-f8a9-4a04-817e-b1dc492c63b7
+
+	column ReportId
+		dataType: String
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: 11c8c28d-0523-480b-8a0b-7d3df75f07f0
+		sourceColumn: "FINANCE_BARD2_Report views[ReportId]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column ReportType
+		dataType: String
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: 433f706f-f1e7-43da-850a-0fa3aa2b035c
+		sourceColumn: "FINANCE_BARD2_Report views[ReportType]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column ReportName
+		dataType: String
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: 0dffca7b-02a1-44b2-afcb-f25c4c7e84c4
+		sourceColumn: "FINANCE_BARD2_Report views[ReportName]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column AppName
+		dataType: String
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: 54edfd67-fa22-4906-8c50-6291c6fb860a
+		sourceColumn: "FINANCE_BARD2_Report views[AppName]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column UserKey
+		dataType: String
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: 14b2a932-c62c-4a7f-80c2-5cbacba113fa
+		sourceColumn: "FINANCE_BARD2_Report views[UserKey]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column UserId
+		dataType: String
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: 4543588b-e3a4-49fb-ba4e-06a07ac92343
+		sourceColumn: "FINANCE_BARD2_Report views[UserId]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column UserAgent
+		dataType: String
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: 6433a1b2-0a14-4e89-9bf3-83f9fcda2485
+		sourceColumn: "FINANCE_BARD2_Report views[UserAgent]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column DatasetName
+		dataType: String
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: 0147694e-c83c-486f-8eae-9bedaeb828b3
+		sourceColumn: "FINANCE_BARD2_Report views[DatasetName]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column CapacityId
+		dataType: String
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: a15f6dcf-f928-4fd2-8e5e-7a88604aaeb2
+		sourceColumn: "FINANCE_BARD2_Report views[CapacityId]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column CapacityName
+		dataType: String
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: 9aaa8dc0-39b6-4c7e-972a-26f47a14b501
+		sourceColumn: "FINANCE_BARD2_Report views[CapacityName]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: DateTime
+		formatString:= General Date
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: 9081c081-aa0d-4c74-b6b3-814bdc177f56
+		sourceColumn: "FINANCE_BARD2_Report views[Date]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreationTime
+		dataType: DateTime
+		formatString:= General Date
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: e49ed64d-588b-4be2-aacc-c319bf46769d
+		sourceColumn: "FINANCE_BARD2_Report views[CreationTime]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column DistributionMethod
+		dataType: String
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: 863fe541-f9ba-43aa-b7fe-30f439426bfb
+		sourceColumn: "FINANCE_BARD2_Report views[DistributionMethod]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column OriginalConsumptionMethod
+		dataType: String
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: 7b484b00-f929-4d7b-8a90-0a0ec4217850
+		sourceColumn: "FINANCE_BARD2_Report views[OriginalConsumptionMethod]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column ConsumptionMethod
+		dataType: String
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: 8733b7fa-ab8e-4b54-9866-62220087c310
+		sourceColumn: "FINANCE_BARD2_Report views[ConsumptionMethod]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	annotation PBI_Id = daa03f2cb1624cda9a10f7a0df40fd31
+

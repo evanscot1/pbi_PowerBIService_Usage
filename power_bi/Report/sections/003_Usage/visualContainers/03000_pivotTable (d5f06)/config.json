@@ -1,0 +1,207 @@
+{
+  "name": "d5f06dc9e5c105474d4a",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 1322.3414634146341,
+        "y": 420.14634146341461,
+        "z": 5000,
+        "width": 571.609756097561,
+        "height": 629.560975609756,
+        "tabOrder": 3000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "pivotTable",
+    "projections": {
+      "Rows": [
+        {
+          "queryRef": "IMPORT_USERS.JOB_DESCRIPTION",
+          "active": true
+        },
+        {
+          "queryRef": "ALL_IMPORT_USERS.NAME"
+        }
+      ],
+      "Values": [
+        {
+          "queryRef": "All_Report views.Viewers"
+        },
+        {
+          "queryRef": "All_Report views.Views"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "a1",
+          "Entity": "All_Report views",
+          "Type": 0
+        },
+        {
+          "Name": "i",
+          "Entity": "ALL_IMPORT_USERS",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "i"
+              }
+            },
+            "Property": "JOB_DESCRIPTION"
+          },
+          "Name": "IMPORT_USERS.JOB_DESCRIPTION",
+          "NativeReferenceName": "JOB_DESCRIPTION"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a1"
+              }
+            },
+            "Property": "Viewers"
+          },
+          "Name": "All_Report views.Viewers",
+          "NativeReferenceName": "Viewers"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a1"
+              }
+            },
+            "Property": "Views"
+          },
+          "Name": "All_Report views.Views",
+          "NativeReferenceName": "Views"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "i"
+              }
+            },
+            "Property": "NAME"
+          },
+          "Name": "ALL_IMPORT_USERS.NAME",
+          "NativeReferenceName": "NAME"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Measure": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "a1"
+                }
+              },
+              "Property": "Views"
+            }
+          }
+        }
+      ]
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "Rows"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "IMPORT_USERS.JOB_DESCRIPTION"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ALL_IMPORT_USERS"
+                    }
+                  },
+                  "Property": "JOB_DESCRIPTION"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "ALL_IMPORT_USERS.NAME"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ALL_IMPORT_USERS"
+                    }
+                  },
+                  "Property": "NAME"
+                }
+              }
+            ],
+            "isPinned": true
+          }
+        ],
+        "root": {
+          "identityValues": null
+        }
+      }
+    ],
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "318.0483023261047D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ALL_IMPORT_USERS.NAME"
+          }
+        }
+      ],
+      "subTotals": [
+        {
+          "properties": {
+            "columnSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "rowSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

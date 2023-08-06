@@ -1,0 +1,142 @@
+{
+  "name": "c81a9cd38008916b6b95",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 674.34146341463406,
+        "y": 420.14634146341461,
+        "z": 8000,
+        "width": 599.26829268292681,
+        "height": 629.560975609756,
+        "tabOrder": 6000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "pivotTable",
+    "projections": {
+      "Values": [
+        {
+          "queryRef": "All_Report_Page_Views.Page Viewers Ct"
+        },
+        {
+          "queryRef": "All_Report_Page_Views.Page View Ct"
+        }
+      ],
+      "Rows": [
+        {
+          "queryRef": "All_Report_Pages.SectionName",
+          "active": true
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "a",
+          "Entity": "All_Report_Page_Views",
+          "Type": 0
+        },
+        {
+          "Name": "a1",
+          "Entity": "All_Report_Pages",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a"
+              }
+            },
+            "Property": "Page View Ct"
+          },
+          "Name": "All_Report_Page_Views.Page View Ct",
+          "NativeReferenceName": "Page View Ct"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a"
+              }
+            },
+            "Property": "Page Viewers Ct"
+          },
+          "Name": "All_Report_Page_Views.Page Viewers Ct",
+          "NativeReferenceName": "Page Viewers Ct"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a1"
+              }
+            },
+            "Property": "SectionName"
+          },
+          "Name": "All_Report_Pages.SectionName",
+          "NativeReferenceName": "SectionName"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Measure": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "a"
+                }
+              },
+              "Property": "Page View Ct"
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "305.02440345851255D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "All_Report_Pages.SectionName"
+          }
+        }
+      ],
+      "subTotals": [
+        {
+          "properties": {
+            "columnSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "rowSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

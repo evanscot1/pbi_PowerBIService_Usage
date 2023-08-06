@@ -1,0 +1,196 @@
+{
+  "name": "ebac8b6b71d3cea98954",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 904.74290099769769,
+        "y": 0,
+        "z": 0,
+        "width": 881.16653875671534,
+        "height": 673.39984650805843,
+        "tabOrder": 1000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Slicers",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "18pt",
+                      "textDecoration": "underline"
+                    }
+                  },
+                  {
+                    "value": " - There are a set amount of slicers currently being displayed, but if you have a need for more slicers than currently being displayed you can unhide them by modifying the selection pane. ",
+                    "textStyle": {
+                      "fontSize": "18pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "If you decide to make additional slicers visible you will need to update the bookmark groups for filter pane and compact filter pane. to make sure the slicers populate and hide correctly. ",
+                    "textStyle": {
+                      "fontSize": "18pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "I've found its easier to build a slicer pane in your first page, and if planning to use same slicers to delete pre-built in next page and copy paste entire group and update bookmarks.",
+                    "textStyle": {
+                      "fontSize": "18pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Help Page",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "18pt",
+                      "textDecoration": "underline",
+                      "color": "#ffffff"
+                    }
+                  },
+                  {
+                    "value": " - please make sure you are filling out the help page for your report. We want to try and provide a similar experience to our user group, and that would include they can trust that we will provide a help page to explain the report and any customized metrics that might exist. It is also a good idea to provide an email account, person, or teams channel where people can contact with questions. ",
+                    "textStyle": {
+                      "fontSize": "18pt",
+                      "color": "#ffffff"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "For better page navigation please keep this page hidden and don't use it as a landing page. users should use help icons throughout the report to navigate back to this page.",
+                    "textStyle": {
+                      "fontSize": "18pt",
+                      "color": "#ffffff"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "background": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Report Details Data Elements Text'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "parentGroupName": "a120b1df9ce7be2563dd"
+}

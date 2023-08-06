@@ -1,0 +1,89 @@
+table 'Dates 3'
+	isHidden
+	lineageTag: 6a2d2315-84ef-45c7-9349-e13f6332be01
+	sourceLineageTag: 400619c0-544c-46b1-a5a0-9f6df481b7e5
+	ordinal: 51
+
+	partition 'Dates 3' = Entity
+		mode: DirectQuery
+		entityName: Dates
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 3'
+
+	column Date
+		dataCategory: Uncategorized
+		dataType: DateTime
+		formatString:= General Number
+		isDataTypeInferred: false
+		isHidden
+		isNullable: false
+		lineageTag: 79714067-b9c3-4629-9d29-9737aed2d5d1
+		sourceColumn: Date
+		sourceLineageTag: 0d131d9c-1d9c-40db-9337-4f37205426ed
+		summarizeBy: None
+
+		variation Variation
+			defaultHierarchy: 'LocalDateTable_bc207ece-a79c-4d33-a331-c40f45eb2725 3'.'Date Hierarchy'
+			isDefault
+			relationship: 'b01949a4-05a8-49fe-91ba-91262801e9f0'
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column DoW
+		dataCategory: Uncategorized
+		dataType: Int64
+		formatString:= 0
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: bfb0677d-8a1a-442e-9c9f-5672d7ef2a27
+		sourceColumn: DoW
+		sourceLineageTag: f239ab83-aadd-4111-86e8-4579f2bfc43c
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column fDoW
+		dataCategory: Uncategorized
+		dataType: DateTime
+		formatString:= General Number
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 7f4fac4d-7c66-4180-a843-0297c37d4654
+		sourceColumn: fDoW
+		sourceLineageTag: 8db85d67-b349-4e5d-9575-9b53609db79c
+		summarizeBy: None
+
+		variation Variation
+			defaultHierarchy: 'LocalDateTable_b465bb22-755a-4444-bc06-bd92af8a8952 3'.'Date Hierarchy'
+			isDefault
+			relationship: 'e3edba4a-fdc9-42ae-b105-64664762715e'
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column lDoW
+		dataCategory: Uncategorized
+		dataType: DateTime
+		formatString:= General Number
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: ac1733be-1517-495f-8503-3986fc38982a
+		sourceColumn: lDoW
+		sourceLineageTag: df26ef9f-7d55-40d8-a77e-be79909160f2
+		summarizeBy: None
+
+		variation Variation
+			defaultHierarchy: 'LocalDateTable_7e74b9e2-e4a5-4c05-8b29-c52b531c8abf 3'.'Date Hierarchy'
+			isDefault
+			relationship: '30ca6a79-fb6c-4914-a08b-99402a560d73'
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	changedProperty = IsHidden
+

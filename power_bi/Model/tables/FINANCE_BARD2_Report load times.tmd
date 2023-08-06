@@ -1,0 +1,329 @@
+table 'FINANCE_BARD2_Report load times'
+	isHidden
+	lineageTag: 1726f747-923f-490e-8d42-02ee22441f8c
+	sourceLineageTag: 96a140cd-8e7c-4e48-b86b-424dec870405
+	ordinal: 105
+
+	partition 'FINANCE_BARD2_Report load times' = Entity
+		mode: DirectQuery
+		entityName: "Report load times"
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 6'
+
+	column Timestamp
+		dataCategory: Uncategorized
+		dataType: DateTime
+		formatString:= dddd\, mmmm d\, yyyy
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 315d7117-bbaa-4042-b651-932d5e95bf03
+		sourceColumn: Timestamp
+		sourceLineageTag: e00d1a4c-4de5-4ad6-9f8d-ea1684e7bc88
+		summarizeBy: None
+
+		variation Variation
+			defaultHierarchy: 'LocalDateTable_d27e4379-e50d-47cf-aeac-77eb5f688306 6'.'Date Hierarchy'
+			isDefault
+			relationship: 'b29b4d85-1d39-49d8-aa5b-9609ac1ee444'
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column PbiCluster
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 44138ca7-def5-4638-9154-ad89f930368d
+		sourceColumn: PbiCluster
+		sourceLineageTag: 20f1d500-c0a0-4ec3-9a7e-dbb1067abd42
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column AppName
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 54eecac2-e7b5-490d-8c28-b222e79ce517
+		sourceColumn: AppName
+		sourceLineageTag: f276504a-c331-4178-bd3f-66a0956f4b76
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column TenantId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: c2bebaab-6fec-4ce8-a33c-39d1ce9755f1
+		sourceColumn: TenantId
+		sourceLineageTag: b01ff4fc-01ba-4f50-a053-ea81e3d4f670
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column UserId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 9c0aa027-6494-43de-89ab-00b34be7ece1
+		sourceColumn: UserId
+		sourceLineageTag: d46f4bb9-eed2-4a9c-bbd8-51881410d748
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column ReportId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: afcd86e1-3e38-4551-ac46-dfa5cb5cc82c
+		sourceColumn: ReportId
+		sourceLineageTag: 701d4ada-4a18-469c-9567-6093d7391aaf
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column GroupId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 7cd6ee21-409c-402a-88f0-97a5dbaab36c
+		sourceColumn: GroupId
+		sourceLineageTag: a9379168-a7aa-4f68-86ea-c03e3d8f9555
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column Client
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 329c9d39-72b6-4e4f-8f9a-956623d6c0f7
+		sourceColumn: Client
+		sourceLineageTag: 5bb743ad-88da-4685-96ec-5c02c10df39a
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column StartTime
+		dataCategory: Uncategorized
+		dataType: DateTime
+		formatString:= General Number
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: a4a1d3cf-fd0a-410b-8cc4-511fb055fcc0
+		sourceColumn: StartTime
+		sourceLineageTag: c1674f3d-a90d-4267-8b12-41608188a052
+		summarizeBy: None
+
+		variation Variation
+			defaultHierarchy: 'LocalDateTable_3b852b25-f44a-4909-b021-a7df8cabefe6 6'.'Date Hierarchy'
+			isDefault
+			relationship: 'b9889e51-4292-4dc1-b950-a7e8d436401e'
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column EndTime
+		dataCategory: Uncategorized
+		dataType: DateTime
+		formatString:= General Number
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 168744b3-15b8-441b-851c-d37ac39f7f5d
+		sourceColumn: EndTime
+		sourceLineageTag: 8c18e0ad-54f0-4b9c-bc87-9dbc388116b9
+		summarizeBy: None
+
+		variation Variation
+			defaultHierarchy: 'LocalDateTable_3ebb0033-50be-4e6e-8081-ee8c7cf4091f 6'.'Date Hierarchy'
+			isDefault
+			relationship: '38c9f1c4-d528-4eed-8296-4741ed59cf7d'
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column DeviceOSVersion
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 5c447c1e-8db5-427a-8b29-cc60b863ec1e
+		sourceColumn: DeviceOSVersion
+		sourceLineageTag: bab2b2f7-e550-482b-81af-31003983c3ca
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column LocationCity
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 7a2d69d6-32db-43d6-ba22-bdbd521b8a31
+		sourceColumn: LocationCity
+		sourceLineageTag: 839b7272-27e0-4800-99d4-7735192e6820
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column Country
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: ad38be23-cfee-40ef-8d73-b2531a208343
+		sourceColumn: Country
+		sourceLineageTag: 905fc576-68d5-4e3a-bcab-7f62c04b56b0
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column loadTime
+		dataCategory: Uncategorized
+		dataType: Int64
+		formatString:= 0
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 086b9aae-acc9-4240-b8b1-55c1881dcfb6
+		sourceColumn: loadTime
+		sourceLineageTag: 352cfe5c-541b-4c6b-9789-218c95f6852f
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column Date
+		dataCategory: Uncategorized
+		dataType: DateTime
+		formatString:= General Number
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 4b10bcc6-a320-4650-8010-bd695ff99817
+		sourceColumn: Date
+		sourceLineageTag: 06b1af1f-0774-4631-bd51-343b4f7534f9
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column OriginalReportId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 45d4aee0-3519-4a8b-9ee9-725e3e6edece
+		sourceColumn: OriginalReportId
+		sourceLineageTag: 3c764f5d-5c32-47ab-b654-07ff84b19ae5
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column OriginalGroupId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: cfc21fcf-66ea-4696-b9ad-61aa79af451e
+		sourceColumn: OriginalGroupId
+		sourceLineageTag: 6943ff8d-2b33-44d4-aadf-ba15220a418b
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column DeviceBrowserVersion
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: f5261030-1879-4a5a-bd6b-580ab36df62b
+		sourceColumn: DeviceBrowserVersion
+		sourceLineageTag: 812bd21a-4515-44e4-9be6-496a24b84929
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column Browser
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 3e55f51b-8149-4d84-80e9-2426aade840c
+		sourceColumn: Browser
+		sourceLineageTag: bd0a8afc-1993-41e6-8dcf-32cd1e68b42b
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column AppGuid
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: ed63a11c-d7a6-4aaa-9b1e-0b4d372f6b01
+		sourceColumn: AppGuid
+		sourceLineageTag: 0f219ff0-cf6f-4bda-bf05-9deca7a57a17
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column SessionSource
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 4c21433b-8854-4846-98dc-4cc5d4028ad5
+		sourceColumn: SessionSource
+		sourceLineageTag: 41e4ded6-edac-4d68-b0bc-62d110e5ee6a
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	changedProperty = Name
+
+	changedProperty = IsHidden
+

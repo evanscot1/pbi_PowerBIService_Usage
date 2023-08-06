@@ -1,0 +1,250 @@
+{
+  "objects": {
+    "columnWidth": [
+      {
+        "properties": {
+          "value": {
+            "expr": {
+              "Literal": {
+                "Value": "318.0483023261047D"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "ALL_IMPORT_USERS.NAME"
+        }
+      }
+    ],
+    "subTotals": [
+      {
+        "properties": {
+          "columnSubtotals": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "rowSubtotals": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Rows": [
+      0,
+      3
+    ],
+    "Values": [
+      1,
+      2
+    ]
+  },
+  "projectionActiveItems": {
+    "Rows": [
+      {
+        "queryRef": "IMPORT_USERS.JOB_DESCRIPTION",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "JOB_DESCRIPTION",
+        "Name": "IMPORT_USERS.JOB_DESCRIPTION",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Viewers",
+        "Name": "All_Report views.Viewers",
+        "Type": 3,
+        "Format": "#,0"
+      },
+      {
+        "Restatement": "Views",
+        "Name": "All_Report views.Views",
+        "Type": 3,
+        "Format": "#,0"
+      },
+      {
+        "Restatement": "NAME",
+        "Name": "ALL_IMPORT_USERS.NAME",
+        "Type": 2048
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Rows",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Rows",
+          "Projection": 3,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 2,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "JOB_DESCRIPTION",
+      "queryName": "IMPORT_USERS.JOB_DESCRIPTION",
+      "roles": {
+        "Rows": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "ALL_IMPORT_USERS"
+            }
+          },
+          "Property": "JOB_DESCRIPTION"
+        }
+      }
+    },
+    {
+      "displayName": "Viewers",
+      "format": "#,0",
+      "queryName": "All_Report views.Viewers",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "All_Report views"
+            }
+          },
+          "Property": "Viewers"
+        }
+      }
+    },
+    {
+      "displayName": "Views",
+      "format": "#,0",
+      "queryName": "All_Report views.Views",
+      "roles": {
+        "Values": true
+      },
+      "sort": 2,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "All_Report views"
+            }
+          },
+          "Property": "Views"
+        }
+      }
+    },
+    {
+      "displayName": "NAME",
+      "queryName": "ALL_IMPORT_USERS.NAME",
+      "roles": {
+        "Rows": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "ALL_IMPORT_USERS"
+            }
+          },
+          "Property": "NAME"
+        }
+      }
+    }
+  ],
+  "expansionStates": [
+    {
+      "roles": [
+        "Rows"
+      ],
+      "levels": [
+        {
+          "queryRefs": [
+            "IMPORT_USERS.JOB_DESCRIPTION"
+          ],
+          "isCollapsed": true,
+          "identityKeys": [
+            {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "ALL_IMPORT_USERS"
+                  }
+                },
+                "Property": "JOB_DESCRIPTION"
+              }
+            }
+          ],
+          "isPinned": true
+        },
+        {
+          "queryRefs": [
+            "ALL_IMPORT_USERS.NAME"
+          ],
+          "isCollapsed": true,
+          "identityKeys": [
+            {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "ALL_IMPORT_USERS"
+                  }
+                },
+                "Property": "NAME"
+              }
+            }
+          ],
+          "isPinned": true
+        }
+      ],
+      "root": {
+        "identityValues": null
+      }
+    }
+  ]
+}

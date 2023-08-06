@@ -1,0 +1,53 @@
+{
+  "name": "537c317e02bf9d90faa3",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 1370.4415139845178,
+        "y": 447.421654918429,
+        "z": 3000,
+        "width": 287.91327913279133,
+        "height": 187.3170731707317,
+        "tabOrder": 8000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "image",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "CHR_Logo_Stack_2C_Reverse_RGB_914095176665739.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'CHR Logo Stacked'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "parentGroupName": "08a1f253cf400e1178bd"
+}

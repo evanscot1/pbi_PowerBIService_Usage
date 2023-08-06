@@ -1,0 +1,66 @@
+{
+  "version": "5.43",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY23SU04",
+      "version": "5.43",
+      "type": 2
+    },
+    "customTheme": {
+      "name": "Insight_Power_BI_Theme9317808661970082.json",
+      "version": "5.43",
+      "type": 1
+    }
+  },
+  "activeSectionIndex": 3,
+  "defaultDrillFilterOtherVisuals": true,
+  "slowDataSourceSettings": {
+    "isCrossHighlightingDisabled": false,
+    "isSlicerSelectionsButtonEnabled": false,
+    "isFilterSelectionsButtonEnabled": false,
+    "isFieldWellButtonEnabled": false,
+    "isApplyAllButtonEnabled": false
+  },
+  "linguisticSchemaSyncVersion": 2,
+  "settings": {
+    "useNewFilterPaneExperience": true,
+    "allowChangeFilterTypes": true,
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": 1
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "visible": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

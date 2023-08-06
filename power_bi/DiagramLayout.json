@@ -1,0 +1,858 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 1321.0056713829858,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1860.0172115541927,
+            "y": 689.53170861326726
+          },
+          "nodeIndex": "Users_ReportPageView",
+          "nodeLineageTag": "0fcc7fa2-3759-439f-8f15-035c32dea1b7",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 70.138688193973962,
+            "y": 554.98876037082846
+          },
+          "nodeIndex": "NAST[INT]_Report_Load_Times",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 918.96125430283519,
+            "y": 452.70519083382646
+          },
+          "nodeIndex": "NAST[INT]_Report page views",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 607.851240829231,
+            "y": 105.1190741283915
+          },
+          "nodeIndex": "NAST[INT]_Report pages",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 89.621195227560179,
+            "y": -10
+          },
+          "nodeIndex": "NAST[INT]_Report rank",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 303.68277267162546,
+            "y": 914.90261494102015
+          },
+          "nodeIndex": "NAST[INT]_Report views",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 312.10022605901463,
+            "y": 299.33796950747205
+          },
+          "nodeIndex": "NAST[INT]_Reports",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1018.0172115541931,
+            "y": 814.61050592667209
+          },
+          "nodeIndex": "NAST[INT]_Users",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10,
+            "y": 1273.0634172265345
+          },
+          "nodeIndex": "NAST[INT]_Workspace reports",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 623.49513874991089,
+            "y": 726.41820983832986
+          },
+          "nodeIndex": "NAST[INT]_Workspace views",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4845.3191171037979,
+            "y": 603.53170861326726
+          },
+          "nodeIndex": "Model measures 2",
+          "nodeLineageTag": "fff64f27-726a-4cf5-892c-3d81871537b8",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4151.9892630562254,
+            "y": 491.74039295765
+          },
+          "nodeIndex": "Dates 2",
+          "nodeLineageTag": "12431549-1361-4889-9a41-b5f0501212c9",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5413.3191171037979,
+            "y": 689.53170861326726
+          },
+          "nodeIndex": "Users_ReportPageView 2",
+          "nodeLineageTag": "db804800-821d-4cda-a88a-7f2ce9c4eff7",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3623.4405937435786,
+            "y": 554.98876037082846
+          },
+          "nodeIndex": "NAST[PROD]_Report load times",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4472.26315985244,
+            "y": 452.70519083382646
+          },
+          "nodeIndex": "NAST[PROD]_Report page views",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4161.153146378836,
+            "y": 105.1190741283915
+          },
+          "nodeIndex": "NAST[PROD]_Report pages",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3856.9846782212303,
+            "y": 914.90261494102015
+          },
+          "nodeIndex": "NAST[PROD]_Report views",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3865.4021316086191,
+            "y": 299.33796950747205
+          },
+          "nodeIndex": "NAST[PROD]_Reports",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3563.3019055496047,
+            "y": 1273.0634172265345
+          },
+          "nodeIndex": "NAST[PROD]_Workspace reports",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4176.7970442995156,
+            "y": 726.41820983832986
+          },
+          "nodeIndex": "NAST[PROD]_Workspace views",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3642.923100777165,
+            "y": -10
+          },
+          "nodeIndex": "NAST[PROD]_Report rank",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6979.3363286579906,
+            "y": 603.53170861326726
+          },
+          "nodeIndex": "Model measures 3",
+          "nodeLineageTag": "384a95ff-e312-41ea-8718-51f1450c9dda",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6286.0064746104181,
+            "y": 491.74039295765
+          },
+          "nodeIndex": "Dates 3",
+          "nodeLineageTag": "6a2d2315-84ef-45c7-9349-e13f6332be01",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7547.3363286579906,
+            "y": 689.53170861326726
+          },
+          "nodeIndex": "Users_ReportPageView 3",
+          "nodeLineageTag": "db06b5c7-6e31-443f-89cb-8390f5287889",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5757.4578052977722,
+            "y": 554.98876037082846
+          },
+          "nodeIndex": "HUB[PROD]_Report load times",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6606.2803714066331,
+            "y": 452.70519083382646
+          },
+          "nodeIndex": "HUB[PROD]_Report page views",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4571.3191171037979,
+            "y": 814.61050592667209
+          },
+          "nodeIndex": "NAST[PROD]_Users",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6295.1703579330288,
+            "y": 105.1190741283915
+          },
+          "nodeIndex": "HUB[PROD]_Report pages",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5776.9403123313577,
+            "y": -10
+          },
+          "nodeIndex": "HUB[PROD]_Report rank",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5991.0018897754235,
+            "y": 914.90261494102015
+          },
+          "nodeIndex": "HUB[PROD]_Report views",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5999.4193431628128,
+            "y": 299.33796950747205
+          },
+          "nodeIndex": "HUB[PROD]_Reports",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6705.3363286579906,
+            "y": 814.61050592667209
+          },
+          "nodeIndex": "HUB[PROD]_Users",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5697.3191171037979,
+            "y": 1273.0634172265345
+          },
+          "nodeIndex": "HUB[PROD]_Workspace reports",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6310.8142558537093,
+            "y": 726.41820983832986
+          },
+          "nodeIndex": "HUB[PROD]_Workspace views",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9113.3535402121834,
+            "y": 603.53170861326726
+          },
+          "nodeIndex": "Model measures",
+          "nodeLineageTag": "2d572189-75d4-4b17-b8ff-9c81fb5ed58a",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8420.0236861646117,
+            "y": 491.74039295765
+          },
+          "nodeIndex": "Dates",
+          "nodeLineageTag": "8824f298-71c0-4241-a3b9-fa473d5b2f26",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9681.3535402121834,
+            "y": 689.53170861326726
+          },
+          "nodeIndex": "Users_ReportPageView 4",
+          "nodeLineageTag": "42ddb89f-86cf-47be-b759-2245bf486ff5",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7891.4750168519649,
+            "y": 554.98876037082846
+          },
+          "nodeIndex": "NAST[DEV]_Report load times",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8740.2975829608258,
+            "y": 452.70519083382646
+          },
+          "nodeIndex": "NAST[DEV]_Report page views",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8429.1875694872215,
+            "y": 105.1190741283915
+          },
+          "nodeIndex": "NAST[DEV]_Report pages",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7910.9575238855505,
+            "y": -10
+          },
+          "nodeIndex": "NAST[DEV]_Report rank",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8125.0191013296162,
+            "y": 914.90261494102015
+          },
+          "nodeIndex": "NAST[DEV]_Report views",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8133.4365547170055,
+            "y": 299.33796950747205
+          },
+          "nodeIndex": "NAST[DEV]_Reports",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8839.3535402121834,
+            "y": 814.61050592667209
+          },
+          "nodeIndex": "NAST[DEV]_Users",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7831.3363286579906,
+            "y": 1273.0634172265345
+          },
+          "nodeIndex": "NAST[DEV]_Workspace reports",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8444.8314674079011,
+            "y": 726.41820983832986
+          },
+          "nodeIndex": "NAST[DEV]_Workspace views",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Model measures 4",
+          "nodeLineageTag": "06e99678-154c-4781-a20e-f780fb8667f3",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Dates 4",
+          "nodeLineageTag": "37a1832e-e7ca-4f18-b444-26c2855a5480",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Users_ReportPageView 5",
+          "nodeLineageTag": "af24a6a9-cfb2-43c1-b8cb-ce190b5df712",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "NAST_CONTRACTUAL_Report load times",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "NAST_CONTRACTUAL_Report page views",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "NAST_CONTRACTUAL_Report pages",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "NAST_CONTRACTUAL_Report rank",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "NAST_CONTRACTUAL_Report views",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "NAST_CONTRACTUAL_Reports",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "NAST_CONTRACTUAL_Users",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "NAST_CONTRACTUAL_Workspace reports",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "NAST_CONTRACTUAL_Workspace views",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1576.0172115541927,
+            "y": 701.53170861326726
+          },
+          "nodeIndex": "NAST[INT] Usage Report Refresh",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5129.3191171037979,
+            "y": 701.53170861326726
+          },
+          "nodeIndex": "NAST[PROD] Usage Report Refresh",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9397.3535402121834,
+            "y": 701.53170861326726
+          },
+          "nodeIndex": "NAST[DEV] Usage Report Refresh",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "NAST_Contractual Usage Report Refresh",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7263.3363286579906,
+            "y": 701.53170861326726
+          },
+          "nodeIndex": "HUBS[PROD] Usage Report Refresh",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 80,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 1,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 143,
+            "y": 0
+          },
+          "nodeIndex": "All_Report views",
+          "nodeLineageTag": "1a4e5dbd-18bc-4e6a-9549-e616fdd186dc",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 723,
+            "y": 390
+          },
+          "nodeIndex": "All_Workspace_Reports",
+          "nodeLineageTag": "e57de1b4-d1af-4a5e-b417-78eeaf7c0678",
+          "size": {
+            "height": 301,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 140,
+            "y": 388
+          },
+          "nodeIndex": "ALL_IMPORT_USERS",
+          "nodeLineageTag": "b9b8049a-510f-46dc-be44-ccbc926f36d5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 451,
+            "y": 387
+          },
+          "nodeIndex": "All_Date_Table",
+          "nodeLineageTag": "f5c1e602-c51d-408e-8acf-01d97fb3c58f",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 733,
+            "y": 8
+          },
+          "nodeIndex": "All_Report_Pages",
+          "nodeLineageTag": "ed218ede-f1a5-485b-b5dc-4b4670d3725e",
+          "size": {
+            "height": 295,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 403,
+            "y": 4
+          },
+          "nodeIndex": "All_Report_Page_Views",
+          "nodeLineageTag": "b4cd3a32-1bd6-4b81-abe0-d4403e471059",
+          "size": {
+            "height": 290,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 986,
+            "y": 396
+          },
+          "nodeIndex": "All Reporting Owners",
+          "nodeLineageTag": "9040f9a9-9fa9-4d1d-a434-29dcd6790531",
+          "size": {
+            "height": 299,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All Reporting",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All Reporting",
+  "defaultDiagram": "All tables"
+}

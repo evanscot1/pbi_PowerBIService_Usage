@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Filterf016dde507a48965a5bd",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "V_CUSTOMER_METRICS"
+          }
+        },
+        "Property": "MODE_NAME"
+      }
+    },
+    "filter": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "v",
+          "Entity": "V_CUSTOMER_METRICS",
+          "Type": 0
+        }
+      ],
+      "Where": [
+        {
+          "Condition": {
+            "In": {
+              "Expressions": [
+                {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "v"
+                      }
+                    },
+                    "Property": "MODE_NAME"
+                  }
+                }
+              ],
+              "Values": [
+                [
+                  {
+                    "Literal": {
+                      "Value": "'TRUCK'"
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "type": "Categorical",
+    "howCreated": 1,
+    "objects": {},
+    "ordinal": 0
+  }
+]

@@ -1,0 +1,71 @@
+table NAST_CONTRACTUAL_Users
+	isHidden
+	lineageTag: f90d64f6-f174-4ddd-b23a-a4d082ff0626
+	sourceLineageTag: 6d5103b9-d9ce-4886-aff5-6b034dc41ea6
+	ordinal: 99
+
+	partition NAST_CONTRACTUAL_Users = Entity
+		mode: DirectQuery
+		entityName: Users
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 5'
+
+	column UserId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: a6c81c2d-f8a2-429c-a257-ded5831b0a4e
+		sourceColumn: UserId
+		sourceLineageTag: b8bb8249-7454-4110-aab8-8b8259c0dbf5
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column UserKey
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 38a4fd4b-11c1-460b-8adb-89738e78ce4f
+		sourceColumn: UserKey
+		sourceLineageTag: 7b6f9a0b-b107-497b-840f-53591eea8dee
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column UserGuid
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 2b8825f3-0a65-4b4e-a222-adf0b3c4fafc
+		sourceColumn: UserGuid
+		sourceLineageTag: 16810f80-d331-4722-b04b-899d87095e6c
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column UniqueUser
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 737055d5-d80c-464d-a602-537c77db320b
+		sourceColumn: UniqueUser
+		sourceLineageTag: 4b8bbac5-7897-4754-a0ca-0e4c8e578e5b
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	changedProperty = Name
+
+	changedProperty = IsHidden
+

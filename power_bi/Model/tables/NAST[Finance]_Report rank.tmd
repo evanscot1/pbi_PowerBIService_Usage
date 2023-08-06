@@ -1,0 +1,112 @@
+table 'NAST[Finance]_Report rank'
+	isHidden
+	lineageTag: 5dedf235-ed6b-4797-a4b4-6c51e75377b6
+	sourceLineageTag: ceca560f-ef98-4b03-b7ac-0945c8bb4c77
+	ordinal: 141
+
+	partition 'NAST[Finance]_Report rank' = Entity
+		mode: DirectQuery
+		entityName: "Report rank"
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 8'
+
+	measure 'Total Org Report Count 7' = EXTERNALMEASURE("Total Org Report Count", INTEGER, "DirectQuery to AS - Usage Metrics Report 8")
+		dataCategory: Uncategorized
+		formatString:= 0
+		isHidden
+		lineageTag: fd591b98-6e18-4ba4-8acb-b4629a39bce7
+		sourceLineageTag: 9a847ae3-5986-4b4a-bf95-183e6ab00ceb
+
+		changedProperty = IsHidden
+
+	column ReportId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		isNullable: false
+		lineageTag: 42743c76-4f76-4fea-9d7a-e469b50dd530
+		sourceColumn: ReportId
+		sourceLineageTag: 4240b45f-2eae-4d1d-b07a-2cb9eab58c80
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column WorkspaceId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: d25d476f-a4c2-4ed8-bf1c-864d56382bf5
+		sourceColumn: WorkspaceId
+		sourceLineageTag: c6df53b9-36bd-482e-9a50-ca6f295260c7
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column ReportViewCount
+		dataCategory: Uncategorized
+		dataType: Int64
+		formatString:= 0
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 55a00832-895b-441b-8358-1d0aee3fe8d5
+		sourceColumn: ReportViewCount
+		sourceLineageTag: 9792859d-5c7d-41ab-93c2-bf3d3be686e1
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column ReportRank
+		dataCategory: Uncategorized
+		dataType: Int64
+		formatString:= 0
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: a8687b22-01db-4ca5-be96-92f05194443b
+		sourceColumn: ReportRank
+		sourceLineageTag: bc87aefe-1cc4-4e0c-9020-72b1a99cdea5
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column TotalReportCount
+		dataCategory: Uncategorized
+		dataType: Int64
+		formatString:= 0
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 9f7b7726-d21e-4699-aa12-689e3bfba275
+		sourceColumn: TotalReportCount
+		sourceLineageTag: b53ab747-67a8-4bfd-806a-63ec701c237f
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column TenantId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: e524e85d-1fb4-420c-b5af-3b7dbd2ff0fa
+		sourceColumn: TenantId
+		sourceLineageTag: 6fa080bb-c95a-47ef-91b6-e43a82b9b9cb
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	changedProperty = Name
+
+	changedProperty = IsHidden
+

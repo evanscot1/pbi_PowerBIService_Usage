@@ -1,0 +1,66 @@
+{
+  "name": "ae8603eeee9304a7d09a",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 844.625850340136,
+        "y": 526.80272108843531,
+        "z": 8000,
+        "width": 222.0408163265306,
+        "height": 88.526077097505663,
+        "tabOrder": 7000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "tableEx",
+    "projections": {
+      "Values": [
+        {
+          "queryRef": "Refresh Stats 7.Last Refresh"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "r",
+          "Entity": "NAST[Finance] Usage Report Refresh",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "r"
+              }
+            },
+            "Property": "NAST[Finance] Refresh"
+          },
+          "Name": "Refresh Stats 7.Last Refresh",
+          "NativeReferenceName": "Last Refresh"
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

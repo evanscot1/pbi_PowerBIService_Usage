@@ -1,0 +1,221 @@
+{
+  "name": "20ea05b7e29f28fd19f9",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 1000,
+        "width": 879.69301611665389,
+        "height": 674.87336914811976,
+        "tabOrder": 4000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Home Page",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "18pt",
+                      "textDecoration": "underline"
+                    }
+                  },
+                  {
+                    "value": " - The Home page is a navigation cover page you can use to allow your users to quickly go to certain pages or sections of your report without having to tab through the various pages. If your report doesn't have multiple pages or a need for this you can simply hide the page. ",
+                    "textStyle": {
+                      "fontSize": "18pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "One thing to note is all the CHR logos are set up to redirect the user to the home page so if you decide to not use that function you'll want to reset those to navigate to the correct landing page.",
+                    "textStyle": {
+                      "fontSize": "18pt",
+                      "color": "#e00a0a"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "To create the page navigation icons like the example on the home page simply copy and paste the group then take a screen shot of your page and upload to the report and replace the new image with the current dashboard image. this will help users identify visually which page they want to navigate to.",
+                    "textStyle": {
+                      "fontSize": "18pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "an example of this  in action can be found in this ",
+                    "textStyle": {
+                      "fontSize": "18pt"
+                    }
+                  },
+                  {
+                    "value": "report",
+                    "textStyle": {
+                      "fontSize": "18pt",
+                      "color": "#ffffff"
+                    },
+                    "url": "https://app.powerbi.com/groups/me/reports/194b5f2f-138b-4e4a-8e40-bb26ae785be5/ReportSectionf93b733bb8b2e4ca639b?ctid=d441ad83-6235-46d6-ab1a-89744a91b1d8"
+                  },
+                  {
+                    "value": ".",
+                    "textStyle": {
+                      "fontSize": "18pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Bookmarks",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "18pt",
+                      "textDecoration": "underline",
+                      "color": "#ffffff"
+                    }
+                  },
+                  {
+                    "value": " - This Report is preloaded with several bookmarks preset to operate the slicer pane, help page, and toggle between pages. feel free to add additional bookmarks if you should need, or if you have a suggestion for a new feature please share that back!",
+                    "textStyle": {
+                      "fontSize": "18pt",
+                      "color": "#ffffff"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Shared Dataset Connections ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "18pt",
+                      "textDecoration": "underline"
+                    }
+                  },
+                  {
+                    "value": "- This Report has a singular data source pre-built around Refresh_Date. to leverage a shared dataset you will need to delete this before connecting to the shared dataset. ",
+                    "textStyle": {
+                      "fontSize": "18pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "background": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Report Details Parameters Text'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "parentGroupName": "a120b1df9ce7be2563dd"
+}

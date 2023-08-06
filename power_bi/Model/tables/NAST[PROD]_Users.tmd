@@ -1,0 +1,57 @@
+table 'NAST[PROD]_Users'
+	lineageTag: 53338b02-3ab8-47fb-9a18-af43ab557046
+	sourceLineageTag: 6d5103b9-d9ce-4886-aff5-6b034dc41ea6
+	ordinal: 36
+
+	partition 'NAST[PROD]_Users' = Entity
+		mode: DirectQuery
+		entityName: Users
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 2'
+
+	column UserId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: e0b8ebe4-8fe9-4da6-b847-e13cfd4f405e
+		sourceColumn: UserId
+		sourceLineageTag: b8bb8249-7454-4110-aab8-8b8259c0dbf5
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+	column UserKey
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: 3bef3a79-1d77-48d2-966b-00c8ec39f8de
+		sourceColumn: UserKey
+		sourceLineageTag: 7b6f9a0b-b107-497b-840f-53591eea8dee
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+	column UserGuid
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: fce2fcf3-91b6-45af-9b33-0bac290a54b4
+		sourceColumn: UserGuid
+		sourceLineageTag: 16810f80-d331-4722-b04b-899d87095e6c
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+	column UniqueUser
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: 2e0122b2-051a-4536-bd42-2460ac26aef1
+		sourceColumn: UniqueUser
+		sourceLineageTag: 4b8bbac5-7897-4754-a0ca-0e4c8e578e5b
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+	changedProperty = Name
+

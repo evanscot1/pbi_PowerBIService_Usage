@@ -1,0 +1,464 @@
+{
+  "id": 10650149,
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSection",
+      "config": "{}",
+      "id": 67666652,
+      "name": "Pod"
+    },
+    {
+      "boundSection": "ReportSection07e2b7f5487d926b614d",
+      "config": "{}",
+      "id": 67666653,
+      "name": "Pod1"
+    },
+    {
+      "boundSection": "ReportSection0964257cec770dae6c11",
+      "config": "{}",
+      "id": 67666654,
+      "name": "Pod2"
+    },
+    {
+      "boundSection": "ReportSectioncaf4b25d721580dcdc58",
+      "config": "{}",
+      "id": 67666655,
+      "name": "Pod3"
+    },
+    {
+      "boundSection": "ReportSectionc5829762975a42610036",
+      "config": "{}",
+      "id": 67666656,
+      "name": "Pod4"
+    },
+    {
+      "boundSection": "ReportSection6416b6ec71d35b1b100e",
+      "config": "{}",
+      "id": 67666657,
+      "name": "Pod5"
+    },
+    {
+      "boundSection": "ReportSection4ecc2830159d10e00ee2",
+      "config": "{}",
+      "id": 67666658,
+      "name": "Pod6"
+    },
+    {
+      "boundSection": "ReportSection2eb5dbfc40ca5956c436",
+      "config": "{}",
+      "id": 67666659,
+      "name": "Pod7"
+    },
+    {
+      "boundSection": "ReportSection0c0795c034d6495ebe81",
+      "config": "{}",
+      "id": 67666660,
+      "name": "Pod8"
+    },
+    {
+      "boundSection": "ReportSectionc65cbc7058c2c40963a1",
+      "config": "{}",
+      "id": 67666661,
+      "name": "Pod9"
+    },
+    {
+      "boundSection": "ReportSection210f6c604b63161418a0",
+      "config": "{}",
+      "id": 67666662,
+      "name": "Pod10"
+    }
+  ],
+  "publicCustomVisuals": [
+    "multiKpiEA8DA325489E436991F0E411F2D85FF3",
+    "TextEnhancerByMAQ46ASG0293G65JY43S89DKJ9"
+  ],
+  "reportId": 4973550,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 21593375,
+        "items": [
+          {
+            "id": 78428438,
+            "path": "BBED0A4D4D8D44CE93CF2DAFADEE466C.pbiviz.json",
+            "resourcePackageId": 21593375,
+            "resourcePackageItemBlobInfoId": 52972773,
+            "type": 5
+          }
+        ],
+        "name": "BBED0A4D4D8D44CE93CF2DAFADEE466C",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 21593376,
+        "items": [
+          {
+            "id": 78428439,
+            "path": "BoxWhiskerChart1455240051538.pbiviz.json",
+            "resourcePackageId": 21593376,
+            "resourcePackageItemBlobInfoId": 52972775,
+            "type": 5
+          }
+        ],
+        "name": "BoxWhiskerChart1455240051538",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 21593377,
+        "items": [
+          {
+            "id": 78428440,
+            "path": "GlobeMap1447669447625.pbiviz.json",
+            "resourcePackageId": 21593377,
+            "resourcePackageItemBlobInfoId": 52972777,
+            "type": 5
+          }
+        ],
+        "name": "GlobeMap1447669447625",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 21593378,
+        "items": [
+          {
+            "id": 78428441,
+            "path": "heatmapF244EA9EE1F34E828A80CF19B41976F8.pbiviz.json",
+            "resourcePackageId": 21593378,
+            "resourcePackageItemBlobInfoId": 52972779,
+            "type": 5
+          }
+        ],
+        "name": "heatmapF244EA9EE1F34E828A80CF19B41976F8",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 21593379,
+        "items": [
+          {
+            "id": 78428442,
+            "path": "Histogram1445664487616.pbiviz.json",
+            "resourcePackageId": 21593379,
+            "resourcePackageItemBlobInfoId": 52972781,
+            "type": 5
+          }
+        ],
+        "name": "Histogram1445664487616",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 21593380,
+        "items": [
+          {
+            "id": 78428443,
+            "path": "kpifree51D0292A0438427096AC459B59FEF2DE.pbiviz.json",
+            "resourcePackageId": 21593380,
+            "resourcePackageItemBlobInfoId": 52972783,
+            "type": 5
+          }
+        ],
+        "name": "kpifree51D0292A0438427096AC459B59FEF2DE",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 21593381,
+        "items": [
+          {
+            "id": 78428444,
+            "path": "multicardkpis.pbiviz.json",
+            "resourcePackageId": 21593381,
+            "resourcePackageItemBlobInfoId": 52972785,
+            "type": 5
+          }
+        ],
+        "name": "multicardkpis",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 21593382,
+        "items": [
+          {
+            "id": 78428445,
+            "path": "multiKpiEA8DA325489E436991F0E411F2D85FF3.pbiviz.json",
+            "resourcePackageId": 21593382,
+            "resourcePackageItemBlobInfoId": 52972787,
+            "type": 5
+          }
+        ],
+        "name": "multiKpiEA8DA325489E436991F0E411F2D85FF3",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 21593383,
+        "items": [
+          {
+            "id": 78428446,
+            "path": "PBI_CV_3C80B1F2_09AF_4123_8E99_C3CBC46B23E0.pbiviz.json",
+            "resourcePackageId": 21593383,
+            "resourcePackageItemBlobInfoId": 52972789,
+            "type": 5
+          }
+        ],
+        "name": "PBI_CV_3C80B1F2_09AF_4123_8E99_C3CBC46B23E0",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 21593384,
+        "items": [
+          {
+            "id": 78428447,
+            "path": "PBI_CV_7B952816_A48F_49B4_9E13_15E3BB2C0337.pbiviz.json",
+            "resourcePackageId": 21593384,
+            "resourcePackageItemBlobInfoId": 52972791,
+            "type": 5
+          }
+        ],
+        "name": "PBI_CV_7B952816_A48F_49B4_9E13_15E3BB2C0337",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 21593385,
+        "items": [
+          {
+            "id": 78428448,
+            "path": "PBI_CV_EB3A4088_75C5_4746_9D8B_255A7B7ECD6C.pbiviz.json",
+            "resourcePackageId": 21593385,
+            "resourcePackageItemBlobInfoId": 52972793,
+            "type": 5
+          }
+        ],
+        "name": "PBI_CV_EB3A4088_75C5_4746_9D8B_255A7B7ECD6C",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 21593386,
+        "items": [
+          {
+            "id": 78428449,
+            "path": "powerKPI462CE5C2666F4EC8A8BDD7E5587320A3.pbiviz.json",
+            "resourcePackageId": 21593386,
+            "resourcePackageItemBlobInfoId": 52972795,
+            "type": 5
+          }
+        ],
+        "name": "powerKPI462CE5C2666F4EC8A8BDD7E5587320A3",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 21593387,
+        "items": [
+          {
+            "id": 78428450,
+            "path": "powerKPIMatrixEB2381CC88A8425FBEB1B07FF57784E6.pbiviz.json",
+            "resourcePackageId": 21593387,
+            "resourcePackageItemBlobInfoId": 52972797,
+            "type": 5
+          }
+        ],
+        "name": "powerKPIMatrixEB2381CC88A8425FBEB1B07FF57784E6",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 21593388,
+        "items": [
+          {
+            "id": 78428451,
+            "path": "TextEnhancerByMAQ46ASG0293G65JY43S89DKJ9.pbiviz.json",
+            "resourcePackageId": 21593388,
+            "resourcePackageItemBlobInfoId": 52972799,
+            "type": 5
+          }
+        ],
+        "name": "TextEnhancerByMAQ46ASG0293G65JY43S89DKJ9",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 21593389,
+        "items": [
+          {
+            "id": 78428452,
+            "name": "CHR_Logomark_299LtBlue_RGB_1_5278495942787422.png",
+            "path": "CHR_Logomark_299LtBlue_RGB_1_5278495942787422.png",
+            "resourcePackageId": 21593389,
+            "resourcePackageItemBlobInfoId": 101904656,
+            "type": 100
+          },
+          {
+            "id": 78428453,
+            "name": "CHR_LogoTM_Horz_2C_wTagline_Re2387276959979876.png",
+            "path": "CHR_LogoTM_Horz_2C_wTagline_Re2387276959979876.png",
+            "resourcePackageId": 21593389,
+            "resourcePackageItemBlobInfoId": 101904657,
+            "type": 100
+          },
+          {
+            "id": 78428454,
+            "name": "CHR_Logo_Stack_2C_Reverse_RGB_914095176665739.png",
+            "path": "CHR_Logo_Stack_2C_Reverse_RGB_914095176665739.png",
+            "resourcePackageId": 21593389,
+            "resourcePackageItemBlobInfoId": 101904658,
+            "type": 100
+          },
+          {
+            "id": 78428456,
+            "name": "dimmed_Roads2957919811496641.png",
+            "path": "dimmed_Roads2957919811496641.png",
+            "resourcePackageId": 21593389,
+            "resourcePackageItemBlobInfoId": 101904660,
+            "type": 100
+          },
+          {
+            "id": 78428457,
+            "name": "dimmed_Roads450471359252705.png",
+            "path": "dimmed_Roads450471359252705.png",
+            "resourcePackageId": 21593389,
+            "resourcePackageItemBlobInfoId": 101904661,
+            "type": 100
+          },
+          {
+            "id": 78428458,
+            "name": "dimmed_Roads49286815345220925.png",
+            "path": "dimmed_Roads49286815345220925.png",
+            "resourcePackageId": 21593389,
+            "resourcePackageItemBlobInfoId": 101904662,
+            "type": 100
+          },
+          {
+            "id": 78428459,
+            "name": "dimmed_Roads5147622659589763.png",
+            "path": "dimmed_Roads5147622659589763.png",
+            "resourcePackageId": 21593389,
+            "resourcePackageItemBlobInfoId": 101904663,
+            "type": 100
+          },
+          {
+            "id": 78428463,
+            "name": "kisspng-computer-icons-spreads10646740609246197.png",
+            "path": "kisspng-computer-icons-spreads10646740609246197.png",
+            "resourcePackageId": 21593389,
+            "resourcePackageItemBlobInfoId": 101904667,
+            "type": 100
+          },
+          {
+            "id": 78428464,
+            "name": "kisspng-line-chart-diagram-com12190773175997838.png",
+            "path": "kisspng-line-chart-diagram-com12190773175997838.png",
+            "resourcePackageId": 21593389,
+            "resourcePackageItemBlobInfoId": 101904668,
+            "type": 100
+          },
+          {
+            "id": 78428465,
+            "name": "menu-bar-lines-option-list-ham9142015900674816.png",
+            "path": "menu-bar-lines-option-list-ham9142015900674816.png",
+            "resourcePackageId": 21593389,
+            "resourcePackageItemBlobInfoId": 101904669,
+            "type": 100
+          },
+          {
+            "id": 78428466,
+            "name": "new_dat_regions_Topo21065518128126826.json",
+            "path": "new_dat_regions_Topo21065518128126826.json",
+            "resourcePackageId": 21593389,
+            "resourcePackageItemBlobInfoId": 101904670,
+            "type": 100
+          },
+          {
+            "id": 78428467,
+            "name": "page_example10082729799692403.png",
+            "path": "page_example10082729799692403.png",
+            "resourcePackageId": 21593389,
+            "resourcePackageItemBlobInfoId": 101904671,
+            "type": 100
+          },
+          {
+            "name": "Insight_Power_BI_Theme9317808661970082.json",
+            "path": "Insight_Power_BI_Theme9317808661970082.json",
+            "type": 201
+          },
+          {
+            "name": "menu8927662926253053.png",
+            "path": "menu8927662926253053.png",
+            "type": 100
+          },
+          {
+            "name": "question_(1)6281794262807672.png",
+            "path": "question_(1)6281794262807672.png",
+            "type": 100
+          },
+          {
+            "name": "filter_(2)35114281547268567.png",
+            "path": "filter_(2)35114281547268567.png",
+            "type": 100
+          },
+          {
+            "name": "cancel5764455518570493.png",
+            "path": "cancel5764455518570493.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 21593390,
+        "items": [
+          {
+            "name": "CY23SU04",
+            "path": "BaseThemes/CY23SU04.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "theme": "Insight_Power_BI_Theme9317808661970082.json"
+}

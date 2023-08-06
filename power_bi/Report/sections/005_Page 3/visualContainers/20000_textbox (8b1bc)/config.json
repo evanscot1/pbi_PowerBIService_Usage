@@ -1,0 +1,70 @@
+{
+  "name": "8b1bc43e3a8fe0eee438",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 81.860465116279073,
+        "y": 0,
+        "z": 5000,
+        "width": 1469.7674418604652,
+        "height": 87.441860465116278,
+        "tabOrder": 20000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Title",
+                    "textStyle": {
+                      "fontSize": "36pt",
+                      "color": "#ffffff"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "parentGroupName": "23178a5033cedec413d7"
+}

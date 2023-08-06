@@ -1,0 +1,27 @@
+table 'NAST_Contractual Usage Report Refresh'
+	isHidden
+	lineageTag: 668253c5-7a6d-4ac8-8e6a-88f6518c981b
+	sourceLineageTag: 9578ffab-7bde-46d8-ba4f-486559d24e82
+	ordinal: 92
+
+	partition 'NAST_Contractual Usage Report Refresh' = Entity
+		mode: DirectQuery
+		entityName: "Refresh Stats"
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 5'
+
+	column 'NAST_Contractual Refresh'
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 99884c94-4e11-4010-8e81-97022b493877
+		sourceColumn: "Last Refresh"
+		sourceLineageTag: fb38f4d9-5a54-42d5-9aef-7ece73930cb4
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = Name
+
+	changedProperty = Name
+

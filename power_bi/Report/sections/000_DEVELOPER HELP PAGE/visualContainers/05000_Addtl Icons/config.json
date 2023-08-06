@@ -1,0 +1,21 @@
+{
+  "name": "08a1f253cf400e1178bd",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "height": 640.7451336077612,
+        "width": 1759.2553396794624,
+        "x": 125.38011695906432,
+        "y": 337.43668457405988,
+        "z": 14000,
+        "tabOrder": 5000
+      }
+    }
+  ],
+  "singleVisualGroup": {
+    "displayName": "Addtl Icons",
+    "groupMode": 0,
+    "isHidden": true
+  }
+}

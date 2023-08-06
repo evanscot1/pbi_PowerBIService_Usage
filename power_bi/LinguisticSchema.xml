@@ -1,0 +1,59 @@
+<LinguisticSchema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Language="en-US" DynamicImprovement="Default" xmlns="http://schemas.microsoft.com/sqlserver/2016/01/linguisticschema">
+  <Entities>
+    <Entity Name="Page_2" ConceptualEntity="Pod1" Source="Generated">
+      <Words>
+        <Word>Page 2</Word>
+      </Words>
+    </Entity>
+    <Entity Name="Usage" ConceptualEntity="Pod" Source="Generated">
+      <Words>
+        <Word>Usage</Word>
+      </Words>
+    </Entity>
+    <Entity Name="Page_3" ConceptualEntity="Pod2" Source="Generated">
+      <Words>
+        <Word>Page 3</Word>
+      </Words>
+    </Entity>
+    <Entity Name="Page4" ConceptualEntity="Pod3" Source="Generated">
+      <Words>
+        <Word>Page4</Word>
+      </Words>
+    </Entity>
+    <Entity Name="Page_5" ConceptualEntity="Pod4" Source="Generated">
+      <Words>
+        <Word>Page 5</Word>
+      </Words>
+    </Entity>
+    <Entity Name="Page_6" ConceptualEntity="Pod5" Source="Generated">
+      <Words>
+        <Word>Page 6</Word>
+      </Words>
+    </Entity>
+    <Entity Name="Page_7" ConceptualEntity="Pod6" Source="Generated">
+      <Words>
+        <Word>Page 7</Word>
+      </Words>
+    </Entity>
+    <Entity Name="Page_8" ConceptualEntity="Pod7" Source="Generated">
+      <Words>
+        <Word>Page 8</Word>
+      </Words>
+    </Entity>
+    <Entity Name="Page_9" ConceptualEntity="Pod8" Source="Generated">
+      <Words>
+        <Word>Page 9</Word>
+      </Words>
+    </Entity>
+    <Entity Name="Page_10" ConceptualEntity="Pod9" Source="Generated">
+      <Words>
+        <Word>Page 10</Word>
+      </Words>
+    </Entity>
+    <Entity Name="Page_11" ConceptualEntity="Pod10" Source="Generated">
+      <Words>
+        <Word>Page 11</Word>
+      </Words>
+    </Entity>
+  </Entities>
+</LinguisticSchema>

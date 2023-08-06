@@ -1,0 +1,66 @@
+{
+  "name": "9cd08383d88375822c6b",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "height": 87.155770477793638,
+        "width": 82.161609303842951,
+        "x": 0,
+        "y": 0,
+        "z": 2000,
+        "tabOrder": 15000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "image",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "CHR_Logomark_299LtBlue_RGB_1_5278495942787422.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'CHR Logo - compact'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "parentGroupName": "6f150fc0c0e8e4615ccf"
+}

@@ -1,0 +1,113 @@
+{
+  "Commands": [
+    {
+      "SemanticQueryDataShapeCommand": {
+        "Query": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "a",
+              "Entity": "All_Workspace_Reports",
+              "Type": 0
+            },
+            {
+              "Name": "a1",
+              "Entity": "All_Report views",
+              "Type": 0
+            }
+          ],
+          "Select": [
+            {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "a"
+                  }
+                },
+                "Property": "Workspace"
+              },
+              "Name": "All_Workspace_Reports.Workspace",
+              "NativeReferenceName": "Workspace"
+            },
+            {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "a1"
+                  }
+                },
+                "Property": "Viewers"
+              },
+              "Name": "All_Report views.Viewers",
+              "NativeReferenceName": "Viewers"
+            },
+            {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "a1"
+                  }
+                },
+                "Property": "Views"
+              },
+              "Name": "All_Report views.Views",
+              "NativeReferenceName": "Views"
+            },
+            {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "a1"
+                  }
+                },
+                "Property": "Views_Distinct_Report_Count"
+              },
+              "Name": "All_Report views.Views_Distinct_Report_Count",
+              "NativeReferenceName": "Report Ct."
+            }
+          ],
+          "OrderBy": [
+            {
+              "Direction": 2,
+              "Expression": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "a1"
+                    }
+                  },
+                  "Property": "Views"
+                }
+              }
+            }
+          ]
+        },
+        "Binding": {
+          "Primary": {
+            "Groupings": [
+              {
+                "Projections": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "Subtotal": 1
+              }
+            ]
+          },
+          "DataReduction": {
+            "DataVolume": 3,
+            "Primary": {
+              "Window": {
+                "Count": 500
+              }
+            }
+          },
+          "Version": 1
+        },
+        "ExecutionMetricsKind": 1
+      }
+    }
+  ]
+}

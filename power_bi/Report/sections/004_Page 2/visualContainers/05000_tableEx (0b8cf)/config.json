@@ -1,0 +1,81 @@
+{
+  "name": "0b8cf99f99d4480004c5",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 844.625850340136,
+        "y": 307.66439909297048,
+        "z": 6000,
+        "width": 223.49206349206349,
+        "height": 87.074829931972786,
+        "tabOrder": 5000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "tableEx",
+    "projections": {
+      "Values": [
+        {
+          "queryRef": "Refresh Stats 2.Last Refresh"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "r1",
+          "Entity": "NAST[PROD] Usage Report Refresh",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "r1"
+              }
+            },
+            "Property": "NAST[PROD] Refresh"
+          },
+          "Name": "Refresh Stats 2.Last Refresh",
+          "NativeReferenceName": "Last Refresh1"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "r1"
+                }
+              },
+              "Property": "NAST[PROD] Refresh"
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

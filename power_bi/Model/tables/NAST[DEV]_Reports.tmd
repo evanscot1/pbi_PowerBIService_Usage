@@ -1,0 +1,87 @@
+table 'NAST[DEV]_Reports'
+	isHidden
+	lineageTag: 2c19df3f-70b7-40fa-9e2e-fb7fa9057bd1
+	sourceLineageTag: a70d2714-271a-4fb4-bdef-25a42c03ee19
+	ordinal: 69
+
+	partition 'NAST[DEV]_Reports' = Entity
+		mode: DirectQuery
+		entityName: Reports
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 4'
+
+	column OrganizationId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: afeae82b-3d27-4168-b231-83cdf2071cd7
+		sourceColumn: OrganizationId
+		sourceLineageTag: 6f0a7eca-6b5d-43f2-acf5-5143422b6f2f
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column ReportGuid
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		isNullable: false
+		lineageTag: 93370548-10f7-4fe0-bed3-163ce9ed5744
+		sourceColumn: ReportGuid
+		sourceLineageTag: d04f80ed-b628-4cfc-859b-bd220ce893aa
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column ReportName
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: a14928dd-2ae2-474c-ad7e-050fc7afc4fe
+		sourceColumn: ReportName
+		sourceLineageTag: 2a1b9eea-cb70-4575-aa1c-e3d83b16f3c1
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column WorkspaceId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 49fb92bc-7e38-44d5-a123-fc1c09876e28
+		sourceColumn: WorkspaceId
+		sourceLineageTag: 0d3e7f72-b7cb-43d0-a775-0bc678f65d8f
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column IsUsageMetricsReport
+		dataCategory: Uncategorized
+		dataType: Boolean
+		formatString:= "TRUE";"TRUE";"FALSE"
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: f550f0b1-7cc8-4162-9932-991fa7aa5267
+		sourceColumn: IsUsageMetricsReport
+		sourceLineageTag: aaa9416e-121b-4837-87a4-6d04bb28ee40
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	changedProperty = Name
+
+	changedProperty = IsHidden
+

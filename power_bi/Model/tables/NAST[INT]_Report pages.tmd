@@ -1,0 +1,72 @@
+table 'NAST[INT]_Report pages'
+	isHidden
+	lineageTag: 557bcc85-033a-4781-833d-0e14d480135b
+	sourceLineageTag: 188b8e09-bf11-4400-b737-7ff61d8904f0
+	ordinal: 9
+
+	partition 'NAST[INT]_Report pages' = Entity
+		mode: DirectQuery
+		entityName: "Report pages"
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report'
+
+	column ReportId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 82a8c624-d092-4483-b56d-92cd99d96bb4
+		sourceColumn: ReportId
+		sourceLineageTag: 6ba18d5f-8652-4c1f-9b46-ed7dd792b940
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column SectionId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		isNullable: false
+		lineageTag: f96b792d-bff2-40dc-bbdc-03e7d7c6c82c
+		sourceColumn: SectionId
+		sourceLineageTag: 838a3e51-08e1-4160-9502-65cd4886a266
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column SectionName
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 5d8a6d52-370c-48b7-942d-1b39cbacb5ec
+		sourceColumn: SectionName
+		sourceLineageTag: f6c1b906-7e88-4353-9966-39f2ad8c5ac3
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column WorkspaceId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 97f0450b-58f9-4183-b237-7dd14563f5a8
+		sourceColumn: WorkspaceId
+		sourceLineageTag: 80baa592-e19c-4ce2-98ab-10d56ab3615f
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	changedProperty = Name
+
+	changedProperty = IsHidden
+

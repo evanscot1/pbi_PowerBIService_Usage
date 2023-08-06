@@ -1,0 +1,81 @@
+{
+  "filters": {
+    "byExpr": [
+      {
+        "type": "Advanced",
+        "expression": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All_Report_Page_Views"
+              }
+            },
+            "Property": "Page View Ct"
+          }
+        },
+        "howCreated": 0
+      },
+      {
+        "type": "Advanced",
+        "expression": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All_Report_Page_Views"
+              }
+            },
+            "Property": "Page Viewers Ct"
+          }
+        },
+        "howCreated": 0
+      },
+      {
+        "type": "Categorical",
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All_Report_Pages"
+              }
+            },
+            "Property": "SectionName"
+          }
+        },
+        "howCreated": 0
+      }
+    ]
+  },
+  "singleVisual": {
+    "visualType": "pivotTable",
+    "objects": {},
+    "orderBy": [
+      {
+        "Direction": 2,
+        "Expression": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All_Report_Page_Views"
+              }
+            },
+            "Property": "Page View Ct"
+          }
+        }
+      }
+    ],
+    "activeProjections": {
+      "Rows": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All_Report_Pages"
+              }
+            },
+            "Property": "SectionName"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+table 'Finance BARD2'
+	isHidden
+	lineageTag: cd8ae7bf-9bd9-4215-9d12-55b5b4e3b50e
+	sourceLineageTag: 9578ffab-7bde-46d8-ba4f-486559d24e82
+	ordinal: 113
+
+	partition 'Finance BARD2' = Entity
+		mode: DirectQuery
+		entityName: "Refresh Stats"
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 6'
+
+	column 'Fianance BARD2 Refresh'
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: a93fee4f-1a48-4b17-b04e-4e2ef645d1ef
+		sourceColumn: "Last Refresh"
+		sourceLineageTag: fb38f4d9-5a54-42d5-9aef-7ece73930cb4
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = Name
+
+	changedProperty = Name
+

@@ -1,0 +1,27 @@
+table 'NAST[DEV] Usage Report Refresh'
+	isHidden
+	lineageTag: bcb61f79-8df4-46c5-a078-4f782ff28a32
+	sourceLineageTag: 9578ffab-7bde-46d8-ba4f-486559d24e82
+	ordinal: 71
+
+	partition 'NAST[DEV] Usage Report Refresh' = Entity
+		mode: DirectQuery
+		entityName: "Refresh Stats"
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 4'
+
+	column 'NAST[DEV] Refresh'
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: faeadb93-0dc6-4722-a7dd-e833bd1a550a
+		sourceColumn: "Last Refresh"
+		sourceLineageTag: fb38f4d9-5a54-42d5-9aef-7ece73930cb4
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = Name
+
+	changedProperty = Name
+

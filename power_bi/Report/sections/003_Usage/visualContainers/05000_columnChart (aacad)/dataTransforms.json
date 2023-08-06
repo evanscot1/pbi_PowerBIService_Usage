@@ -1,0 +1,124 @@
+{
+  "projectionOrdering": {
+    "Category": [
+      0
+    ],
+    "Y": [
+      1
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "All_Report views.Date",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Date",
+        "Name": "All_Report views.Date",
+        "Type": 4,
+        "Format": "G"
+      },
+      {
+        "Restatement": "Views_Distinct_Report_Count",
+        "Name": "All_Report views.Views_Distinct_Report_Count",
+        "Type": 3,
+        "Format": "#,0"
+      }
+    ],
+    "Filters": [
+      {
+        "type": 8,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All_Report views"
+              }
+            },
+            "Property": "Date"
+          }
+        }
+      },
+      {
+        "type": 0,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All_Date_Table"
+              }
+            },
+            "Property": "IS_NAST_WORK_DAY"
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Category",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Y",
+          "Projection": 1,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Date",
+      "format": "G",
+      "queryName": "All_Report views.Date",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 519
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "All_Report views"
+            }
+          },
+          "Property": "Date"
+        }
+      }
+    },
+    {
+      "displayName": "Views_Distinct_Report_Count",
+      "format": "#,0",
+      "queryName": "All_Report views.Views_Distinct_Report_Count",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "All_Report views"
+            }
+          },
+          "Property": "Views_Distinct_Report_Count"
+        }
+      }
+    }
+  ]
+}

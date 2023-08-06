@@ -1,0 +1,249 @@
+table 'NAST[INT]_Report views'
+	isHidden
+	lineageTag: ef38b8bf-86c7-411e-9a46-b27de7d4bf0c
+	sourceLineageTag: 940c0704-747b-4e04-8474-0aa28d70874b
+	ordinal: 1
+
+	partition 'NAST[INT]_Report views' = Entity
+		mode: DirectQuery
+		entityName: "Report views"
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report'
+
+	column ReportId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 49e63bbf-279d-4975-8af7-1fab72f8bc0b
+		sourceColumn: ReportId
+		sourceLineageTag: 032f562b-98e8-4f3e-a8ce-fd525821f96a
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column ReportType
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 20c164ed-aa87-420c-8df3-4776541803e0
+		sourceColumn: ReportType
+		sourceLineageTag: 4bd76904-7eee-4aa0-a1ab-4d5ffc0d3c13
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column ReportName
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: a27ec2eb-5b14-452b-8630-8a2a195da915
+		sourceColumn: ReportName
+		sourceLineageTag: 9ec3b56b-d7a6-4613-acc8-501e1743490f
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column AppName
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 60a8075c-d434-4649-82f8-ca51a4e10769
+		sourceColumn: AppName
+		sourceLineageTag: 281b7e8e-d3b6-495b-8340-2ff1258ed289
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column UserKey
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 51d34cc3-29e4-47f2-a6d1-ffddef009f14
+		sourceColumn: UserKey
+		sourceLineageTag: 36b48f02-c55e-4357-b544-4bc573d9a40c
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column UserId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 98984406-c3e9-4f5c-bf2b-94e27eba70e8
+		sourceColumn: UserId
+		sourceLineageTag: 752b614b-6e16-4108-a438-0cd80334bf48
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column UserAgent
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: ea51c221-5fb7-45c0-89a9-dfdd7a6712de
+		sourceColumn: UserAgent
+		sourceLineageTag: 84c4a8ac-211d-4f52-8fc4-74dcafc178d2
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column DatasetName
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 7c368fa7-bd2b-4587-9614-a4450085af21
+		sourceColumn: DatasetName
+		sourceLineageTag: 63474dd7-919e-4848-aee0-5772fd0bbe7a
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column CapacityId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 43782435-2b73-49eb-85e1-e6e0df735f51
+		sourceColumn: CapacityId
+		sourceLineageTag: 7cba8c27-9eca-411b-b926-eb59ee6f959f
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column CapacityName
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: dd0acf2c-adaa-431c-b64e-ab99f747255a
+		sourceColumn: CapacityName
+		sourceLineageTag: 7075d0d5-9250-41e1-a312-5e0512685124
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column Date
+		dataCategory: Uncategorized
+		dataType: DateTime
+		formatString:= General Number
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: a4ce75bd-f652-4221-b535-32a9394940ee
+		sourceColumn: Date
+		sourceLineageTag: 52963429-b6b6-4c32-a939-070982671edc
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column CreationTime
+		dataCategory: Uncategorized
+		dataType: DateTime
+		formatString:= General Number
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: cd7571c1-ae8f-49f8-a2c3-c5d25e3220e6
+		sourceColumn: CreationTime
+		sourceLineageTag: 2c26bc83-c94e-463e-80da-21dd5269def4
+		summarizeBy: None
+
+		variation Variation
+			defaultHierarchy: 'LocalDateTable_dc7eb03a-ec8b-421f-b39b-107ea1f05736'.'Date Hierarchy'
+			isDefault
+			relationship: 'ff7c269c-05f3-4732-a50a-8cdd0d64e093'
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column DistributionMethod
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: d58693d8-4b9c-4740-afc5-eaa1148c3595
+		sourceColumn: DistributionMethod
+		sourceLineageTag: ee00af2d-8088-4f93-8c66-3585a9d83e9e
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column OriginalConsumptionMethod
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: e1b6d82e-0273-42f7-8506-7c3db7c301c1
+		sourceColumn: OriginalConsumptionMethod
+		sourceLineageTag: 8fb9ba0f-1342-46ef-8d1f-b8d9b4a5265b
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column ConsumptionMethod
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: b3c0495f-ac8b-4be8-9a31-62e454ffef6b
+		sourceColumn: ConsumptionMethod
+		sourceLineageTag: 40a23e93-0f90-43fd-ba85-9de87ef22bec
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	hierarchy 'UserAgent Hierarchy'
+		isHidden
+		lineageTag: 199e9ea9-3df9-42e4-bd1b-712ca504a41f
+		sourceLineageTag: 843f6174-0394-4962-9b11-a8a2162aeec9
+
+		level UserAgent
+			column: UserAgent
+			lineageTag: 321ef613-2274-4125-94c2-a986f0e921d4
+			sourceLineageTag: 00f6a3ad-7015-492f-8ffb-ac8632fdbfc2
+
+		level UserId
+			column: UserId
+			lineageTag: 7e76f156-f6a6-48ab-b344-dfa7f90d0be1
+			sourceLineageTag: 76aabc05-9eb6-4e48-a9e9-98831f4d7043
+
+		changedProperty = IsHidden
+
+	changedProperty = Name
+
+	changedProperty = IsHidden
+

@@ -1,0 +1,99 @@
+{
+  "Commands": [
+    {
+      "SemanticQueryDataShapeCommand": {
+        "Query": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "a",
+              "Entity": "All_Report_Page_Views",
+              "Type": 0
+            },
+            {
+              "Name": "a1",
+              "Entity": "All_Report_Pages",
+              "Type": 0
+            }
+          ],
+          "Select": [
+            {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "a"
+                  }
+                },
+                "Property": "Page View Ct"
+              },
+              "Name": "All_Report_Page_Views.Page View Ct",
+              "NativeReferenceName": "Page View Ct"
+            },
+            {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "a"
+                  }
+                },
+                "Property": "Page Viewers Ct"
+              },
+              "Name": "All_Report_Page_Views.Page Viewers Ct",
+              "NativeReferenceName": "Page Viewers Ct"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "a1"
+                  }
+                },
+                "Property": "SectionName"
+              },
+              "Name": "All_Report_Pages.SectionName",
+              "NativeReferenceName": "SectionName"
+            }
+          ],
+          "OrderBy": [
+            {
+              "Direction": 2,
+              "Expression": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "a"
+                    }
+                  },
+                  "Property": "Page View Ct"
+                }
+              }
+            }
+          ]
+        },
+        "Binding": {
+          "Primary": {
+            "Groupings": [
+              {
+                "Projections": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ]
+          },
+          "DataReduction": {
+            "DataVolume": 3,
+            "Primary": {
+              "Window": {
+                "Count": 500
+              }
+            }
+          },
+          "Version": 1
+        },
+        "ExecutionMetricsKind": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "name": "c293edec947cd11e95db",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 1504.1350210970468,
+        "y": 101.26582278481013,
+        "z": 2000,
+        "width": 403.7130801687764,
+        "height": 303.79746835443041,
+        "tabOrder": 4000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "lineChart",
+    "projections": {
+      "Category": [
+        {
+          "queryRef": "All_Report views.Date",
+          "active": true
+        }
+      ],
+      "Y": [
+        {
+          "queryRef": "All_Report views.Viewers"
+        },
+        {
+          "queryRef": "All_Report views.Views"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "a",
+          "Entity": "All_Report views",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a"
+              }
+            },
+            "Property": "Date"
+          },
+          "Name": "All_Report views.Date",
+          "NativeReferenceName": "Date"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a"
+              }
+            },
+            "Property": "Viewers"
+          },
+          "Name": "All_Report views.Viewers",
+          "NativeReferenceName": "Viewers"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a"
+              }
+            },
+            "Property": "Views"
+          },
+          "Name": "All_Report views.Views",
+          "NativeReferenceName": "Views"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 1,
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "a"
+                }
+              },
+              "Property": "Date"
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "hasDefaultSort": true
+  }
+}

@@ -1,0 +1,246 @@
+table 'HUB[PROD]_Report page views'
+	isHidden
+	lineageTag: a2c5c742-6e95-4379-8e91-c7568ffe914e
+	sourceLineageTag: 082dd08a-3736-49eb-a465-a5294b27ae7b
+	ordinal: 41
+
+	partition 'HUB[PROD]_Report page views' = Entity
+		mode: DirectQuery
+		entityName: "Report page views"
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 3'
+
+	column AppName
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 40c9f8ed-8b4e-4508-8e9b-21846bc93585
+		sourceColumn: AppName
+		sourceLineageTag: 487a8b13-2a8f-4c52-a5c3-d6b7fd0160a9
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column UserId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: b37b3df7-32b1-497e-b280-87c83d28e5f6
+		sourceColumn: UserId
+		sourceLineageTag: 7f8edcd0-7ed2-4fe1-8d2f-69a1c3b6ce73
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column ReportId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 20947d2e-f20a-431f-8a57-22ca2bcf0014
+		sourceColumn: ReportId
+		sourceLineageTag: 70e0d123-e2b8-46ff-a88e-99f2186d68db
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column Date
+		dataCategory: Uncategorized
+		dataType: DateTime
+		formatString:= General Number
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 21abed22-9737-45f7-81bc-13dc90890bd7
+		sourceColumn: Date
+		sourceLineageTag: 57962bf7-717c-4618-b845-2d3ddcf1ce7b
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column Timestamp
+		dataCategory: Uncategorized
+		dataType: DateTime
+		formatString:= General Number
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: b6a4ef59-ae48-4a24-8b9c-64b22638530c
+		sourceColumn: Timestamp
+		sourceLineageTag: 76d15a53-d5bf-47b8-80f6-e304f8e99687
+		summarizeBy: None
+
+		variation Variation
+			defaultHierarchy: 'LocalDateTable_e9fae86b-d80b-4c31-9ba4-095822014411 3'.'Date Hierarchy'
+			isDefault
+			relationship: 'ab9bb0d9-e8d6-4586-93d5-7d4a34aaef0b'
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column AppGuid
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: b17f3cdb-5bd8-44ae-8c39-1761469cdf24
+		sourceColumn: AppGuid
+		sourceLineageTag: 6f19e4ca-2291-4e3b-847a-162e4c05ca1a
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column Client
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 16b3eeff-1557-4fee-aedf-8dba4c7b3bad
+		sourceColumn: Client
+		sourceLineageTag: 07e7c257-422a-438e-8f1c-dbc510f2c992
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column DeviceBrowserVersion
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: a276db7e-5584-4c26-a191-8d4d9580af7a
+		sourceColumn: DeviceBrowserVersion
+		sourceLineageTag: 20d10d7b-0f15-4a40-a7be-b1f5fb373e30
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column DeviceOSVersion
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 667baa95-c61b-4512-a1ef-714b6a5c2b3a
+		sourceColumn: DeviceOSVersion
+		sourceLineageTag: 22c69059-fa69-4b20-abec-53a928379cda
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column WorkspaceId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 05996681-2c72-4dac-90b8-13757cc95878
+		sourceColumn: WorkspaceId
+		sourceLineageTag: 60824bac-ea25-49fc-ae70-13de37761bf2
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column OriginalWorkspaceId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 1f5fa846-216e-4400-93ee-105591506d13
+		sourceColumn: OriginalWorkspaceId
+		sourceLineageTag: 3c36c56d-94e3-4e3b-ab8e-21e7f1b0dcfe
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column OriginalReportId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 7acd9623-f72a-4e73-9510-18b51d829dc3
+		sourceColumn: OriginalReportId
+		sourceLineageTag: 0711fc72-97fa-4996-b893-2c5e7a0c27f7
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column SectionId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 5463834e-7aa1-4ef9-a0bd-27bdf0da55c1
+		sourceColumn: SectionId
+		sourceLineageTag: 25060260-0c57-4932-8c2c-252f5a72fd51
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column TenantId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 653f1c43-6e41-4e85-bfec-6245f0307c63
+		sourceColumn: TenantId
+		sourceLineageTag: 79b95f9f-d9f3-4825-adfd-a5ea39d819a5
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column SessionSource
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 33677637-ce59-415a-9add-fc3d880db48d
+		sourceColumn: SessionSource
+		sourceLineageTag: bb26b226-b1c3-44b7-9438-5c2f2e9d0dd7
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column UserKey
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: ee647d52-2d10-40d8-89ed-19e69ebd2bb8
+		sourceColumn: UserKey
+		sourceLineageTag: 92528000-8ff7-4408-83f6-ca52279700f5
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	changedProperty = Name
+
+	changedProperty = IsHidden
+

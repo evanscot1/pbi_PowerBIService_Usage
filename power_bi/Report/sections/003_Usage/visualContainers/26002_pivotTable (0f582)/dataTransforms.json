@@ -1,0 +1,205 @@
+{
+  "objects": {
+    "subTotals": [
+      {
+        "properties": {
+          "columnSubtotals": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "rowSubtotals": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Rows": [
+      2
+    ],
+    "Values": [
+      0,
+      1,
+      3
+    ]
+  },
+  "projectionActiveItems": {
+    "Rows": [
+      {
+        "queryRef": "All Reporting Owners.Owning Group",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Viewers",
+        "Name": "All_Report views.Viewers",
+        "Type": 3,
+        "Format": "#,0"
+      },
+      {
+        "Restatement": "Views",
+        "Name": "All_Report views.Views",
+        "Type": 3,
+        "Format": "#,0"
+      },
+      {
+        "Restatement": "Owning Group",
+        "Name": "All Reporting Owners.Owning Group",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Report Ct.",
+        "Name": "All_Report views.Views_Distinct_Report_Count",
+        "Type": 3,
+        "Format": "#,0"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Rows",
+          "Projection": 2,
+          "isActive": true
+        },
+        {
+          "Name": "Values",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 3,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Viewers",
+      "format": "#,0",
+      "queryName": "All_Report views.Viewers",
+      "roles": {
+        "Values": true
+      },
+      "sort": 2,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "All_Report views"
+            }
+          },
+          "Property": "Viewers"
+        }
+      }
+    },
+    {
+      "displayName": "Views",
+      "format": "#,0",
+      "queryName": "All_Report views.Views",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "All_Report views"
+            }
+          },
+          "Property": "Views"
+        }
+      }
+    },
+    {
+      "displayName": "Owning Group",
+      "queryName": "All Reporting Owners.Owning Group",
+      "roles": {
+        "Rows": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "All Reporting Owners"
+            }
+          },
+          "Property": "Owning Group"
+        }
+      }
+    },
+    {
+      "displayName": "Report Ct.",
+      "format": "#,0",
+      "queryName": "All_Report views.Views_Distinct_Report_Count",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "All_Report views"
+            }
+          },
+          "Property": "Views_Distinct_Report_Count"
+        }
+      }
+    }
+  ],
+  "expansionStates": [
+    {
+      "roles": [
+        "Rows"
+      ],
+      "levels": [
+        {
+          "queryRefs": [
+            "All Reporting Owners.Owning Group"
+          ],
+          "isCollapsed": true,
+          "isPinned": true
+        }
+      ],
+      "root": {
+        "identityValues": null
+      }
+    }
+  ]
+}

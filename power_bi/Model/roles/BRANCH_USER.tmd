@@ -1,0 +1,5 @@
+role BRANCH_USER
+	modelPermission: Read
+
+	annotation PBI_Id = ea568c720cf546c9adf8428ff8cfcab8
+

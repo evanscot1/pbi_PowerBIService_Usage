@@ -1,0 +1,66 @@
+{
+  "name": "1f233360b20077b0ba21",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 844.215474807808,
+        "y": 175.31873237099714,
+        "z": 5000,
+        "width": 223.90243902439022,
+        "height": 88.243902439024382,
+        "tabOrder": 4000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "tableEx",
+    "projections": {
+      "Values": [
+        {
+          "queryRef": "Refresh Stats 4.Last Refresh"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "r1",
+          "Entity": "NAST[DEV] Usage Report Refresh",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "r1"
+              }
+            },
+            "Property": "NAST[DEV] Refresh"
+          },
+          "Name": "Refresh Stats 4.Last Refresh",
+          "NativeReferenceName": "Last Refresh1"
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "name": "7ef9058e05c70563334c",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 85.454545454545453,
+        "y": 281.81818181818181,
+        "z": 11000,
+        "width": 1801.8181818181818,
+        "height": 218.18181818181816,
+        "tabOrder": 11000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "display": {
+      "mode": "hidden"
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "These extra icons below can be used to further customize your report. if you want to expose multiple visuals a chart and graph on top of each other bookmarks can allow you to do this without sacrificing space. an example report can be found ",
+                    "textStyle": {
+                      "fontSize": "24pt",
+                      "color": "#ffffff"
+                    }
+                  },
+                  {
+                    "value": "here",
+                    "textStyle": {
+                      "fontSize": "24pt",
+                      "color": "#ffffff"
+                    },
+                    "url": "https://app.powerbi.com/groups/46ac8c33-5e7f-461c-bf62-b3d551d62a9d/reports/08baf2d6-f71b-4f1d-a205-8a9ee12a7392/ReportSectioncfcd0b2da3dbc4a2231d?bookmarkGuid=Bookmark132c6ae48a66a6e53dd5"
+                  },
+                  {
+                    "value": ". ",
+                    "textStyle": {
+                      "fontSize": "24pt",
+                      "color": "#ffffff"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Also included some extra CHR branded logos should they be required elsewhere in your reporting.",
+                    "textStyle": {
+                      "fontSize": "24pt",
+                      "color": "#ffffff"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "background": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": -0.5
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Additional Icon Text'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

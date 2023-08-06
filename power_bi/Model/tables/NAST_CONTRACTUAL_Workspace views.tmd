@@ -1,0 +1,114 @@
+table 'NAST_CONTRACTUAL_Workspace views'
+	isHidden
+	lineageTag: acbfeb28-58f9-4c2a-aba2-ede12e963ce2
+	sourceLineageTag: ed16c722-1441-471c-915d-0164d8fd550c
+	ordinal: 94
+
+	partition 'NAST_CONTRACTUAL_Workspace views' = Entity
+		mode: DirectQuery
+		entityName: "Workspace views"
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 5'
+
+	column ReportId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 326dae96-ed12-4224-8ff0-6ab5e0674fe9
+		sourceColumn: ReportId
+		sourceLineageTag: 6c82af29-a588-4084-b1ae-bdfd353f4040
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column UserId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: db282fa6-d0c8-4e1f-acce-8ee45b448ed4
+		sourceColumn: UserId
+		sourceLineageTag: b63bdc99-0c2c-4886-94a5-127796fef645
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column DistributionMethod
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 7342a12e-1cde-4274-a8d8-d17400efdd70
+		sourceColumn: DistributionMethod
+		sourceLineageTag: d325a0c9-02cb-439b-ac7e-f4540bd214b7
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column ConsumptionMethod
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: d042d1a0-61a9-4d11-b568-4084f4b90998
+		sourceColumn: ConsumptionMethod
+		sourceLineageTag: cfaf38cd-5b54-495d-beb6-e324abf26e41
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column Views
+		dataCategory: Uncategorized
+		dataType: Int64
+		formatString:= 0
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 5f77fb36-a02a-43df-8300-dac3fbcd03df
+		sourceColumn: Views
+		sourceLineageTag: 1a053eea-1796-4bdb-bf05-a9531cbf1242
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column UserKey
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 785239e8-02bc-48da-a012-8c5e87503723
+		sourceColumn: UserKey
+		sourceLineageTag: 58031bde-a8a2-4086-a47b-5f2b526b2f22
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column UniqueUser
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: a16a1cc6-3159-4076-b5cf-3fd023f42dfe
+		sourceColumn: UniqueUser
+		sourceLineageTag: b260fc66-1dce-46bc-9615-0c4422563e2c
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	changedProperty = Name
+
+	changedProperty = IsHidden
+

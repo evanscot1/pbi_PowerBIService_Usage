@@ -1,0 +1,86 @@
+{
+  "name": "aacad164e962e416c846",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 1058.5654008438821,
+        "y": 101.26582278481013,
+        "z": 6000,
+        "width": 426.66666666666669,
+        "height": 303.79746835443041,
+        "tabOrder": 5000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "columnChart",
+    "projections": {
+      "Category": [
+        {
+          "queryRef": "All_Report views.Date",
+          "active": true
+        }
+      ],
+      "Y": [
+        {
+          "queryRef": "All_Report views.Views_Distinct_Report_Count"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "a",
+          "Entity": "All_Report views",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a"
+              }
+            },
+            "Property": "Date"
+          },
+          "Name": "All_Report views.Date",
+          "NativeReferenceName": "Date"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a"
+              }
+            },
+            "Property": "Views_Distinct_Report_Count"
+          },
+          "Name": "All_Report views.Views_Distinct_Report_Count",
+          "NativeReferenceName": "Views_Distinct_Report_Count"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 1,
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "a"
+                }
+              },
+              "Property": "Date"
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "filterSortOrder": 3,
+    "hasDefaultSort": true
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "0f5829b6c9dd27be87a9",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 473.92405063291153,
+        "y": 101.26582278481013,
+        "z": 9000,
+        "width": 565.73839662447256,
+        "height": 305.14767932489451,
+        "tabOrder": 26002
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "pivotTable",
+    "projections": {
+      "Rows": [
+        {
+          "queryRef": "All Reporting Owners.Owning Group",
+          "active": true
+        }
+      ],
+      "Values": [
+        {
+          "queryRef": "All_Report views.Viewers"
+        },
+        {
+          "queryRef": "All_Report views.Views"
+        },
+        {
+          "queryRef": "All_Report views.Views_Distinct_Report_Count"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "a1",
+          "Entity": "All_Report views",
+          "Type": 0
+        },
+        {
+          "Name": "a2",
+          "Entity": "All Reporting Owners",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a1"
+              }
+            },
+            "Property": "Viewers"
+          },
+          "Name": "All_Report views.Viewers",
+          "NativeReferenceName": "Viewers"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a1"
+              }
+            },
+            "Property": "Views"
+          },
+          "Name": "All_Report views.Views",
+          "NativeReferenceName": "Views"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a2"
+              }
+            },
+            "Property": "Owning Group"
+          },
+          "Name": "All Reporting Owners.Owning Group",
+          "NativeReferenceName": "Owning Group"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a1"
+              }
+            },
+            "Property": "Views_Distinct_Report_Count"
+          },
+          "Name": "All_Report views.Views_Distinct_Report_Count",
+          "NativeReferenceName": "Report Ct."
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Measure": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "a1"
+                }
+              },
+              "Property": "Viewers"
+            }
+          }
+        }
+      ]
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "Rows"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "All Reporting Owners.Owning Group"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          }
+        ],
+        "root": {
+          "identityValues": null
+        }
+      }
+    ],
+    "columnProperties": {
+      "All_Report views.Views_Distinct_Report_Count": {
+        "displayName": "Report Ct."
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "subTotals": [
+        {
+          "properties": {
+            "columnSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "rowSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

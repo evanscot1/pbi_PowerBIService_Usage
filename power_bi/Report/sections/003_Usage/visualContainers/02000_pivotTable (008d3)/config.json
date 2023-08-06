@@ -1,0 +1,156 @@
+{
+  "name": "008d3f904d74e8c06d56",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 13.502109704641351,
+        "y": 101.26582278481013,
+        "z": 4000,
+        "width": 441.51898734177217,
+        "height": 305.14767932489451,
+        "tabOrder": 2000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "pivotTable",
+    "projections": {
+      "Rows": [
+        {
+          "queryRef": "All_Workspace_Reports.Workspace",
+          "active": true
+        }
+      ],
+      "Values": [
+        {
+          "queryRef": "All_Report views.Viewers"
+        },
+        {
+          "queryRef": "All_Report views.Views"
+        },
+        {
+          "queryRef": "All_Report views.Views_Distinct_Report_Count"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "a",
+          "Entity": "All_Workspace_Reports",
+          "Type": 0
+        },
+        {
+          "Name": "a1",
+          "Entity": "All_Report views",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a"
+              }
+            },
+            "Property": "Workspace"
+          },
+          "Name": "All_Workspace_Reports.Workspace",
+          "NativeReferenceName": "Workspace"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a1"
+              }
+            },
+            "Property": "Viewers"
+          },
+          "Name": "All_Report views.Viewers",
+          "NativeReferenceName": "Viewers"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a1"
+              }
+            },
+            "Property": "Views"
+          },
+          "Name": "All_Report views.Views",
+          "NativeReferenceName": "Views"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a1"
+              }
+            },
+            "Property": "Views_Distinct_Report_Count"
+          },
+          "Name": "All_Report views.Views_Distinct_Report_Count",
+          "NativeReferenceName": "Report Ct."
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Measure": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "a1"
+                }
+              },
+              "Property": "Views"
+            }
+          }
+        }
+      ]
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "Rows"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "All_Workspace_Reports.Workspace"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "All_Workspace_Reports"
+                    }
+                  },
+                  "Property": "Workspace"
+                }
+              }
+            ],
+            "isPinned": true
+          }
+        ],
+        "root": {
+          "identityValues": null
+        }
+      }
+    ],
+    "columnProperties": {
+      "All_Report views.Views_Distinct_Report_Count": {
+        "displayName": "Report Ct."
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {}
+  }
+}

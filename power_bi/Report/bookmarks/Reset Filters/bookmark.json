@@ -1,0 +1,62 @@
+{
+  "displayName": "Reset Filters",
+  "name": "Bookmarkc01161f811cd33561a7f",
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSection",
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "visible": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "options": {
+    "targetVisualNames": [
+      "e2552c2047cc1a0ba874",
+      "a40c8b3a7010e61a7e9b",
+      "c553fba04114299c110e",
+      "bacd77266189a49d8b06",
+      "d5302a7b2dce7e7229b3",
+      "e58ea94079e09cd52518",
+      "2a96b176b09c8e1d723e",
+      "92690896219dba33aa02",
+      "7e817822cb1abe864a0c",
+      "7655339ba00924aa5623",
+      "296382766d56a3302207",
+      "50d1d9487478c0125cbc",
+      "2f3dcc00313cd37480c0",
+      "caabfebf8735b9703b39",
+      "416ff877400beae2d055",
+      "718a0f4b2320d0b711c1",
+      "85fd616010b414006e75",
+      "6885258a121e7a8e28bc",
+      "1c6b2f740db3e5523217",
+      "d4db3958aea37a0933aa",
+      "982528e0c0945c7ad740",
+      "3528b41c4700816d0e85",
+      "715229a5b7a43a8603a7"
+    ],
+    "suppressDisplay": true,
+    "applyOnlyToTargetVisuals": true,
+    "suppressActiveSection": true
+  }
+}

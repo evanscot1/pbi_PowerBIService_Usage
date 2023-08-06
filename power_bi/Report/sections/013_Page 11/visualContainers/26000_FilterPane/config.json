@@ -1,0 +1,21 @@
+{
+  "name": "7ce2eef024cd501a0db4",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 1582.8571428571429,
+        "y": 0,
+        "z": 2000,
+        "width": 337,
+        "height": 1078.6185725249425,
+        "tabOrder": 26000
+      }
+    }
+  ],
+  "singleVisualGroup": {
+    "displayName": "FilterPane",
+    "groupMode": 0,
+    "isHidden": true
+  }
+}

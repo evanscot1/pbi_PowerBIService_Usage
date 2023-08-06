@@ -1,0 +1,474 @@
+table 'Model measures 8'
+	isHidden
+	lineageTag: 759fb8b7-3c3a-43d1-ac49-3375773cf12b
+	sourceLineageTag: 088a20e1-ae21-42a9-b384-bdf3e6170eca
+	ordinal: 161
+
+	partition 'Model measures 8' = Entity
+		mode: DirectQuery
+		entityName: "Model measures"
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 9'
+
+	measure 'Report views 8' = EXTERNALMEASURE("Report views", INTEGER, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Views
+		formatString:= #,0
+		isHidden
+		lineageTag: 6cb741a7-60bc-4fb3-bef5-4abd264e495b
+		sourceLineageTag: e30bc543-d24a-4c1c-97ba-76cb3c232692
+
+		changedProperty = IsHidden
+
+	measure 'Report viewers 8' = EXTERNALMEASURE("Report viewers", INTEGER, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Views
+		formatString:= #,0
+		isHidden
+		lineageTag: a10563fe-fc20-4b91-9701-55b8ab37f884
+		sourceLineageTag: a166ded4-cd2f-45c6-a53e-fb421a373ca8
+
+		changedProperty = IsHidden
+
+	measure 'Page view share 8' = EXTERNALMEASURE("Page view share", DOUBLE, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Views
+		formatString:= #,0%;-#,0%;#,0%
+		isHidden
+		lineageTag: 5fd7c360-2a03-4272-898a-2aa1045c573e
+		sourceLineageTag: 81811df5-4b28-4e16-8be4-9ddf691c8a88
+
+		changedProperty = IsHidden
+
+	measure 'View trend 8' = EXTERNALMEASURE("View trend", DOUBLE, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Trends
+		formatString:= 0.0%;-0.0%;0.0%
+		isHidden
+		lineageTag: 28866ee8-c2d1-4edf-a4ec-b75987df3dad
+		sourceLineageTag: 1dd53109-3e61-4cc7-ad7d-eb03d77871eb
+
+		changedProperty = IsHidden
+
+	measure 'P-50 8' = EXTERNALMEASURE("P-50", DOUBLE, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: "Load times"
+		formatString:= 0.0
+		isHidden
+		lineageTag: 3c82ecec-ea9e-4086-942c-10389de21765
+		sourceLineageTag: 3bf432cc-7c82-4db8-a036-06459d3cf2f8
+
+		changedProperty = IsHidden
+
+	measure 'P-50 7d 8' = EXTERNALMEASURE("P-50 7d", DOUBLE, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: "Load times"
+		formatString:= 0.00
+		isHidden
+		lineageTag: 27cedee3-c86b-418e-83e7-98bdda0249a1
+		sourceLineageTag: 1019dead-90a4-4576-94c7-1845f8bbaafc
+
+		changedProperty = IsHidden
+
+	measure 'P-25 8' = EXTERNALMEASURE("P-25", DOUBLE, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: "Load times"
+		isHidden
+		lineageTag: e3087771-d45b-487b-a6c2-43268acb57e7
+		sourceLineageTag: 14078391-c661-43b0-b33e-b153b0bbaad2
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+		changedProperty = IsHidden
+
+	measure 'P-10 8' = EXTERNALMEASURE("P-10", DOUBLE, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: "Load times"
+		formatString:= 0.0
+		isHidden
+		lineageTag: 7dab0770-0631-48c9-a992-92d40d045dc3
+		sourceLineageTag: dad447f9-10c9-49ab-a653-23480fd853af
+
+		changedProperty = IsHidden
+
+	measure 'P-90 7d 8' = EXTERNALMEASURE("P-90 7d", DOUBLE, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: "Load times"
+		isHidden
+		lineageTag: a51869b9-5cb4-478a-9e45-3ba7947f8a99
+		sourceLineageTag: ee6c4532-e8ec-466b-b4dd-d9243c5bdc6e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+		changedProperty = IsHidden
+
+	measure 'P-10 7d 8' = EXTERNALMEASURE("P-10 7d", DOUBLE, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: "Load times"
+		formatString:= 0.0
+		isHidden
+		lineageTag: c3cd286b-3c3b-484f-95bc-3a53491eee77
+		sourceLineageTag: 2dfe41a8-9420-40b7-890e-d72c1bb7016e
+
+		changedProperty = IsHidden
+
+	measure 'Typical report opening interval 8' = EXTERNALMEASURE("Typical report opening interval", STRING, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: "Display strings"
+		isHidden
+		lineageTag: ef347312-114a-4a13-9e5d-baab07b2705f
+		sourceLineageTag: 5e54e9e2-73e4-4c54-88c0-a5f7d037dd75
+
+		changedProperty = IsHidden
+
+	measure 'Rank string 8' = EXTERNALMEASURE("Rank string", STRING, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: "Display strings"
+		isHidden
+		lineageTag: 9ef0828d-f5be-4657-a035-019038f385df
+		sourceLineageTag: 6103e7f1-6d5a-4b66-a861-9fa85f636c51
+
+		changedProperty = IsHidden
+
+	measure 'Performance trend 8' = EXTERNALMEASURE("Performance trend", DOUBLE, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Trends
+		formatString:= 0.0%;-0.0%;0.0%
+		isHidden
+		lineageTag: c6def18e-3eea-41f6-8451-b2c378908a9a
+		sourceLineageTag: aec92e0b-abcf-40e5-a8e4-30ce423660bf
+
+		changedProperty = IsHidden
+
+	measure 'Typical report opening time 8' = EXTERNALMEASURE("Typical report opening time", STRING, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: "Display strings"
+		isHidden
+		lineageTag: 0738c4b0-ba60-4f65-90e0-52ed0e34da38
+		sourceLineageTag: 1ba7404b-f21d-48d0-9756-4cdfc797c049
+
+		changedProperty = IsHidden
+
+	/// Total number of unique viewers of all reports in the workspace
+	measure 'Workspace report viewers 8' = EXTERNALMEASURE("Workspace report viewers", INTEGER, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Workspace
+		formatString:= #,0
+		isHidden
+		lineageTag: efa81140-ef4c-4d62-9b17-a1b4b6193f41
+		sourceLineageTag: 90797c10-1972-4e29-a817-cf38190cbc02
+
+		changedProperty = IsHidden
+
+	measure 'Workspace inactive reports 8' = EXTERNALMEASURE("Workspace inactive reports", INTEGER, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Workspace
+		formatString:= 0
+		isHidden
+		lineageTag: d811c4d2-2a10-442a-a743-ee5a09a0eee4
+		sourceLineageTag: 7def33e7-5b78-499f-8b58-31528262aff5
+
+		changedProperty = IsHidden
+
+	measure 'Workspace views 8' = EXTERNALMEASURE("Workspace views", INTEGER, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Workspace
+		formatString:= #,0
+		isHidden
+		lineageTag: 71da9469-4ebc-455a-af05-f40f6b4e8676
+		sourceLineageTag: 455aa6ba-3bd5-4b1b-ba21-9c183988c835
+
+		changedProperty = IsHidden
+
+	measure 'Workspace active days per report 8' = EXTERNALMEASURE("Workspace active days per report", INTEGER, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Workspace
+		formatString:= 0
+		isHidden
+		lineageTag: b4eda540-13f5-4918-b967-4cbc86318ac8
+		sourceLineageTag: aebe48b4-1f13-4f95-abcf-48e9428ffe45
+
+		changedProperty = IsHidden
+
+	measure 'Workspace reports 8' = EXTERNALMEASURE("Workspace reports", INTEGER, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Workspace
+		formatString:= 0
+		isHidden
+		lineageTag: 90e9322d-baf8-4434-9366-6b8b6bf76cfd
+		sourceLineageTag: 6c6c26ec-8e0b-4fd6-b9e7-22bd4ba6ab95
+
+		changedProperty = IsHidden
+
+	/// Number of reports with views in the last 30 days
+	measure 'Workspace active reports 8' = EXTERNALMEASURE("Workspace active reports", INTEGER, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Workspace
+		formatString:= 0
+		isHidden
+		lineageTag: fb6f874e-6203-4bbf-b4d8-ce316464e997
+		sourceLineageTag: b47cd68f-271c-437a-9475-c2abe679d3a0
+
+		changedProperty = IsHidden
+
+	measure 'Workspace report view % 8' = EXTERNALMEASURE("Workspace report view %", DOUBLE, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Workspace
+		formatString:= 0%;-0%;0%
+		isHidden
+		lineageTag: 3f2c0256-d300-4013-820f-1a35350ffb3e
+		sourceLineageTag: ad714cab-0cdd-41a0-8112-d85315194e6d
+
+		changedProperty = IsHidden
+
+	measure 'Covered time display string 8' = EXTERNALMEASURE("Covered time display string", STRING, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: "Display strings"
+		isHidden
+		lineageTag: 567892d9-1419-41cd-a7a2-90f8ca5de247
+		sourceLineageTag: 34259b13-f5fd-4b31-a2b3-513579d14687
+
+		changedProperty = IsHidden
+
+	measure 'Embedding for your organziation 8' = EXTERNALMEASURE("Embedding for your organziation", INTEGER, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Embedding
+		formatString:= 0
+		isHidden
+		lineageTag: 45bc4cbf-3c48-420d-bdac-71b59624b195
+		sourceLineageTag: 40a04f9a-8c0c-4ee8-85bd-3df040c98562
+
+		changedProperty = IsHidden
+
+	measure 'Embedding for your customers 8' = EXTERNALMEASURE("Embedding for your customers", INTEGER, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Embedding
+		formatString:= 0
+		isHidden
+		lineageTag: 01e47bf9-3901-42cc-94c4-e88cb6b91a83
+		sourceLineageTag: 7301941f-ab22-40f8-9408-f4c84ce04b5f
+
+		changedProperty = IsHidden
+
+	measure 'Simplified embedding 8' = EXTERNALMEASURE("Simplified embedding", INTEGER, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Embedding
+		formatString:= 0
+		isHidden
+		lineageTag: c40aa152-103b-4297-b175-5a583afbfc94
+		sourceLineageTag: e87c9425-4401-44b4-986b-3a5f7b3f193b
+
+		changedProperty = IsHidden
+
+	measure 'Workspace view trend 8' = EXTERNALMEASURE("Workspace view trend", DOUBLE, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Workspace
+		formatString:= 0.0%;-0.0%;0.0%
+		isHidden
+		lineageTag: a63283ff-aa68-426b-bf0c-f39ea0bba7bd
+		sourceLineageTag: be7d00d2-6d1f-4656-9568-616781830d38
+
+		changedProperty = IsHidden
+
+	measure 'Last refresh time display string 8' = EXTERNALMEASURE("Last refresh time display string", STRING, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: "Display strings"
+		isHidden
+		lineageTag: f3f5773c-0563-4f76-a102-33eb9d3b2490
+		sourceLineageTag: 954f783c-bf86-46d3-95ff-3e7cb3bac2ad
+
+		changedProperty = IsHidden
+
+	measure 'Report title 8' = EXTERNALMEASURE("Report title", STRING, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: "Display strings"
+		isHidden
+		lineageTag: 48e98dd5-1158-4da0-8b5b-3343ca175e12
+		sourceLineageTag: be55f47e-2bfe-4623-a8fe-a6c936b48f5a
+
+		changedProperty = IsHidden
+
+	measure 'Report Id 8' = EXTERNALMEASURE("Report Id", STRING, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: "Display strings"
+		isHidden
+		lineageTag: 3091bfc1-d83d-470b-81d4-98c1e9bfda98
+		sourceLineageTag: 01455aa0-496d-47ba-9278-4ba5e70e4d3a
+
+		changedProperty = IsHidden
+
+	measure 'Covered perf time display string 8' = EXTERNALMEASURE("Covered perf time display string", STRING, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: "Display strings"
+		isHidden
+		lineageTag: 341b3ae0-74e5-497b-9fbc-2385311dd36d
+		sourceLineageTag: e4c345e9-dab4-4edd-804d-3f032555cb47
+
+		changedProperty = IsHidden
+
+	measure 'P-25 7d 8' = EXTERNALMEASURE("P-25 7d", DOUBLE, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: "Load times"
+		isHidden
+		lineageTag: 2043c165-5a3a-407c-8487-ea30ad369c29
+		sourceLineageTag: d35a736f-272a-4f6a-8778-83dc43a2a7d0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+		changedProperty = IsHidden
+
+	measure 'P-90 8' = EXTERNALMEASURE("P-90", DOUBLE, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: "Load times"
+		isHidden
+		lineageTag: e572e54a-9fe7-46ff-9926-b3b2c037d1c9
+		sourceLineageTag: 747542eb-426c-4a6a-b4ac-ad8800c2ef01
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+		changedProperty = IsHidden
+
+	measure 'P-75 8' = EXTERNALMEASURE("P-75", DOUBLE, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: "Load times"
+		isHidden
+		lineageTag: c91537f2-39da-488f-839c-a258edf669bf
+		sourceLineageTag: 100b5383-4f9b-4795-a9b7-651724cf9324
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+		changedProperty = IsHidden
+
+	measure 'P-75 7d 8' = EXTERNALMEASURE("P-75 7d", DOUBLE, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: "Load times"
+		isHidden
+		lineageTag: 6563de36-a3fb-491d-9643-6f8ef2bc87f9
+		sourceLineageTag: 8eda2f67-66b1-480a-9ba0-d1d06f812655
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+		changedProperty = IsHidden
+
+	measure 'Total page views 8' = EXTERNALMEASURE("Total page views", INTEGER, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Views
+		formatString:= 0
+		isHidden
+		lineageTag: 64ff541f-189f-4f94-8f12-09ed68a7d3a6
+		sourceLineageTag: c1c8ac3b-56f3-4438-acfb-d0daefdd0d98
+
+		changedProperty = IsHidden
+
+	measure 'Total page users 8' = EXTERNALMEASURE("Total page users", INTEGER, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Views
+		formatString:= 0
+		isHidden
+		lineageTag: f3384f89-2673-491a-97d7-bb9749d3edea
+		sourceLineageTag: aa0576ce-d3aa-4672-830a-10043aa1caf9
+
+		changedProperty = IsHidden
+
+	measure 'Weekly Viewers 8' = EXTERNALMEASURE("Weekly Viewers", INTEGER, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Views
+		formatString:= 0
+		isHidden
+		lineageTag: 99347ec4-b3cb-42bc-9665-08e621b79892
+		sourceLineageTag: afdc22a3-d297-499d-a818-60a4489242da
+
+		changedProperty = IsHidden
+
+	measure 'Weekly Views 8' = EXTERNALMEASURE("Weekly Views", INTEGER, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Views
+		formatString:= 0
+		isHidden
+		lineageTag: 46e85afc-e1c2-45fa-8ee9-0c0869dda584
+		sourceLineageTag: 88fed40c-481f-469c-9213-d597fb0e6acd
+
+		changedProperty = IsHidden
+
+	measure 'P-10 trend 8' = EXTERNALMEASURE("P-10 trend", DOUBLE, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Trends
+		formatString:= 0.0%;-0.0%;0.0%
+		isHidden
+		lineageTag: 89de2c4d-e1c1-45cf-8d47-16b32d38efdd
+		sourceLineageTag: 1eb803a5-cffd-4d4e-9033-26107335fa90
+
+		changedProperty = IsHidden
+
+	measure 'P-25 trend 8' = EXTERNALMEASURE("P-25 trend", DOUBLE, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Trends
+		formatString:= 0.0%;-0.0%;0.0%
+		isHidden
+		lineageTag: 85102f14-2657-4f52-9b18-5fdbd10c41fa
+		sourceLineageTag: 0a6833ac-6c1d-423e-bc15-04ca6ab06942
+
+		changedProperty = IsHidden
+
+	measure 'P-75 trend 8' = EXTERNALMEASURE("P-75 trend", DOUBLE, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Trends
+		formatString:= 0.0%;-0.0%;0.0%
+		isHidden
+		lineageTag: 7b4d3e07-d167-4373-8a5c-6039940eef09
+		sourceLineageTag: d7c9deb7-4585-44cf-9eb1-93d4e9d32ee1
+
+		changedProperty = IsHidden
+
+	measure 'P-90 trend 8' = EXTERNALMEASURE("P-90 trend", DOUBLE, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Trends
+		formatString:= 0.0%;-0.0%;0.0%
+		isHidden
+		lineageTag: d19bf7c5-520d-4ce6-b8af-95a2674d623a
+		sourceLineageTag: 8dc1bed6-fca5-40b0-8688-0bfa73517b8f
+
+		changedProperty = IsHidden
+
+	measure 'Report view share 8' = EXTERNALMEASURE("Report view share", DOUBLE, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Views
+		isHidden
+		lineageTag: c11cb62c-8c9e-4630-8500-530c1e90c24d
+		sourceLineageTag: 5215202c-9cc3-4f5c-b323-3893ce709e68
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+		changedProperty = IsHidden
+
+	measure 'Workspace report days with usage 8' = EXTERNALMEASURE("Workspace report days with usage", INTEGER, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Workspace
+		formatString:= 0
+		isHidden
+		lineageTag: 78807257-79e6-437c-b8d8-b617b6549d1f
+		sourceLineageTag: 2e1d29cd-0b64-47e3-82c8-5509f4179fce
+
+		changedProperty = IsHidden
+
+	measure 'Workspace viewed reports 8' = EXTERNALMEASURE("Workspace viewed reports", INTEGER, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Workspace
+		formatString:= 0
+		isHidden
+		lineageTag: 7a50f953-250d-4e0d-8417-df6193959032
+		sourceLineageTag: 9dda7f11-1053-4560-ae8f-b83830c8f95c
+
+		changedProperty = IsHidden
+
+	measure 'Page views 8' = EXTERNALMEASURE("Page views", INTEGER, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		displayFolder: Views
+		formatString:= 0
+		isHidden
+		lineageTag: 9bab8af3-8662-4c09-85a7-2a1e06506955
+		sourceLineageTag: c34575cb-ecf0-4081-b9b2-378223ef35d3
+
+		changedProperty = IsHidden
+
+	changedProperty = IsHidden
+

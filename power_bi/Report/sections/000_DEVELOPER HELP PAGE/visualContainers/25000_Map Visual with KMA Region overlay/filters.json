@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Filter1",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "dimDate"
+          }
+        },
+        "Property": "Date"
+      }
+    },
+    "type": "Advanced",
+    "howCreated": 1
+  }
+]

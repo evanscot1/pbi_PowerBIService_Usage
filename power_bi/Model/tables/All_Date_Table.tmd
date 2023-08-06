@@ -1,0 +1,517 @@
+table All_Date_Table
+	lineageTag: f5c1e602-c51d-408e-8acf-01d97fb3c58f
+	ordinal: 136
+
+	partition All_Date_Table = M
+		mode: Import
+		expression:=
+			let
+			    Source = Value.NativeQuery(Snowflake.Databases("prod_chrobinson.east-us-2.azure.snowflakecomputing.com","SURFACETRANS_WAREHOUSE"){[Name="ENTERPRISE_REFERENCE_DOMAIN"]}[Data], "SELECT * FROM ENTERPRISE_REFERENCE_DOMAIN.BROKER.REF_DATE WHERE DATE_ID > 20230101 AND DATE_ID < 20270101", null, [EnableFolding=true])
+			in
+			    Source
+
+	column DATE_ID
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: 5b63bc7e-ab45-4cf4-87a3-3efc43c483b9
+		sourceColumn: DATE_ID
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATE
+		dataType: DateTime
+		formatString:= Long Date
+		isDataTypeInferred: false
+		lineageTag: 2d8ef291-0c3f-407e-ad72-0c9ad2996c93
+		sourceColumn: DATE
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column YEAR
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: 23b6db5d-d2b8-4671-a217-c5cd76aaa0aa
+		sourceColumn: YEAR
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column QUARTER_OF_YEAR
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: 92cdf07d-a763-464e-8479-c348b30cdb0f
+		sourceColumn: QUARTER_OF_YEAR
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MONTH_OF_YEAR
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: 016f4436-afc8-4f3f-b346-c29eed251f8b
+		sourceColumn: MONTH_OF_YEAR
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column WEEK_OF_YEAR
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: d1582372-0fbc-4a5f-bb94-b6458be5cfa5
+		sourceColumn: WEEK_OF_YEAR
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column NON_ISO_WEEK_OF_YEAR
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: 1707deda-35bf-4202-9fa0-8e6f10ece680
+		sourceColumn: NON_ISO_WEEK_OF_YEAR
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column DAY_OF_YEAR
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: 20370b8c-fd90-44db-9925-38fe7f488e4f
+		sourceColumn: DAY_OF_YEAR
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column WEEK_OF_MONTH
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: 7dff8dd6-13cd-4443-bb52-72c0e409d540
+		sourceColumn: WEEK_OF_MONTH
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column DAY_OF_MONTH
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: 1428fab7-0440-4ad8-935b-7423d113bb9b
+		sourceColumn: DAY_OF_MONTH
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column DAY_OF_WEEK
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: 2229ee35-915e-499c-a3c4-248371a1c980
+		sourceColumn: DAY_OF_WEEK
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column QUARTER_NAME
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: 6acf0172-817a-4efd-989e-5c3da6a45dc2
+		sourceColumn: QUARTER_NAME
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column SHORT_MONTH_NAME
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: 1fc06923-c297-403d-bacf-51126b3acb2c
+		sourceColumn: SHORT_MONTH_NAME
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column MONTH_NAME
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: ded2450d-3c6e-4b7a-9e58-7182a320c634
+		sourceColumn: MONTH_NAME
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column DAY_NAME_SHORT
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: cb00c013-0887-4691-92fe-4c3986ed9386
+		sourceColumn: DAY_NAME_SHORT
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column DAY_NAME
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: f86136e0-11f1-48a5-b789-3a426d44f6fb
+		sourceColumn: DAY_NAME
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column YEAR_START_DATE
+		dataType: DateTime
+		formatString:= Long Date
+		isDataTypeInferred: false
+		lineageTag: b30c1b8a-97d6-4d60-bc1e-36e81f51105c
+		sourceColumn: YEAR_START_DATE
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column YEAR_END_DATE
+		dataType: DateTime
+		formatString:= Long Date
+		isDataTypeInferred: false
+		lineageTag: a4e35853-4063-49e4-9acb-465e3f4a481c
+		sourceColumn: YEAR_END_DATE
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column QUARTER_ID
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: bc22c978-2b25-4c59-bd46-b8817ec88bee
+		sourceColumn: QUARTER_ID
+		summarizeBy: Count
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column QUARTER_START_DATE
+		dataType: DateTime
+		formatString:= Long Date
+		isDataTypeInferred: false
+		lineageTag: f6a71b0d-e7e2-40df-b3d8-07962631a25c
+		sourceColumn: QUARTER_START_DATE
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column QUARTER_END_DATE
+		dataType: DateTime
+		formatString:= Long Date
+		isDataTypeInferred: false
+		lineageTag: 45eef8b5-3b61-47ff-a963-1ac2e6eb510d
+		sourceColumn: QUARTER_END_DATE
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column MONTH_ID
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: bb5e10b5-276d-451b-b177-1e33649c6e19
+		sourceColumn: MONTH_ID
+		summarizeBy: Count
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MONTH_START_DATE
+		dataType: DateTime
+		formatString:= Long Date
+		isDataTypeInferred: false
+		lineageTag: 47d3b907-7bc2-48f3-8ad6-357f9e5ae14d
+		sourceColumn: MONTH_START_DATE
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column MONTH_END_DATE
+		dataType: DateTime
+		formatString:= Long Date
+		isDataTypeInferred: false
+		lineageTag: 241e90eb-7dcd-4551-956e-19c903a388b1
+		sourceColumn: MONTH_END_DATE
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column YEAR_OF_WEEK
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: 09625eb2-01c6-453b-86a2-bab9bd7ba337
+		sourceColumn: YEAR_OF_WEEK
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column WEEK_ID
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: e34e3848-bcd0-4389-a1d3-28f25736ea13
+		sourceColumn: WEEK_ID
+		summarizeBy: Count
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column WEEK_START_DATE
+		dataType: DateTime
+		formatString:= Long Date
+		isDataTypeInferred: false
+		lineageTag: d0906ee2-c3f1-4396-8fa6-104f83496b03
+		sourceColumn: WEEK_START_DATE
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column WEEK_END_DATE
+		dataType: DateTime
+		formatString:= Long Date
+		isDataTypeInferred: false
+		lineageTag: ef460997-bf93-4461-a0b0-ea987672b646
+		sourceColumn: WEEK_END_DATE
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column NON_ISO_YEAR_OF_WEEK
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: f9c38ebd-03ea-423e-83aa-999e3ffe4d92
+		sourceColumn: NON_ISO_YEAR_OF_WEEK
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column NON_ISO_WEEK_ID
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: f8cef8ac-4eb9-45c1-b87b-c9299189d24e
+		sourceColumn: NON_ISO_WEEK_ID
+		summarizeBy: Count
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column NON_ISO_WEEK_START_DATE
+		dataType: DateTime
+		formatString:= Long Date
+		isDataTypeInferred: false
+		lineageTag: fe01f676-20d2-4866-a42e-832922c75ce1
+		sourceColumn: NON_ISO_WEEK_START_DATE
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column NON_ISO_WEEK_END_DATE
+		dataType: DateTime
+		formatString:= Long Date
+		isDataTypeInferred: false
+		lineageTag: 461a4765-19b7-44f4-820f-9073236d048b
+		sourceColumn: NON_ISO_WEEK_END_DATE
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column IS_WEEK_DAY
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: 74cb4337-fc57-4f4e-b49b-82b401edd028
+		sourceColumn: IS_WEEK_DAY
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column DAY_OF_WEEK_MONTHLY_OCCURRENCE
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: b563d69a-d679-4a7d-88a5-1cffa3b893c2
+		sourceColumn: DAY_OF_WEEK_MONTHLY_OCCURRENCE
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column DAY_OF_WEEK_MONTHLY_COUNT
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: d5ffe5f8-58a3-4f01-848f-371ead5c6fd2
+		sourceColumn: DAY_OF_WEEK_MONTHLY_COUNT
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column IS_NAST_WORK_DAY
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: 7331975a-4887-4ba7-b324-f040f2dd028d
+		sourceColumn: IS_NAST_WORK_DAY
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column EST_ISO_YEAR
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: eaacd989-110c-47d5-9f8b-7b99118e7739
+		sourceColumn: EST_ISO_YEAR
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column EST_ISO_MONTH_NUM
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: be90a8f7-bafd-4e94-9d28-cab0726672bc
+		sourceColumn: EST_ISO_MONTH_NUM
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column EST_ISO_MONTH_SHORT
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: cd409bdd-3b1d-44fc-96e8-ea5e1b53abaa
+		sourceColumn: EST_ISO_MONTH_SHORT
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column EST_FIRST_DAY_OF_WEEK
+		dataType: DateTime
+		formatString:= Long Date
+		isDataTypeInferred: false
+		lineageTag: 52df2ded-1296-48cc-9c7a-4cfad6b190bd
+		sourceColumn: EST_FIRST_DAY_OF_WEEK
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column EST_WEEK_DAY_NUM
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: 2c451896-2296-4e5b-82df-8ac846077774
+		sourceColumn: EST_WEEK_DAY_NUM
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column EST_WORK_DAY
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: 3d5de13d-ddf0-4166-a149-b4ab12dc2b98
+		sourceColumn: EST_WORK_DAY
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column EST_HOLIDAY_FLAG
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: cefdfbd1-f937-489f-9fa0-cb749c7d7bd7
+		sourceColumn: EST_HOLIDAY_FLAG
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column EST_HOLIDAY_NAME
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: e9755133-f071-466b-baeb-81dfeb6eaf4a
+		sourceColumn: EST_HOLIDAY_NAME
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column EST_BUSINESS_DAY
+		dataType: Double
+		isDataTypeInferred: false
+		lineageTag: 21da84d4-9ade-4913-a271-82d518e43ec0
+		sourceColumn: EST_BUSINESS_DAY
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column REPORTING_WEEKDAY_GROUP_DATE
+		dataType: DateTime
+		formatString:= Long Date
+		isDataTypeInferred: false
+		lineageTag: 7fa1e69d-243f-4595-a1ed-52e94dc2daa5
+		sourceColumn: REPORTING_WEEKDAY_GROUP_DATE
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	annotation PBI_ResultType = Table
+

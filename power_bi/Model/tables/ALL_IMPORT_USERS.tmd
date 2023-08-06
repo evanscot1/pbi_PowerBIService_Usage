@@ -1,0 +1,104 @@
+table ALL_IMPORT_USERS
+	lineageTag: b9b8049a-510f-46dc-be44-ccbc926f36d5
+	ordinal: 133
+
+	partition ALL_IMPORT_USERS = M
+		mode: Import
+		expression:=
+			let
+			    Source = Value.NativeQuery(Snowflake.Databases("prod_chrobinson.east-us-2.azure.snowflakecomputing.com","SURFACETRANS_WAREHOUSE"){[Name="ENTERPRISE_REFERENCE_DOMAIN"]}[Data], "WITH USERS AS (#(lf)#(lf)SELECT#(lf)W.SEVEN_LETTER,#(lf)CONCAT(W.PREFERRED_FIRST_NAME,' ',W.PREFERRED_LAST_NAME) as NAME,#(lf)W.PREFERRED_FIRST_NAME,#(lf)W.PREFERRED_LAST_NAME,#(lf)B.BRANCH_NAME,#(lf)RBR.BRANCH_ROLLUP_NAME,#(lf)RBR.SUBREGION1,#(lf)RBR.SUBREGION2,#(lf)WJC.JOB_DESCRIPTION,#(lf)CONCAT(W.SEVEN_LETTER,'@CHROBINSON.COM') as USERID#(lf)#(lf)FROM ENTERPRISE_REFERENCE_DOMAIN.BROKER.REF_WORKER as W#(lf)INNER JOIN ENTERPRISE_REFERENCE_DOMAIN.BROKER.REF_BRANCH as B on B.BRANCH_PARTY_CODE = W.BRANCH_COST_CENTER_CODE#(lf)INNER JOIN ENTERPRISE_REFERENCE_DOMAIN.BROKER.REF_BRANCH_ROLLUP as RBR on RBR.BRANCH_PARTY_ID = B.BRANCH_PARTY_ID#(lf)INNER JOIN ENTERPRISE_REFERENCE_DOMAIN.BROKER.REF_WORKER_JOB_CODE as WJC on WJC.JOB_CODE_ID = W.JOB_CODE_ID#(lf)#(lf)WHERE W.WORKER_STATUS = 'A'#(lf)AND W.SEVEN_LETTER <> '*******'#(lf)#(lf)),#(lf)#(lf)MULTIPLE_USERS AS (#(lf)SELECT#(lf)U.SEVEN_LETTER,#(lf)COUNT(U.USERID) as USER_COUNT#(lf)FROM USERS as U#(lf)#(lf)GROUP BY U.SEVEN_LETTER#(lf)ORDER BY#(lf)COUNT(U.USERID) DESC#(lf))#(lf)#(lf)SELECT#(lf)U.*#(lf)#(lf)FROM USERS as U#(lf)LEFT JOIN MULTIPLE_USERS as MU on MU.SEVEN_LETTER = U.SEVEN_LETTER#(lf)#(lf)WHERE MU.USER_COUNT = 1", null, [EnableFolding=true])
+			in
+			    Source
+
+	column SEVEN_LETTER
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: 725aa927-da10-4e0d-8cb6-d86e8425e46c
+		sourceColumn: SEVEN_LETTER
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column NAME
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: 7ce6ce8a-034c-4a04-8224-8dd7c2970fcc
+		sourceColumn: NAME
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column PREFERRED_FIRST_NAME
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: b4115421-43a3-4858-bced-776a0896a4c8
+		sourceColumn: PREFERRED_FIRST_NAME
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column PREFERRED_LAST_NAME
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: 0413e28e-2337-4257-bcac-fc94b318b552
+		sourceColumn: PREFERRED_LAST_NAME
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column BRANCH_NAME
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: 3f9211d7-8973-449a-a1ce-99197b488cb0
+		sourceColumn: BRANCH_NAME
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column BRANCH_ROLLUP_NAME
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: f15f9c06-0607-46b6-ad90-36570c0869ed
+		sourceColumn: BRANCH_ROLLUP_NAME
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column SUBREGION1
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: 8fb4ce47-9872-475b-82f5-b630141160fc
+		sourceColumn: SUBREGION1
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column SUBREGION2
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: 1d738cc3-032a-43d1-9fea-9f2a378c7ca4
+		sourceColumn: SUBREGION2
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column JOB_DESCRIPTION
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: b1ab90ca-43f9-42fe-bbde-58843881e096
+		sourceColumn: JOB_DESCRIPTION
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column USERID
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: fdfa0095-6dcd-450c-a2ba-794661b9e246
+		sourceColumn: USERID
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	annotation PBI_ResultType = Table
+

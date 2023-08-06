@@ -1,0 +1,71 @@
+table 'Finance[BARD]_Users'
+	isHidden
+	lineageTag: 6eda9881-8499-4d73-8eb8-bdd35e2d5c2a
+	sourceLineageTag: 6d5103b9-d9ce-4886-aff5-6b034dc41ea6
+	ordinal: 179
+
+	partition 'Finance[BARD]_Users' = Entity
+		mode: DirectQuery
+		entityName: Users
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 9'
+
+	column UserId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: eebabb8e-0b45-4082-8eba-bd9535a5c580
+		sourceColumn: UserId
+		sourceLineageTag: b8bb8249-7454-4110-aab8-8b8259c0dbf5
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column UserKey
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 3cb2960d-7696-48fa-adbf-70b11e363dd0
+		sourceColumn: UserKey
+		sourceLineageTag: 7b6f9a0b-b107-497b-840f-53591eea8dee
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column UserGuid
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: bb3f8f4c-4b33-4f64-a84d-5537c680ad4a
+		sourceColumn: UserGuid
+		sourceLineageTag: 16810f80-d331-4722-b04b-899d87095e6c
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column UniqueUser
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: de654c62-2023-475d-83b9-c42027bb8e70
+		sourceColumn: UniqueUser
+		sourceLineageTag: 4b8bbac5-7897-4754-a0ca-0e4c8e578e5b
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	changedProperty = Name
+
+	changedProperty = IsHidden
+

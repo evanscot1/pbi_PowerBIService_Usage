@@ -1,0 +1,196 @@
+{
+  "objects": {},
+  "projectionOrdering": {
+    "Rows": [
+      0
+    ],
+    "Values": [
+      1,
+      2,
+      3
+    ]
+  },
+  "projectionActiveItems": {
+    "Rows": [
+      {
+        "queryRef": "All_Workspace_Reports.Workspace",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Workspace",
+        "Name": "All_Workspace_Reports.Workspace",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Viewers",
+        "Name": "All_Report views.Viewers",
+        "Type": 3,
+        "Format": "#,0"
+      },
+      {
+        "Restatement": "Views",
+        "Name": "All_Report views.Views",
+        "Type": 3,
+        "Format": "#,0"
+      },
+      {
+        "Restatement": "Report Ct.",
+        "Name": "All_Report views.Views_Distinct_Report_Count",
+        "Type": 3,
+        "Format": "#,0"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Rows",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Values",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 2,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 3,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Workspace",
+      "queryName": "All_Workspace_Reports.Workspace",
+      "roles": {
+        "Rows": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "All_Workspace_Reports"
+            }
+          },
+          "Property": "Workspace"
+        }
+      }
+    },
+    {
+      "displayName": "Viewers",
+      "format": "#,0",
+      "queryName": "All_Report views.Viewers",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "All_Report views"
+            }
+          },
+          "Property": "Viewers"
+        }
+      }
+    },
+    {
+      "displayName": "Views",
+      "format": "#,0",
+      "queryName": "All_Report views.Views",
+      "roles": {
+        "Values": true
+      },
+      "sort": 2,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "All_Report views"
+            }
+          },
+          "Property": "Views"
+        }
+      }
+    },
+    {
+      "displayName": "Report Ct.",
+      "format": "#,0",
+      "queryName": "All_Report views.Views_Distinct_Report_Count",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "All_Report views"
+            }
+          },
+          "Property": "Views_Distinct_Report_Count"
+        }
+      }
+    }
+  ],
+  "expansionStates": [
+    {
+      "roles": [
+        "Rows"
+      ],
+      "levels": [
+        {
+          "queryRefs": [
+            "All_Workspace_Reports.Workspace"
+          ],
+          "isCollapsed": true,
+          "identityKeys": [
+            {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "All_Workspace_Reports"
+                  }
+                },
+                "Property": "Workspace"
+              }
+            }
+          ],
+          "isPinned": true
+        }
+      ],
+      "root": {
+        "identityValues": null
+      }
+    }
+  ]
+}

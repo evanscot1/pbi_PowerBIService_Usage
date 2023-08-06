@@ -1,0 +1,64 @@
+{
+  "displayName": "Dev Help Toggle - Report Details",
+  "name": "Bookmark6718f937111b57f8cf8a",
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSection07d5601be4bdaafe1029",
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "visible": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "options": {
+    "targetVisualNames": [
+      "08a1f253cf400e1178bd",
+      "a120b1df9ce7be2563dd",
+      "8b520e4df545977a7d00",
+      "7ef9058e05c70563334c",
+      "4ee35a30860147cdacfe",
+      "b321043d2978c45e262d",
+      "28f0bcb7e2d04627b03f",
+      "262d06ad00d1ea2db944",
+      "ccbf07853edfb9178bd2",
+      "e13a4d054f25a0851681",
+      "1063abbe25b7bab49f9f",
+      "abb0f4b530e156ea6fa3",
+      "d4ab3e63c4fd09feec12",
+      "e1e8efb4ac24d5f60622",
+      "7fdc753480cb2a2b0607",
+      "72e696ff97082b4c49c9",
+      "83378041757968baa171",
+      "5ae9d911652034b12b08",
+      "4694da14df0fbeb07e9d",
+      "537c317e02bf9d90faa3",
+      "dc4344c0cec587b1836f",
+      "5bb924b231f497b52e83",
+      "1d3ed265aec0f8acd005",
+      "20ea05b7e29f28fd19f9",
+      "ebac8b6b71d3cea98954"
+    ],
+    "suppressData": true,
+    "suppressActiveSection": true,
+    "applyOnlyToTargetVisuals": true
+  }
+}

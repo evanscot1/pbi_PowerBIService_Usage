@@ -1,0 +1,21 @@
+{
+  "name": "14b33b05607fb3740af7",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 1000,
+        "width": 1920.0000000000002,
+        "height": 87.441860465116278,
+        "tabOrder": 3000
+      }
+    }
+  ],
+  "singleVisualGroup": {
+    "displayName": "Compact Pane",
+    "groupMode": 0,
+    "isHidden": false
+  }
+}

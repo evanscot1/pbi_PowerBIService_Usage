@@ -1,0 +1,111 @@
+table 'Finance[BARD]_Workspace reports'
+	isHidden
+	lineageTag: cbe19c7b-b268-40e2-9059-30fb46491cf7
+	sourceLineageTag: bb3f9ae3-4a39-4d36-80c4-815ee18c146a
+	ordinal: 175
+
+	partition 'Finance[BARD]_Workspace reports' = Entity
+		mode: DirectQuery
+		entityName: "Workspace reports"
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 9'
+
+	measure 'IsSelectedReport 8' = EXTERNALMEASURE("IsSelectedReport", INTEGER, "DirectQuery to AS - Usage Metrics Report 9")
+		dataCategory: Uncategorized
+		formatString:= 0
+		isHidden
+		lineageTag: 55180f29-f056-4cfd-9cf1-701147ed02ba
+		sourceLineageTag: c1d018d1-26b5-42af-815c-c72d45ebf455
+
+		changedProperty = IsHidden
+
+	column ReportGuid
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		isNullable: false
+		lineageTag: d993244c-6b06-4245-8797-3a6c594b4c94
+		sourceColumn: ReportGuid
+		sourceLineageTag: 7dc770e3-25e2-4e48-8961-b964390cf0fd
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column trend
+		dataCategory: Uncategorized
+		dataType: Double
+		formatString:= 0%;-0%;0%
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: eb2bae29-85e9-4950-9203-5ad4cef8bc26
+		sourceColumn: trend
+		sourceLineageTag: 64e70630-3689-4d9f-8fe3-26d4fdc20afa
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column 'Days with usage'
+		dataCategory: Uncategorized
+		dataType: Int64
+		formatString:= 0
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 94a6feb1-6311-4fe5-bc9d-4faf36b99477
+		sourceColumn: "Days with usage"
+		sourceLineageTag: 3f021dae-8b9c-42aa-83f3-9cd57e6a3b2a
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column ReportName
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: b7057ae7-d541-4c66-9b6a-fc73d328073a
+		sourceColumn: ReportName
+		sourceLineageTag: 176daf7d-a39e-4990-a3b0-17771cebdb39
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column IsUsageMetricsReportWS
+		dataCategory: Uncategorized
+		dataType: Boolean
+		formatString:= "TRUE";"TRUE";"FALSE"
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 75e6b547-a90d-455f-82a2-f37436c07edb
+		sourceColumn: IsUsageMetricsReportWS
+		sourceLineageTag: 3877fe44-3d9d-4b3b-897f-397fcaccbfdd
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column Workspace = "NAST[BARD]"
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: cac69947-6da4-4f23-8f27-fc069dc5cada
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+		changedProperty = Name
+
+		changedProperty = IsHidden
+
+	changedProperty = Name
+
+	changedProperty = IsHidden
+

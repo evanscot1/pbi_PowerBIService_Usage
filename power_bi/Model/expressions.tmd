@@ -1,0 +1,125 @@
+expression EndDateRelative =
+	let
+	    Source = Date.AddDays ( DateTime.Date(DateTime.LocalNow()), +1 )
+	in
+	    Source
+	lineageTag: aeffb4af-abb3-486b-a41a-c73dcb51e993
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Date
+
+expression StartDateRelative =
+	let
+	    Source = Date.AddDays ( DateTime.Date(DateTime.LocalNow()), -806 )
+	in
+	    Source
+	lineageTag: 03e1896b-adcc-4a0b-8a6a-5b46600cd91a
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Date
+
+expression 'DirectQuery to AS - Usage Metrics Report' =
+	let
+	    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/myorg/NAST%20%5BInt%5D", "Usage Metrics Report"),
+	    Cubes = Table.Combine(Source[Data]),
+	    Cube = Cubes{[Id="Model", Kind="Cube"]}[Data]
+	in
+	    Cube
+	lineageTag: 0e82d4f0-4539-48f3-a936-66e5fc7d9c33
+
+	annotation PBI_IncludeFutureArtifacts = True
+
+	annotation PBI_RemovedChildren = [{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"400619c0-544c-46b1-a5a0-9f6df481b7e5"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"088a20e1-ae21-42a9-b384-bdf3e6170eca"}},"objectType":"Table"}]
+
+expression 'DirectQuery to AS - Usage Metrics Report 2' =
+	let
+	    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/myorg/NAST%20%5BProd%5D", "Usage Metrics Report"),
+	    Cubes = Table.Combine(Source[Data]),
+	    Cube = Cubes{[Id="Model", Kind="Cube"]}[Data]
+	in
+	    Cube
+	lineageTag: a9c2f770-970e-4c21-a7a5-c6db788d8cd0
+
+	annotation PBI_IncludeFutureArtifacts = True
+
+expression 'DirectQuery to AS - Usage Metrics Report 3' =
+	let
+	    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/myorg/NAST%20Reporting%20Hubs%20%5BPROD%5D", "Usage Metrics Report"),
+	    Cubes = Table.Combine(Source[Data]),
+	    Cube = Cubes{[Id="Model", Kind="Cube"]}[Data]
+	in
+	    Cube
+	lineageTag: 216c0fce-c57c-4941-9340-b0a2d01e5445
+
+	annotation PBI_IncludeFutureArtifacts = True
+
+expression 'DirectQuery to AS - Usage Metrics Report 4' =
+	let
+	    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/myorg/NAST%20%5BDev%5D", "Usage Metrics Report"),
+	    Cubes = Table.Combine(Source[Data]),
+	    Cube = Cubes{[Id="Model", Kind="Cube"]}[Data]
+	in
+	    Cube
+	lineageTag: 64172b75-9466-498f-88cf-7a5da204c05c
+
+	annotation PBI_IncludeFutureArtifacts = True
+
+expression 'DirectQuery to AS - Usage Metrics Report 5' =
+	let
+	    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/myorg/NAST%20Contractual", "Usage Metrics Report"),
+	    Cubes = Table.Combine(Source[Data]),
+	    Cube = Cubes{[Id="Model", Kind="Cube"]}[Data]
+	in
+	    Cube
+	lineageTag: 958d856e-2b13-442c-bf84-11d36aa9166c
+
+	annotation PBI_IncludeFutureArtifacts = True
+
+expression 'DirectQuery to AS - Usage Metrics Report 6' =
+	let
+	    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/myorg/Finance%20BARD%202", "Usage Metrics Report"),
+	    Cubes = Table.Combine(Source[Data]),
+	    Cube = Cubes{[Id="Model", Kind="Cube"]}[Data]
+	in
+	    Cube
+	lineageTag: a69b33fc-08eb-4f26-a213-8beef5262e4f
+
+	annotation PBI_IncludeFutureArtifacts = True
+
+expression 'DirectQuery to AS - Usage Metrics Report 7' =
+	let
+	    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/myorg/NAST%20Finance", "Usage Metrics Report"),
+	    Cubes = Table.Combine(Source[Data]),
+	    Cube = Cubes{[Id="Model", Kind="Cube"]}[Data]
+	in
+	    Cube
+	lineageTag: eba66f51-8998-49da-9043-079bbe6f8b16
+
+	annotation PBI_IncludeFutureArtifacts = True
+
+	annotation PBI_RemovedChildren = [{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"082dd08a-3736-49eb-a465-a5294b27ae7b"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"188b8e09-bf11-4400-b737-7ff61d8904f0"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"ceca560f-ef98-4b03-b7ac-0945c8bb4c77"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"940c0704-747b-4e04-8474-0aa28d70874b"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"a70d2714-271a-4fb4-bdef-25a42c03ee19"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"bb3f9ae3-4a39-4d36-80c4-815ee18c146a"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"6d5103b9-d9ce-4886-aff5-6b034dc41ea6"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"ed16c722-1441-471c-915d-0164d8fd550c"}},"objectType":"Table"}]
+
+expression 'DirectQuery to AS - Usage Metrics Report 8' =
+	let
+	    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/myorg/NAST%20Finance", "Usage Metrics Report"),
+	    Cubes = Table.Combine(Source[Data]),
+	    Cube = Cubes{[Id="Model", Kind="Cube"]}[Data]
+	in
+	    Cube
+	lineageTag: 0009a931-988b-463b-b592-014f03404047
+
+	annotation PBI_IncludeFutureArtifacts = True
+
+expression 'DirectQuery to AS - Usage Metrics Report 9' =
+	let
+	    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/myorg/Finance%20BARD", "Usage Metrics Report"),
+	    Cubes = Table.Combine(Source[Data]),
+	    Cube = Cubes{[Id="Model", Kind="Cube"]}[Data]
+	in
+	    Cube
+	lineageTag: 15f8ab90-1a2a-4a9a-a974-b737467136fc
+
+	annotation PBI_IncludeFutureArtifacts = True
+

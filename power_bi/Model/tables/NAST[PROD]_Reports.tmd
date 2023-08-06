@@ -1,0 +1,70 @@
+table 'NAST[PROD]_Reports'
+	lineageTag: f470c5ab-a7be-43e0-ae36-85b6c96b56c3
+	sourceLineageTag: a70d2714-271a-4fb4-bdef-25a42c03ee19
+	ordinal: 27
+
+	partition 'NAST[PROD]_Reports' = Entity
+		mode: DirectQuery
+		entityName: Reports
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 2'
+
+	column OrganizationId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: bbb7ecb4-ef07-4253-b77e-6ea3fe7d1650
+		sourceColumn: OrganizationId
+		sourceLineageTag: 6f0a7eca-6b5d-43f2-acf5-5143422b6f2f
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+	column ReportGuid
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isNullable: false
+		lineageTag: 5875dcb0-1341-4d57-b4ac-18afbaee2a78
+		sourceColumn: ReportGuid
+		sourceLineageTag: d04f80ed-b628-4cfc-859b-bd220ce893aa
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+	column ReportName
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: ce6ff3d4-0636-4f8f-9e91-4513ccbf868a
+		sourceColumn: ReportName
+		sourceLineageTag: 2a1b9eea-cb70-4575-aa1c-e3d83b16f3c1
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+	column WorkspaceId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: 84b66ddd-e3a1-4220-a93b-1da89b992293
+		sourceColumn: WorkspaceId
+		sourceLineageTag: 0d3e7f72-b7cb-43d0-a775-0bc678f65d8f
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+	column IsUsageMetricsReport
+		dataCategory: Uncategorized
+		dataType: Boolean
+		formatString:= "TRUE";"TRUE";"FALSE"
+		isDataTypeInferred: false
+		lineageTag: 3936a152-801b-451d-85a6-f5612709b422
+		sourceColumn: IsUsageMetricsReport
+		sourceLineageTag: aaa9416e-121b-4837-87a4-6d04bb28ee40
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+	changedProperty = Name
+

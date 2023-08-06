@@ -1,0 +1,27 @@
+table 'HUBS[PROD] Usage Report Refresh'
+	isHidden
+	lineageTag: 13b82bad-0a08-42e4-b3c1-6635f7fb97a6
+	sourceLineageTag: 9578ffab-7bde-46d8-ba4f-486559d24e82
+	ordinal: 50
+
+	partition 'HUBS[PROD] Usage Report Refresh' = Entity
+		mode: DirectQuery
+		entityName: "Refresh Stats"
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 3'
+
+	column 'HUBS[PROD] Refresh'
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: b349a378-af51-4b31-9b9d-9e0faeba375e
+		sourceColumn: "Last Refresh"
+		sourceLineageTag: fb38f4d9-5a54-42d5-9aef-7ece73930cb4
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = Name
+
+	changedProperty = Name
+

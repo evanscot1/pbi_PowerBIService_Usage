@@ -1,0 +1,21 @@
+{
+  "name": "a120b1df9ce7be2563dd",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "height": 674.87336914811976,
+        "width": 1785.9094397544131,
+        "x": 70,
+        "y": 325.22046600650629,
+        "z": 13000,
+        "tabOrder": 4000
+      }
+    }
+  ],
+  "singleVisualGroup": {
+    "displayName": "Tips & Tricks",
+    "groupMode": 0,
+    "isHidden": true
+  }
+}

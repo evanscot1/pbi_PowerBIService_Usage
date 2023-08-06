@@ -1,0 +1,74 @@
+table All_Workspace_Reports
+	lineageTag: e57de1b4-d1af-4a5e-b417-78eeaf7c0678
+	ordinal: 134
+
+	partition All_Workspace_Reports = Calculated
+		mode: Import
+		expression:= UNION ('FINANCE_BARD2_Workspace reports','HUB[PROD]_Workspace reports', 'NAST[DEV]_Workspace reports', 'NAST[INT]_Workspace reports', 'NAST[PROD]_Workspace reports', 'NAST_CONTRACTUAL_Workspace reports','Finance[BARD]_Workspace reports')
+
+	column ReportGuid
+		dataType: String
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: 6a09aadc-2cc2-4b90-81cf-c7d00dfd2f18
+		sourceColumn: "FINANCE_BARD2_Workspace reports[ReportGuid]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column trend
+		dataType: Double
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: db6db65d-46f1-44a7-a8e1-2b620d6f0def
+		sourceColumn: "FINANCE_BARD2_Workspace reports[trend]"
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Days with usage'
+		dataType: Int64
+		formatString:= 0
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: 3b3b494a-0f64-4af0-b401-efd43c5fd55f
+		sourceColumn: "FINANCE_BARD2_Workspace reports[Days with usage]"
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column ReportName
+		dataType: String
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: 5ec60df7-9a00-423c-938f-daa5657b3970
+		sourceColumn: "FINANCE_BARD2_Workspace reports[ReportName]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsUsageMetricsReportWS
+		dataType: Boolean
+		formatString:= "TRUE";"TRUE";"FALSE"
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: e8f4ed3a-ceec-4df7-972c-8f92feac3414
+		sourceColumn: "FINANCE_BARD2_Workspace reports[IsUsageMetricsReportWS]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column Workspace
+		dataType: String
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: b1b9a64a-a5ed-4c73-81db-b5dcc278156c
+		sourceColumn: "FINANCE_BARD2_Workspace reports[Workspace]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	annotation PBI_Id = 20cf619eeb1e472b914b59a13065132a
+

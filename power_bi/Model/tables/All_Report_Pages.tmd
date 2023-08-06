@@ -1,0 +1,50 @@
+table All_Report_Pages
+	lineageTag: ed218ede-f1a5-485b-b5dc-4b4670d3725e
+	ordinal: 137
+
+	partition All_Report_Pages = Calculated
+		mode: Import
+		expression:= UNION ('FINANCE_BARD2_Report pages','HUB[PROD]_Report pages', 'NAST[DEV]_Report pages', 'NAST[INT]_Report pages', 'NAST[PROD]_Report pages', 'NAST_CONTRACTUAL_Report pages','Finance[BARD]_Report pages')
+
+	column ReportId
+		dataType: String
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: 90b324d9-837d-47bf-be4f-021a0cc57151
+		sourceColumn: "FINANCE_BARD2_Report pages[ReportId]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column SectionId
+		dataType: String
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: 2a92825a-214f-4352-bf96-03606b3c4131
+		sourceColumn: "FINANCE_BARD2_Report pages[SectionId]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column SectionName
+		dataType: String
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: 0b79d6d2-1ea7-4ca2-8f4f-0b6289a9a250
+		sourceColumn: "FINANCE_BARD2_Report pages[SectionName]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column WorkspaceId
+		dataType: String
+		isDataTypeInferred: false
+		isNameInferred: false
+		lineageTag: c8926c2b-3c07-44ce-b673-15b106106520
+		sourceColumn: "FINANCE_BARD2_Report pages[WorkspaceId]"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	annotation PBI_Id = 30e56bc4a4044394a13f1eaecd2de353
+

@@ -1,0 +1,174 @@
+{
+  "displayName": "Expose Filter Pane-pg5",
+  "name": "Bookmark1b4e1933e50525372d92",
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSectionc5829762975a42610036",
+    "filters": {
+      "byName": {
+        "Filter2affab2d7327249675a3": {
+          "name": "Filter2affab2d7327249675a3",
+          "type": "Categorical",
+          "filter": {
+            "Version": 2,
+            "From": [
+              {
+                "Name": "v",
+                "Entity": "V_DIM_DATE",
+                "Type": 0
+              }
+            ],
+            "Where": [
+              {
+                "Condition": {
+                  "In": {
+                    "Expressions": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "BeforeTodayFlag"
+                        }
+                      }
+                    ],
+                    "Values": [
+                      [
+                        {
+                          "Literal": {
+                            "Value": "1L"
+                          }
+                        }
+                      ]
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "V_DIM_DATE"
+                }
+              },
+              "Property": "BeforeTodayFlag"
+            }
+          },
+          "howCreated": 1
+        },
+        "Filter42f48a53ff54f55a77d6": {
+          "name": "Filter42f48a53ff54f55a77d6",
+          "type": "Categorical",
+          "filter": {
+            "Version": 2,
+            "From": [
+              {
+                "Name": "v",
+                "Entity": "V_DIM_BRANCH",
+                "Type": 0
+              }
+            ],
+            "Where": [
+              {
+                "Condition": {
+                  "In": {
+                    "Expressions": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "PRIMARYBUSINESSLINE"
+                        }
+                      }
+                    ],
+                    "Values": [
+                      [
+                        {
+                          "Literal": {
+                            "Value": "'North America Trans'"
+                          }
+                        }
+                      ]
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "V_DIM_BRANCH"
+                }
+              },
+              "Property": "PRIMARYBUSINESSLINE"
+            }
+          },
+          "howCreated": 1
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "visible": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "options": {
+    "targetVisualNames": [
+      "6f150fc0c0e8e4615ccf",
+      "689baea720ed5aadaa67",
+      "782d154188aaca59174f",
+      "9cd08383d88375822c6b",
+      "f81189af2d926ea5b4fd",
+      "0e09e1d43eaaef234715",
+      "50717a0adefdb6b12fa2",
+      "29ce27e8f887ef713caa",
+      "01450674ad214f7d4388",
+      "55d83fbb6915cec45bc8",
+      "a63ba014fe905dc601a2",
+      "fdaccfdb60a8162144e2",
+      "375830e6a1603e69b25b",
+      "8713a5f33e02f5545643",
+      "7ceeb80f267830075d11",
+      "dccbe5755893839304d5",
+      "46f08d54dac91e5ac561",
+      "0bf853ccf7b119fe7316",
+      "5d676700a7ef8dfb8c38",
+      "3e338ba4b6b037093097",
+      "4d76de9765d24f0659a8",
+      "d3b8ca1a5fb11ee5d8d7",
+      "78fa7c1e1e8461a92aa2"
+    ],
+    "suppressData": true,
+    "suppressActiveSection": true,
+    "applyOnlyToTargetVisuals": true
+  }
+}

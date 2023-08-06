@@ -1,0 +1,111 @@
+table 'NAST_CONTRACTUAL_Workspace reports'
+	isHidden
+	lineageTag: 77fd1d30-12cc-488b-9bf0-c063cc67f2d8
+	sourceLineageTag: bb3f9ae3-4a39-4d36-80c4-815ee18c146a
+	ordinal: 95
+
+	partition 'NAST_CONTRACTUAL_Workspace reports' = Entity
+		mode: DirectQuery
+		entityName: "Workspace reports"
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 5'
+
+	measure 'IsSelectedReport 5' = EXTERNALMEASURE("IsSelectedReport", INTEGER, "DirectQuery to AS - Usage Metrics Report 5")
+		dataCategory: Uncategorized
+		formatString:= 0
+		isHidden
+		lineageTag: 7b13a3e0-3688-431e-a927-6b903ae38c4c
+		sourceLineageTag: c1d018d1-26b5-42af-815c-c72d45ebf455
+
+		changedProperty = IsHidden
+
+	column ReportGuid
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		isNullable: false
+		lineageTag: 0905e904-de66-478a-bf39-fec09fde0684
+		sourceColumn: ReportGuid
+		sourceLineageTag: 7dc770e3-25e2-4e48-8961-b964390cf0fd
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column trend
+		dataCategory: Uncategorized
+		dataType: Double
+		formatString:= 0%;-0%;0%
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 734b1ee0-bbef-49a6-9419-2cb91b1bdf65
+		sourceColumn: trend
+		sourceLineageTag: 64e70630-3689-4d9f-8fe3-26d4fdc20afa
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column 'Days with usage'
+		dataCategory: Uncategorized
+		dataType: Int64
+		formatString:= 0
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 1227c876-f6fa-46be-b238-dac6a043eeb6
+		sourceColumn: "Days with usage"
+		sourceLineageTag: 3f021dae-8b9c-42aa-83f3-9cd57e6a3b2a
+		summarizeBy: Sum
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column ReportName
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 8bad6259-2c2f-4349-a7ab-295793164a00
+		sourceColumn: ReportName
+		sourceLineageTag: 176daf7d-a39e-4990-a3b0-17771cebdb39
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column IsUsageMetricsReportWS
+		dataCategory: Uncategorized
+		dataType: Boolean
+		formatString:= "TRUE";"TRUE";"FALSE"
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: ec3bd7b5-1a2e-4bf5-89a8-48b61e24a32b
+		sourceColumn: IsUsageMetricsReportWS
+		sourceLineageTag: 3877fe44-3d9d-4b3b-897f-397fcaccbfdd
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+		changedProperty = IsHidden
+
+	column Workspace = "NAST_Contractual"
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: c58dabe9-e7d4-4b3c-ab2f-1a0719723193
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+		changedProperty = Name
+
+		changedProperty = IsHidden
+
+	changedProperty = Name
+
+	changedProperty = IsHidden
+

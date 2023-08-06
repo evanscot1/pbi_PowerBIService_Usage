@@ -1,0 +1,52 @@
+{
+  "name": "893baf0481da37bed51c",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 10.314658480429777,
+        "y": 13.261703760552573,
+        "z": 3000,
+        "width": 400.7981580967,
+        "height": 109.04067536454338,
+        "tabOrder": 4000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "image",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "CHR_LogoTM_Horz_2C_wTagline_Re2387276959979876.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'CHR Logo'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

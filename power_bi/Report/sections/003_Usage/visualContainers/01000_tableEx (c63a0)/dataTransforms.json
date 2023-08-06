@@ -1,0 +1,183 @@
+{
+  "objects": {
+    "columnWidth": [
+      {
+        "properties": {
+          "value": {
+            "expr": {
+              "Literal": {
+                "Value": "356.67404573965416D"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "All_Workspace_Reports.ReportName"
+        }
+      }
+    ],
+    "total": [
+      {
+        "properties": {
+          "totals": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Values": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "ReportName",
+        "Name": "All_Workspace_Reports.ReportName",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Owner",
+        "Name": "All Reporting Owners.Owner",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Viewers",
+        "Name": "All_Report views.Viewers",
+        "Type": 3,
+        "Format": "#,0"
+      },
+      {
+        "Restatement": "Views",
+        "Name": "All_Report views.Views",
+        "Type": 3,
+        "Format": "#,0"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Values",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 2,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 3,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "ReportName",
+      "queryName": "All_Workspace_Reports.ReportName",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "All_Workspace_Reports"
+            }
+          },
+          "Property": "ReportName"
+        }
+      }
+    },
+    {
+      "displayName": "Owner",
+      "queryName": "All Reporting Owners.Owner",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "All Reporting Owners"
+            }
+          },
+          "Property": "Owner"
+        }
+      }
+    },
+    {
+      "displayName": "Viewers",
+      "format": "#,0",
+      "queryName": "All_Report views.Viewers",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "All_Report views"
+            }
+          },
+          "Property": "Viewers"
+        }
+      }
+    },
+    {
+      "displayName": "Views",
+      "format": "#,0",
+      "queryName": "All_Report views.Views",
+      "roles": {
+        "Values": true
+      },
+      "sort": 2,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "All_Report views"
+            }
+          },
+          "Property": "Views"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "name": "8b520e4df545977a7d00",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 73.676132003069839,
+        "y": 300.59861857252497,
+        "z": 12000,
+        "width": 1802.1181887950884,
+        "height": 741.18188795088258,
+        "tabOrder": 12000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "D",
+                    "textStyle": {
+                      "fontSize": "24pt",
+                      "color": "#00a3e0"
+                    }
+                  },
+                  {
+                    "value": "eveloper Report & Deployment Checklist",
+                    "textStyle": {
+                      "fontSize": "28pt",
+                      "color": "#00a3e0"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Report Development",
+                    "textStyle": {
+                      "fontSize": "28pt",
+                      "color": "#0071c7"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Utilize CH Robinson Power BI Template & Features",
+                    "textStyle": {
+                      "fontSize": "20pt"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "     If your report has 3+ content pages then it should include a Home Page with navigation to each content page.",
+                    "textStyle": {
+                      "fontSize": "20pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "         C",
+                    "textStyle": {
+                      "fontSize": "20pt"
+                    }
+                  },
+                  {
+                    "value": "heck out the tips and tricks section how to set this up.",
+                    "textStyle": {
+                      "fontSize": "16pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "     Help Page - Fill out each section (parameters, report security, metric definitions, and report purpose)",
+                    "textStyle": {
+                      "fontSize": "20pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "         ",
+                    "textStyle": {
+                      "fontSize": "20pt"
+                    }
+                  },
+                  {
+                    "value": "Keep Help Pages hidden and use bookmark navigation.",
+                    "textStyle": {
+                      "fontSize": "16pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Set up Parameters if applicable ",
+                    "textStyle": {
+                      "fontSize": "20pt"
+                    }
+                  },
+                  {
+                    "value": "--",
+                    "textStyle": {
+                      "fontSize": "20pt",
+                      "color": "#999999"
+                    }
+                  },
+                  {
+                    "value": "See help doc",
+                    "textStyle": {
+                      "fontSize": "20pt",
+                      "color": "#999999"
+                    },
+                    "url": "https://docs.microsoft.com/en-us/power-bi/connect-data/service-parameters"
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "     ",
+                    "textStyle": {
+                      "fontSize": "20pt",
+                      "color": "#999999"
+                    }
+                  },
+                  {
+                    "value": "If data set is large, then set up parameters to limit size prior to deployment",
+                    "textStyle": {
+                      "fontSize": "20pt",
+                      "color": "#e41111"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data Refresh and Latency labeled on each page - objects for this exist on each page, but will need to be populated with a value. (lower right of most pages)",
+                    "textStyle": {
+                      "fontSize": "20pt"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Row Level Security - Setup and Tested ",
+                    "textStyle": {
+                      "fontSize": "20pt"
+                    }
+                  },
+                  {
+                    "value": "-- Discuss security plan with Power BI Admin Team",
+                    "textStyle": {
+                      "fontSize": "20pt",
+                      "color": "#cccccc"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Report Deployment",
+                    "textStyle": {
+                      "fontSize": "37.3333px",
+                      "color": "#0071c7"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Publish saved report to NAST[Dev] environment",
+                    "textStyle": {
+                      "fontSize": "20pt"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Test page loading and check visuals for errors",
+                    "textStyle": {
+                      "fontSize": "20pt"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "  ",
+                    "textStyle": {
+                      "fontSize": "20pt"
+                    }
+                  },
+                  {
+                    "value": "   Page load should be no more than 20 seconds",
+                    "textStyle": {
+                      "fontSize": "20pt",
+                      "color": "#e41111"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Set up gateway connections and data source credentials",
+                    "textStyle": {
+                      "fontSize": "20pt"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Run a singular refresh to validate your report is set up correctly.",
+                    "textStyle": {
+                      "fontSize": "20pt"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "    Set up refresh with full data set to test full user experience.",
+                    "textStyle": {
+                      "fontSize": "20pt",
+                      "color": "#e41111"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "    Refresh time should be less than 45 minutes",
+                    "textStyle": {
+                      "fontSize": "20pt",
+                      "color": "#e41111"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Set up dataset and report permissions for test users ",
+                    "textStyle": {
+                      "fontSize": "20pt"
+                    }
+                  },
+                  {
+                    "value": "-- ",
+                    "textStyle": {
+                      "fontSize": "20pt",
+                      "color": "#999999"
+                    }
+                  },
+                  {
+                    "value": "See help doc",
+                    "textStyle": {
+                      "fontSize": "20pt",
+                      "color": "#b3b3b3"
+                    },
+                    "url": "https://docs.microsoft.com/en-us/power-bi/connect-data/service-datasets-manage-access-permissions"
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Set up and test row level security with users ",
+                    "textStyle": {
+                      "fontSize": "20pt"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Ready for Prod? ",
+                    "textStyle": {
+                      "fontSize": "20pt"
+                    }
+                  },
+                  {
+                    "value": "Connect with the Power BI Admin team",
+                    "textStyle": {
+                      "fontSize": "20pt",
+                      "color": "#b3b3b3"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Once your report has been deployed to prod, please add your report to the ",
+                    "textStyle": {
+                      "fontSize": "20pt"
+                    }
+                  },
+                  {
+                    "value": "Report Library",
+                    "textStyle": {
+                      "fontSize": "20pt",
+                      "color": "#ffffff"
+                    },
+                    "url": "http://inavisphere/edw/analytics/v1/#/report-library"
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "background": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#000000'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Report Check List'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

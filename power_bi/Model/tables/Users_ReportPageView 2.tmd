@@ -1,0 +1,35 @@
+table 'Users_ReportPageView 2'
+	isHidden
+	lineageTag: db804800-821d-4cda-a88a-7f2ce9c4eff7
+	sourceLineageTag: aa82832b-e2c3-41df-a5e1-2b631cb28b4b
+	ordinal: 37
+
+	partition 'Users_ReportPageView 2' = Entity
+		mode: DirectQuery
+		entityName: Users_ReportPageView
+		expressionSource: 'DirectQuery to AS - Usage Metrics Report 2'
+
+	column UserId
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 29e7b49b-64da-4b7d-95de-1cb72022724a
+		sourceColumn: UserId
+		sourceLineageTag: 23c49a8a-9c06-4c14-bff0-74b2aae6a09e
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+
+	column UserKey
+		dataCategory: Uncategorized
+		dataType: String
+		isDataTypeInferred: false
+		isHidden
+		lineageTag: 7d32a3a8-5b56-410a-bb49-2de6e4433946
+		sourceColumn: UserKey
+		sourceLineageTag: 8e72cea5-42ee-44c0-8461-1edfd7f26b9c
+		summarizeBy: None
+
+		annotation SummarizationSetBy = User
+

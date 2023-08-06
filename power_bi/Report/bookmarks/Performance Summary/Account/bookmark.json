@@ -1,0 +1,41 @@
+{
+  "displayName": "Account",
+  "name": "Bookmark08e03b47f6f7664955f5",
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSection",
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "visible": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "options": {
+    "targetVisualNames": [
+      "7b9640de0619a1859857",
+      "227d9f745ab4e664ce17",
+      "d7dc082f8f4d23cf51bd",
+      "ae19d7d9361a6da96df8"
+    ],
+    "applyOnlyToTargetVisuals": true
+  }
+}

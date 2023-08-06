@@ -1,0 +1,79 @@
+table 'All Reporting Owners'
+	lineageTag: 9040f9a9-9fa9-4d1d-a434-29dcd6790531
+	ordinal: 181
+
+	partition 'All Reporting Owners' = M
+		mode: Import
+		expression:=
+			let
+			    Source = Excel.Workbook(Web.Contents("https://chrobinson.sharepoint.com/sites/NBALeadership-SARG/Shared%20Documents/SARG/Reports/PowerBI%20Report%20Owner%20Data.xlsx"), null, true),
+			    Table1_Table = Source{[Item="Table1",Kind="Table"]}[Data],
+			    #"Changed Type" = Table.TransformColumnTypes(Table1_Table,{{"ReportGuid", type text}, {"ReportName", type text}, {"Owner", type text}, {"Owning Group", type text}, {"ActionSWAG", type text}, {"FutureState", type text}, {"ExecStatus", type text}})
+			in
+			    #"Changed Type"
+
+	column ReportGuid
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: 8d23753d-bbe4-47f8-8c25-aeb5b5ba7447
+		sourceColumn: ReportGuid
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column ReportName
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: 7e16d755-6aa9-44d4-a359-aa1e3302a307
+		sourceColumn: ReportName
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column Owner
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: 2e571185-2f4f-4303-97ac-0c26961f918e
+		sourceColumn: Owner
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Owning Group'
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: d0f9236b-3c47-4b31-ae75-25d502fa07d5
+		sourceColumn: "Owning Group"
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column ActionSWAG
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: 83c2596c-3049-484e-bf7d-43dff101bc49
+		sourceColumn: ActionSWAG
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column FutureState
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: 471d3c02-6aae-415e-adcd-1113e217096b
+		sourceColumn: FutureState
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	column ExecStatus
+		dataType: String
+		isDataTypeInferred: false
+		lineageTag: 42804d81-06ec-4f7e-a9ba-49517f2af93f
+		sourceColumn: ExecStatus
+		summarizeBy: None
+
+		annotation SummarizationSetBy = Automatic
+
+	annotation PBI_ResultType = Table
+
